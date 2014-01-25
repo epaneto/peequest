@@ -21,7 +21,8 @@
 
 -(void)show:(SKScene *)scene
 {
-    _view.position = CGPointMake(100,_view.size.height);
+    _view.position = CGPointMake(CGRectGetMidX(scene.frame),
+                                   CGRectGetMidY(scene.frame));
     [scene addChild:_view];
 }
 
