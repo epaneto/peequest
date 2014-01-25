@@ -82,7 +82,10 @@
 		54F2B1651894281D003D25D3 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F2B1641894281D003D25D3 /* AudioToolbox.framework */; };
 		54F2B16718942821003D25D3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F2B16618942821003D25D3 /* AVFoundation.framework */; };
 		54F2B16A18942858003D25D3 /* PQGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F2B16918942858003D25D3 /* PQGame.m */; };
-		54F2B16D18942941003D25D3 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 54F2B16C18942941003D25D3 /* background.png */; };
+		E5B336CC18942C0500D95FAC /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = E5B336CA18942C0500D95FAC /* background.png */; };
+		E5B336CD18942C0500D95FAC /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5B336CB18942C0500D95FAC /* background@2x.png */; };
+		E5B336D118942C7000D95FAC /* PQBackgroundController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B336D018942C7000D95FAC /* PQBackgroundController.m */; };
+		E5B336D518942C8A00D95FAC /* PQBaseObstacle.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B336D418942C8A00D95FAC /* PQBaseObstacle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -241,7 +244,12 @@
 		54F2B16618942821003D25D3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		54F2B16818942858003D25D3 /* PQGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PQGame.h; sourceTree = "<group>"; };
 		54F2B16918942858003D25D3 /* PQGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PQGame.m; sourceTree = "<group>"; };
-		54F2B16C18942941003D25D3 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		E5B336CA18942C0500D95FAC /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		E5B336CB18942C0500D95FAC /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
+		E5B336CF18942C7000D95FAC /* PQBackgroundController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PQBackgroundController.h; path = controllers/PQBackgroundController.h; sourceTree = "<group>"; };
+		E5B336D018942C7000D95FAC /* PQBackgroundController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PQBackgroundController.m; path = controllers/PQBackgroundController.m; sourceTree = "<group>"; };
+		E5B336D318942C8A00D95FAC /* PQBaseObstacle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PQBaseObstacle.h; path = models/PQBaseObstacle.h; sourceTree = "<group>"; };
+		E5B336D418942C8A00D95FAC /* PQBaseObstacle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PQBaseObstacle.m; path = models/PQBaseObstacle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -315,6 +323,8 @@
 		54F2AFCE18942680003D25D3 /* PeeQuest */ = {
 			isa = PBXGroup;
 			children = (
+				E5B336D218942C7700D95FAC /* models */,
+				E5B336CE18942C4A00D95FAC /* controllers */,
 				54F2AFD718942680003D25D3 /* PQAppDelegate.h */,
 				54F2AFD818942680003D25D3 /* PQAppDelegate.m */,
 				54F2AFDA18942680003D25D3 /* Images.xcassets */,
@@ -486,9 +496,28 @@
 		54F2B16B18942941003D25D3 /* assets */ = {
 			isa = PBXGroup;
 			children = (
-				54F2B16C18942941003D25D3 /* background.png */,
+				E5B336CA18942C0500D95FAC /* background.png */,
+				E5B336CB18942C0500D95FAC /* background@2x.png */,
 			);
 			path = assets;
+			sourceTree = "<group>";
+		};
+		E5B336CE18942C4A00D95FAC /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E5B336CF18942C7000D95FAC /* PQBackgroundController.h */,
+				E5B336D018942C7000D95FAC /* PQBackgroundController.m */,
+			);
+			name = controllers;
+			sourceTree = "<group>";
+		};
+		E5B336D218942C7700D95FAC /* models */ = {
+			isa = PBXGroup;
+			children = (
+				E5B336D318942C8A00D95FAC /* PQBaseObstacle.h */,
+				E5B336D418942C8A00D95FAC /* PQBaseObstacle.m */,
+			);
+			name = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -568,7 +597,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				54F2AFD318942680003D25D3 /* InfoPlist.strings in Resources */,
-				54F2B16D18942941003D25D3 /* background.png in Resources */,
+				E5B336CC18942C0500D95FAC /* background.png in Resources */,
+				E5B336CD18942C0500D95FAC /* background@2x.png in Resources */,
 				54F2AFDB18942680003D25D3 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -620,6 +650,7 @@
 				54F2B15318942731003D25D3 /* SPTouchProcessor.m in Sources */,
 				54F2B13918942731003D25D3 /* SPMatrix.m in Sources */,
 				54F2B13E18942731003D25D3 /* SPPoint.m in Sources */,
+				E5B336D118942C7000D95FAC /* PQBackgroundController.m in Sources */,
 				54F2B13F18942731003D25D3 /* SPPoolObject.m in Sources */,
 				54F2B14818942731003D25D3 /* SPSound.m in Sources */,
 				54F2B13818942731003D25D3 /* SPMacros.m in Sources */,
@@ -633,6 +664,7 @@
 				54F2B13118942731003D25D3 /* SPEnterFrameEvent.m in Sources */,
 				54F2B14918942731003D25D3 /* SPSoundChannel.m in Sources */,
 				54F2B13618942731003D25D3 /* SPImage.m in Sources */,
+				E5B336D518942C8A00D95FAC /* PQBaseObstacle.m in Sources */,
 				54F2B13518942731003D25D3 /* SPGLTexture.m in Sources */,
 				54F2B12318942731003D25D3 /* SPALSound.m in Sources */,
 				54F2B12618942731003D25D3 /* SPAudioEngine.m in Sources */,
@@ -857,6 +889,7 @@
 				54F2AFF318942680003D25D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		54F2AFF418942680003D25D3 /* Build configuration list for PBXNativeTarget "PeeQuestTests" */ = {
 			isa = XCConfigurationList;
@@ -865,6 +898,7 @@
 				54F2AFF618942680003D25D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
