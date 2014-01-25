@@ -17,7 +17,7 @@
 
 -(void)setup
 {
-    _view = [[SKSpriteNode alloc]init];
+    _view = [[PQBackgroundView alloc]init];
     _view.texture = [SKTexture textureWithImageNamed:@"background.png"];
 }
 
