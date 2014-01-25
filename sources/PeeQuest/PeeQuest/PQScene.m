@@ -8,9 +8,11 @@
 
 #import "PQScene.h"
 #import "PQBackgroundController.h"
+#import "PQCharacterController.h"
 
 @interface PQScene()
 @property PQBackgroundController * background;
+@property PQCharacterController * character;
 @end
 
 @implementation PQScene
@@ -31,12 +33,15 @@
     _background = [[PQBackgroundController alloc]init];
     [_background setup];
     
+    _character = [[PQCharacterController alloc] init];
+    [_character setup];
     
     [self show];
 }
 
 -(void)show{
     [_background show:self];
+    [_character show:self];
     
     SKLabelNode *myLabel = [SKLabelNode labelNodeWithFontNamed:@"Verdana"];
     myLabel.text = @"Press to Play!";

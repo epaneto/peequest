@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54F2AE17189403FB003D25D3 /* PQCharacterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F2AE16189403FB003D25D3 /* PQCharacterController.m */; };
 		A32DC9B61893F68D005D6B41 /* PQLevelController.m in Sources */ = {isa = PBXBuildFile; fileRef = A32DC9B51893F68D005D6B41 /* PQLevelController.m */; };
 		E5574C991894001C00F80B28 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = E5574C971894001C00F80B28 /* bg.png */; };
 		E5574C9A1894001C00F80B28 /* bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5574C981894001C00F80B28 /* bg@2x.png */; };
@@ -42,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		54F2AE15189403FB003D25D3 /* PQCharacterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PQCharacterController.h; sourceTree = "<group>"; };
+		54F2AE16189403FB003D25D3 /* PQCharacterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PQCharacterController.m; sourceTree = "<group>"; };
 		A32DC9B41893F68D005D6B41 /* PQLevelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PQLevelController.h; path = controllers/PQLevelController.h; sourceTree = "<group>"; };
 		A32DC9B51893F68D005D6B41 /* PQLevelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PQLevelController.m; path = controllers/PQLevelController.m; sourceTree = "<group>"; };
 		E5574C971894001C00F80B28 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg.png; path = assets/bg.png; sourceTree = "<group>"; };
@@ -188,6 +191,8 @@
 				E5E336381893E9FE00D2C445 /* PQBackgroundController.m */,
 				A32DC9B41893F68D005D6B41 /* PQLevelController.h */,
 				A32DC9B51893F68D005D6B41 /* PQLevelController.m */,
+				54F2AE15189403FB003D25D3 /* PQCharacterController.h */,
+				54F2AE16189403FB003D25D3 /* PQCharacterController.m */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -336,6 +341,7 @@
 				E5E3360D1893E60C00D2C445 /* PQViewController.m in Sources */,
 				E5E336071893E60C00D2C445 /* PQAppDelegate.m in Sources */,
 				E5E336031893E60C00D2C445 /* main.m in Sources */,
+				54F2AE17189403FB003D25D3 /* PQCharacterController.m in Sources */,
 				E5E336391893E9FE00D2C445 /* PQBackgroundController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
