@@ -92,6 +92,7 @@
 		E5B336DC189433E000D95FAC /* PQPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B336DB189433E000D95FAC /* PQPlayerController.m */; };
 		E5B336DF1894347600D95FAC /* character.png in Resources */ = {isa = PBXBuildFile; fileRef = E5B336DD1894347600D95FAC /* character.png */; };
 		E5B336E01894347600D95FAC /* character@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5B336DE1894347600D95FAC /* character@2x.png */; };
+		E5B336E3189455F700D95FAC /* SHAnimatableColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B336E2189455F700D95FAC /* SHAnimatableColor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -265,6 +266,8 @@
 		E5B336DB189433E000D95FAC /* PQPlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PQPlayerController.m; sourceTree = "<group>"; };
 		E5B336DD1894347600D95FAC /* character.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = character.png; sourceTree = "<group>"; };
 		E5B336DE1894347600D95FAC /* character@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "character@2x.png"; sourceTree = "<group>"; };
+		E5B336E1189455F700D95FAC /* SHAnimatableColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHAnimatableColor.h; sourceTree = "<group>"; };
+		E5B336E2189455F700D95FAC /* SHAnimatableColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHAnimatableColor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -382,6 +385,8 @@
 		54F2B0A918942731003D25D3 /* Sparrow */ = {
 			isa = PBXGroup;
 			children = (
+				E5B336E1189455F700D95FAC /* SHAnimatableColor.h */,
+				E5B336E2189455F700D95FAC /* SHAnimatableColor.m */,
 				54F2B0AA18942731003D25D3 /* SPALSound.h */,
 				54F2B0AB18942731003D25D3 /* SPALSound.m */,
 				54F2B0AC18942731003D25D3 /* SPALSoundChannel.h */,
@@ -592,6 +597,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = Doubleleft;
 				TargetAttributes = {
+					54F2AFC418942680003D25D3 = {
+						DevelopmentTeam = N56BB82M7F;
+					};
 					54F2AFDF18942680003D25D3 = {
 						TestTargetID = 54F2AFC418942680003D25D3;
 					};
@@ -675,6 +683,7 @@
 				54F2B13018942731003D25D3 /* SPDisplayObjectContainer.m in Sources */,
 				54F2B12A18942731003D25D3 /* SPBitmapChar.m in Sources */,
 				54F2B15318942731003D25D3 /* SPTouchProcessor.m in Sources */,
+				E5B336E3189455F700D95FAC /* SHAnimatableColor.m in Sources */,
 				54F2B13918942731003D25D3 /* SPMatrix.m in Sources */,
 				54F2B13E18942731003D25D3 /* SPPoint.m in Sources */,
 				E5B336D118942C7000D95FAC /* PQBackgroundController.m in Sources */,
@@ -827,7 +836,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Gabriel Pacheco (87TNYHMEF8)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PeeQuest/PeeQuest-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
@@ -836,8 +846,9 @@
 					"third-parties",
 				);
 				INFOPLIST_FILE = "PeeQuest/PeeQuest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "7458011B-A7CB-4CCF-86AE-5F8F92743EF3";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -847,6 +858,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PeeQuest/PeeQuest-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
@@ -855,8 +868,9 @@
 					"third-parties",
 				);
 				INFOPLIST_FILE = "PeeQuest/PeeQuest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "7458011B-A7CB-4CCF-86AE-5F8F92743EF3";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

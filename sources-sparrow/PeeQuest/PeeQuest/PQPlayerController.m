@@ -7,9 +7,11 @@
 //
 
 #import "PQPlayerController.h"
+
 @interface PQPlayerController()
 @property SPImage * view;
 @property (nonatomic,strong) SPTexture * texture;
+@property BOOL isWalking;
 @end
 
 @implementation PQPlayerController
@@ -17,14 +19,29 @@
 {
     _texture = [[SPTexture alloc] initWithContentsOfFile:@"character.png"];
     _view = [[SPImage alloc] initWithTexture:_texture];
+    
+    _isWalking = YES;
 }
 
 -(void)show:(SPSprite *)container
 {
-    _view.x = -190;
-    _view.y = 60;
+    _view.x = 120;
+    _view.y = 200;
     
     [container addChild:_view];
+}
+
+-(void)toogleMove
+{
+    _isWalking = !_isWalking;
+}
+
+-(int)getVelocity
+{
+    if(_isWalking)
+        return 10;
+    else
+        return 0;
 }
 
 @end

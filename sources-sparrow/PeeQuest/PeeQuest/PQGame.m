@@ -33,7 +33,7 @@
     [self addChild:container];
     
     [self addEventListener:@selector(onResize:) atObject:self forType:SP_EVENT_TYPE_RESIZE];
-    [self updateLocations];
+//    [self updateLocations];
     
     _game = [[PQGameController alloc]init];
     [_game setup:container];
@@ -44,9 +44,7 @@
     
     SPSprite *levelContainer = [[PQLevelController sharedInstance] makeLevelWithDict:dict];
     [container addChild:levelContainer];
-    
 }
-
 
 - (void)updateLocations
 {
@@ -59,7 +57,7 @@
 
 - (void)onResize:(SPResizeEvent *)event
 {
-    [self updateLocations];
+//    [self updateLocations];
 }
 
 @end

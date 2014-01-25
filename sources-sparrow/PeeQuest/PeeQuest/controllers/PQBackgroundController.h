@@ -12,4 +12,5 @@
 -(void)setup;
 -(void)show :(SPSprite *)scene;
 -(void)updatePosition:(float)speed;
+-(void)showRain;
 @end

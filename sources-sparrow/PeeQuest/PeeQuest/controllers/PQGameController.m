@@ -14,7 +14,7 @@
 @property SPSprite * mainContainer;
 @property PQBackgroundController * background;
 @property PQPlayerController * player;
-
+@property NSTimer * mainTimer;
 @end
 
 @implementation PQGameController
@@ -34,11 +34,44 @@
     [_player show:_mainContainer];
     
     ////initialize timer
+    [self initRainTimer];
+    
+    ////initialize enter frame
     [_mainContainer addEventListener:@selector(updateGame:) atObject:self forType:SP_EVENT_TYPE_ENTER_FRAME];
+    
+    
+    ////initialize touch
+    [_mainContainer addEventListener:@selector(onUserTouch:)  atObject:self forType:SP_EVENT_TYPE_TOUCH];
+}
+
+-(void)initRainTimer
+{
+    int randomTime = 5.0 + arc4random() % 5;
+    NSLog(@"%i",randomTime);
+    _mainTimer = [NSTimer scheduledTimerWithTimeInterval:randomTime target:self selector:@selector(initRain:) userInfo:nil repeats:NO];
+}
+
+-(void)initRain:(NSTimer *)timer {
+    [self showRain];
+    [self initRainTimer];
+}
+
+-(void)showRain {
+    [_background showRain];
+}
+
+- (void)onUserTouch:(SPTouchEvent*)event
+{
+    SPTouch *touch = [[event touchesWithTarget:_mainContainer
+                                      andPhase:SPTouchPhaseBegan] anyObject];
+    if (touch)
+    {
+        [_player toogleMove];
+    }
 }
 
 - (void)updateGame:(SPEnterFrameEvent *)event
 {
-    [_background updatePosition:10];
+    [_background updatePosition:[_player getVelocity]];
 }
 @end

@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 
 @interface PQPlayerController : NSObject
+-(int)getVelocity;
 -(void)setup;
 -(void)show :(SPSprite * )container;
+-(void)toogleMove;
 @end
