@@ -15,3 +15,10 @@
     #import <Foundation/Foundation.h>
     #import <Sparrow/Sparrow.h>
 #endif
+
+#pragma mark - GENERAL
+#define isiPhone568 ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone && [UIScreen mainScreen].bounds.size.height == 568)
+
+#pragma mark - LEVEL
+#define PQ_LEVEL_SCENE_CHUNK_SIZE isiPhone568 ? 852 : 720
+#define PQ_LEVEL_INITIAL_POSITION 100
