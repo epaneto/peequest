@@ -9,5 +9,20 @@
 #import "PQFinishUI.h"
 
 @implementation PQFinishUI
+{
+    
+}
 
+-(void)build
+{
+    
+}
+-(void)show
+{
+    
+}
+-(void)hide
+{
+    
+}
 @end
