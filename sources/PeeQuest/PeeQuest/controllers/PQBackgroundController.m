@@ -18,7 +18,6 @@
 -(void)setup
 {
     _view = [SKSpriteNode spriteNodeWithImageNamed:@"bg"];
-
 }
 
 -(void)show:(SKScene *)scene
