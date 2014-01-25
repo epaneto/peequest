@@ -7,6 +7,11 @@
 //
 
 #import "PQGame.h"
+#import "PQGameController.h"
+
+@interface PQGame()
+@property PQGameController * game;
+@end
 
 @implementation PQGame : SPSprite
 
@@ -26,11 +31,12 @@
     container = [SPSprite sprite];
     [self addChild:container];
     
-    SPImage *background = [[SPImage alloc] initWithContentsOfFile:@"background.png"];
-    [container addChild:background];
-
     [self addEventListener:@selector(onResize:) atObject:self forType:SP_EVENT_TYPE_RESIZE];
     [self updateLocations];
+    
+    _game = [[PQGameController alloc]init];
+    [_game setup:container];
+    
 }
 
 

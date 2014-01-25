@@ -1,5 +1,5 @@
 //
-//  PQBackgroundController.h
+//  PQPlayerController.h
 //  PeeQuest
 //
 //  Created by Epaminondas Neto on 1/25/14.
@@ -8,8 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface PQBackgroundController : NSObject
+@interface PQPlayerController : NSObject
 -(void)setup;
--(void)show :(SPSprite *)scene;
--(void)updatePosition:(float)speed;
+-(void)show :(SPSprite * )container;
 @end

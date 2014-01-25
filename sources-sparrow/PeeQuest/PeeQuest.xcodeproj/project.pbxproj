@@ -86,6 +86,10 @@
 		E5B336CD18942C0500D95FAC /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5B336CB18942C0500D95FAC /* background@2x.png */; };
 		E5B336D118942C7000D95FAC /* PQBackgroundController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B336D018942C7000D95FAC /* PQBackgroundController.m */; };
 		E5B336D518942C8A00D95FAC /* PQBaseObstacle.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B336D418942C8A00D95FAC /* PQBaseObstacle.m */; };
+		E5B336D818942D9500D95FAC /* PQGameController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B336D718942D9500D95FAC /* PQGameController.m */; };
+		E5B336DC189433E000D95FAC /* PQPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B336DB189433E000D95FAC /* PQPlayerController.m */; };
+		E5B336DF1894347600D95FAC /* character.png in Resources */ = {isa = PBXBuildFile; fileRef = E5B336DD1894347600D95FAC /* character.png */; };
+		E5B336E01894347600D95FAC /* character@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5B336DE1894347600D95FAC /* character@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -250,6 +254,12 @@
 		E5B336D018942C7000D95FAC /* PQBackgroundController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PQBackgroundController.m; path = controllers/PQBackgroundController.m; sourceTree = "<group>"; };
 		E5B336D318942C8A00D95FAC /* PQBaseObstacle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PQBaseObstacle.h; path = models/PQBaseObstacle.h; sourceTree = "<group>"; };
 		E5B336D418942C8A00D95FAC /* PQBaseObstacle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PQBaseObstacle.m; path = models/PQBaseObstacle.m; sourceTree = "<group>"; };
+		E5B336D618942D9500D95FAC /* PQGameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PQGameController.h; path = controllers/PQGameController.h; sourceTree = "<group>"; };
+		E5B336D718942D9500D95FAC /* PQGameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PQGameController.m; path = controllers/PQGameController.m; sourceTree = "<group>"; };
+		E5B336DA189433E000D95FAC /* PQPlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PQPlayerController.h; sourceTree = "<group>"; };
+		E5B336DB189433E000D95FAC /* PQPlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PQPlayerController.m; sourceTree = "<group>"; };
+		E5B336DD1894347600D95FAC /* character.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = character.png; sourceTree = "<group>"; };
+		E5B336DE1894347600D95FAC /* character@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "character@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -496,6 +506,8 @@
 		54F2B16B18942941003D25D3 /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				E5B336DD1894347600D95FAC /* character.png */,
+				E5B336DE1894347600D95FAC /* character@2x.png */,
 				E5B336CA18942C0500D95FAC /* background.png */,
 				E5B336CB18942C0500D95FAC /* background@2x.png */,
 			);
@@ -507,6 +519,10 @@
 			children = (
 				E5B336CF18942C7000D95FAC /* PQBackgroundController.h */,
 				E5B336D018942C7000D95FAC /* PQBackgroundController.m */,
+				E5B336D618942D9500D95FAC /* PQGameController.h */,
+				E5B336D718942D9500D95FAC /* PQGameController.m */,
+				E5B336DA189433E000D95FAC /* PQPlayerController.h */,
+				E5B336DB189433E000D95FAC /* PQPlayerController.m */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -598,7 +614,9 @@
 			files = (
 				54F2AFD318942680003D25D3 /* InfoPlist.strings in Resources */,
 				E5B336CC18942C0500D95FAC /* background.png in Resources */,
+				E5B336DF1894347600D95FAC /* character.png in Resources */,
 				E5B336CD18942C0500D95FAC /* background@2x.png in Resources */,
+				E5B336E01894347600D95FAC /* character@2x.png in Resources */,
 				54F2AFDB18942680003D25D3 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -652,6 +670,7 @@
 				54F2B13E18942731003D25D3 /* SPPoint.m in Sources */,
 				E5B336D118942C7000D95FAC /* PQBackgroundController.m in Sources */,
 				54F2B13F18942731003D25D3 /* SPPoolObject.m in Sources */,
+				E5B336D818942D9500D95FAC /* PQGameController.m in Sources */,
 				54F2B14818942731003D25D3 /* SPSound.m in Sources */,
 				54F2B13818942731003D25D3 /* SPMacros.m in Sources */,
 				54F2B13A18942731003D25D3 /* SPMovieClip.m in Sources */,
@@ -666,6 +685,7 @@
 				54F2B13618942731003D25D3 /* SPImage.m in Sources */,
 				E5B336D518942C8A00D95FAC /* PQBaseObstacle.m in Sources */,
 				54F2B13518942731003D25D3 /* SPGLTexture.m in Sources */,
+				E5B336DC189433E000D95FAC /* PQPlayerController.m in Sources */,
 				54F2B12318942731003D25D3 /* SPALSound.m in Sources */,
 				54F2B12618942731003D25D3 /* SPAudioEngine.m in Sources */,
 				54F2B15218942731003D25D3 /* SPTouchEvent.m in Sources */,
