@@ -6,10 +6,10 @@
 //  Copyright (c) 2014 Doubleleft. All rights reserved.
 //
 
-#import "ViewController.h"
-#import "MyScene.h"
+#import "PQViewController.h"
+#import "PQScene.h"
 
-@implementation ViewController
+@implementation PQViewController
 
 - (void)viewDidLoad
 {
@@ -21,7 +21,7 @@
     skView.showsNodeCount = YES;
     
     // Create and configure the scene.
-    SKScene * scene = [MyScene sceneWithSize:skView.bounds.size];
+    SKScene * scene = [PQScene sceneWithSize:skView.bounds.size];
     scene.scaleMode = SKSceneScaleModeAspectFill;
     
     // Present the scene.

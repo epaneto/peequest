@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 Doubleleft. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "PQAppDelegate.h"
 
-@implementation AppDelegate
+@implementation PQAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

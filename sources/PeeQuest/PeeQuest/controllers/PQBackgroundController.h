@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <SpriteKit/SpriteKit.h>
 
-@interface BackgroundController : NSObject
+@interface PQBackgroundController : NSObject
 -(void)setup;
 -(void)show :(SKScene *)assetId;
 @end

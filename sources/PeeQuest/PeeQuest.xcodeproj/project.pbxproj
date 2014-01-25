@@ -13,21 +13,21 @@
 		E5E335FB1893E60C00D2C445 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5E335FA1893E60C00D2C445 /* SpriteKit.framework */; };
 		E5E336011893E60C00D2C445 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E5E335FF1893E60C00D2C445 /* InfoPlist.strings */; };
 		E5E336031893E60C00D2C445 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E336021893E60C00D2C445 /* main.m */; };
-		E5E336071893E60C00D2C445 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E336061893E60C00D2C445 /* AppDelegate.m */; };
+		E5E336071893E60C00D2C445 /* PQAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E336061893E60C00D2C445 /* PQAppDelegate.m */; };
 		E5E3360A1893E60C00D2C445 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5E336081893E60C00D2C445 /* Main.storyboard */; };
-		E5E3360D1893E60C00D2C445 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E3360C1893E60C00D2C445 /* ViewController.m */; };
-		E5E336101893E60C00D2C445 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E3360F1893E60C00D2C445 /* MyScene.m */; };
+		E5E3360D1893E60C00D2C445 /* PQViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E3360C1893E60C00D2C445 /* PQViewController.m */; };
+		E5E336101893E60C00D2C445 /* PQScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E3360F1893E60C00D2C445 /* PQScene.m */; };
 		E5E336141893E60C00D2C445 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5E336131893E60C00D2C445 /* Images.xcassets */; };
 		E5E3361B1893E60C00D2C445 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5E3361A1893E60C00D2C445 /* XCTest.framework */; };
 		E5E3361C1893E60C00D2C445 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5E335F41893E60C00D2C445 /* Foundation.framework */; };
 		E5E3361D1893E60C00D2C445 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5E335F81893E60C00D2C445 /* UIKit.framework */; };
 		E5E336251893E60C00D2C445 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E5E336231893E60C00D2C445 /* InfoPlist.strings */; };
 		E5E336271893E60C00D2C445 /* PeeQuestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E336261893E60C00D2C445 /* PeeQuestTests.m */; };
-		E5E336391893E9FE00D2C445 /* BackgroundController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E336381893E9FE00D2C445 /* BackgroundController.m */; };
+		E5E336391893E9FE00D2C445 /* PQBackgroundController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E336381893E9FE00D2C445 /* PQBackgroundController.m */; };
 		E5E336401893EF3800D2C445 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = E5E3363E1893EF3800D2C445 /* background.png */; };
 		E5E336411893EF3800D2C445 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5E3363F1893EF3800D2C445 /* background@2x.png */; };
-		E5E336441893F24800D2C445 /* BaseObstacle.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E336431893F24800D2C445 /* BaseObstacle.m */; };
-		E5E336471893F26400D2C445 /* BackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E336461893F26400D2C445 /* BackgroundView.m */; };
+		E5E336441893F24800D2C445 /* PQBaseObstacle.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E336431893F24800D2C445 /* PQBaseObstacle.m */; };
+		E5E336471893F26400D2C445 /* PQBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E336461893F26400D2C445 /* PQBackgroundView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,27 +50,27 @@
 		E5E336001893E60C00D2C445 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E5E336021893E60C00D2C445 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E5E336041893E60C00D2C445 /* PeeQuest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PeeQuest-Prefix.pch"; sourceTree = "<group>"; };
-		E5E336051893E60C00D2C445 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		E5E336061893E60C00D2C445 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E5E336051893E60C00D2C445 /* PQAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PQAppDelegate.h; sourceTree = "<group>"; };
+		E5E336061893E60C00D2C445 /* PQAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PQAppDelegate.m; sourceTree = "<group>"; };
 		E5E336091893E60C00D2C445 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E5E3360B1893E60C00D2C445 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E5E3360C1893E60C00D2C445 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		E5E3360E1893E60C00D2C445 /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
-		E5E3360F1893E60C00D2C445 /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
+		E5E3360B1893E60C00D2C445 /* PQViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PQViewController.h; sourceTree = "<group>"; };
+		E5E3360C1893E60C00D2C445 /* PQViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PQViewController.m; sourceTree = "<group>"; };
+		E5E3360E1893E60C00D2C445 /* PQScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PQScene.h; sourceTree = "<group>"; };
+		E5E3360F1893E60C00D2C445 /* PQScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PQScene.m; sourceTree = "<group>"; };
 		E5E336131893E60C00D2C445 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E5E336191893E60C00D2C445 /* PeeQuestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeeQuestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5E3361A1893E60C00D2C445 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		E5E336221893E60C00D2C445 /* PeeQuestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PeeQuestTests-Info.plist"; sourceTree = "<group>"; };
 		E5E336241893E60C00D2C445 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E5E336261893E60C00D2C445 /* PeeQuestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PeeQuestTests.m; sourceTree = "<group>"; };
-		E5E336371893E9FE00D2C445 /* BackgroundController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BackgroundController.h; path = controllers/BackgroundController.h; sourceTree = "<group>"; };
-		E5E336381893E9FE00D2C445 /* BackgroundController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BackgroundController.m; path = controllers/BackgroundController.m; sourceTree = "<group>"; };
+		E5E336371893E9FE00D2C445 /* PQBackgroundController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PQBackgroundController.h; path = controllers/PQBackgroundController.h; sourceTree = "<group>"; };
+		E5E336381893E9FE00D2C445 /* PQBackgroundController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PQBackgroundController.m; path = controllers/PQBackgroundController.m; sourceTree = "<group>"; };
 		E5E3363E1893EF3800D2C445 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background.png; path = assets/scenario/background.png; sourceTree = "<group>"; };
 		E5E3363F1893EF3800D2C445 /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background@2x.png"; path = "assets/scenario/background@2x.png"; sourceTree = "<group>"; };
-		E5E336421893F24800D2C445 /* BaseObstacle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseObstacle.h; path = model/BaseObstacle.h; sourceTree = "<group>"; };
-		E5E336431893F24800D2C445 /* BaseObstacle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseObstacle.m; path = model/BaseObstacle.m; sourceTree = "<group>"; };
-		E5E336451893F26400D2C445 /* BackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BackgroundView.h; path = view/BackgroundView.h; sourceTree = "<group>"; };
-		E5E336461893F26400D2C445 /* BackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BackgroundView.m; path = view/BackgroundView.m; sourceTree = "<group>"; };
+		E5E336421893F24800D2C445 /* PQBaseObstacle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PQBaseObstacle.h; path = model/PQBaseObstacle.h; sourceTree = "<group>"; };
+		E5E336431893F24800D2C445 /* PQBaseObstacle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PQBaseObstacle.m; path = model/PQBaseObstacle.m; sourceTree = "<group>"; };
+		E5E336451893F26400D2C445 /* PQBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PQBackgroundView.h; path = view/PQBackgroundView.h; sourceTree = "<group>"; };
+		E5E336461893F26400D2C445 /* PQBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PQBackgroundView.m; path = view/PQBackgroundView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,13 +136,13 @@
 				E5E336321893E8C700D2C445 /* model */,
 				E5E336311893E8C100D2C445 /* view */,
 				E5E336301893E8BB00D2C445 /* controllers */,
-				E5E336051893E60C00D2C445 /* AppDelegate.h */,
-				E5E336061893E60C00D2C445 /* AppDelegate.m */,
+				E5E336051893E60C00D2C445 /* PQAppDelegate.h */,
+				E5E336061893E60C00D2C445 /* PQAppDelegate.m */,
 				E5E336081893E60C00D2C445 /* Main.storyboard */,
-				E5E3360B1893E60C00D2C445 /* ViewController.h */,
-				E5E3360C1893E60C00D2C445 /* ViewController.m */,
-				E5E3360E1893E60C00D2C445 /* MyScene.h */,
-				E5E3360F1893E60C00D2C445 /* MyScene.m */,
+				E5E3360B1893E60C00D2C445 /* PQViewController.h */,
+				E5E3360C1893E60C00D2C445 /* PQViewController.m */,
+				E5E3360E1893E60C00D2C445 /* PQScene.h */,
+				E5E3360F1893E60C00D2C445 /* PQScene.m */,
 				E5E336131893E60C00D2C445 /* Images.xcassets */,
 				E5E335FD1893E60C00D2C445 /* Supporting Files */,
 			);
@@ -181,8 +181,8 @@
 		E5E336301893E8BB00D2C445 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
-				E5E336371893E9FE00D2C445 /* BackgroundController.h */,
-				E5E336381893E9FE00D2C445 /* BackgroundController.m */,
+				E5E336371893E9FE00D2C445 /* PQBackgroundController.h */,
+				E5E336381893E9FE00D2C445 /* PQBackgroundController.m */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -190,8 +190,8 @@
 		E5E336311893E8C100D2C445 /* view */ = {
 			isa = PBXGroup;
 			children = (
-				E5E336451893F26400D2C445 /* BackgroundView.h */,
-				E5E336461893F26400D2C445 /* BackgroundView.m */,
+				E5E336451893F26400D2C445 /* PQBackgroundView.h */,
+				E5E336461893F26400D2C445 /* PQBackgroundView.m */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -199,8 +199,8 @@
 		E5E336321893E8C700D2C445 /* model */ = {
 			isa = PBXGroup;
 			children = (
-				E5E336421893F24800D2C445 /* BaseObstacle.h */,
-				E5E336431893F24800D2C445 /* BaseObstacle.m */,
+				E5E336421893F24800D2C445 /* PQBaseObstacle.h */,
+				E5E336431893F24800D2C445 /* PQBaseObstacle.m */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -321,13 +321,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5E336471893F26400D2C445 /* BackgroundView.m in Sources */,
-				E5E336101893E60C00D2C445 /* MyScene.m in Sources */,
-				E5E336441893F24800D2C445 /* BaseObstacle.m in Sources */,
-				E5E3360D1893E60C00D2C445 /* ViewController.m in Sources */,
-				E5E336071893E60C00D2C445 /* AppDelegate.m in Sources */,
+				E5E336471893F26400D2C445 /* PQBackgroundView.m in Sources */,
+				E5E336101893E60C00D2C445 /* PQScene.m in Sources */,
+				E5E336441893F24800D2C445 /* PQBaseObstacle.m in Sources */,
+				E5E3360D1893E60C00D2C445 /* PQViewController.m in Sources */,
+				E5E336071893E60C00D2C445 /* PQAppDelegate.m in Sources */,
 				E5E336031893E60C00D2C445 /* main.m in Sources */,
-				E5E336391893E9FE00D2C445 /* BackgroundController.m in Sources */,
+				E5E336391893E9FE00D2C445 /* PQBackgroundController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

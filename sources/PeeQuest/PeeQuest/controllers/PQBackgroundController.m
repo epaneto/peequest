@@ -6,13 +6,14 @@
 //  Copyright (c) 2014 Doubleleft. All rights reserved.
 //
 
-#import "BackgroundController.h"
+#import "PQBackgroundController.h"
+#import "PQBackgroundView.h"
 
-@interface BackgroundController()
-@property SKSpriteNode * view;
+@interface PQBackgroundController()
+@property PQBackgroundView * view;
 @end
 
-@implementation BackgroundController
+@implementation PQBackgroundController
 
 -(void)setup
 {

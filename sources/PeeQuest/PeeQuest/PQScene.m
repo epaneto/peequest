@@ -6,14 +6,14 @@
 //  Copyright (c) 2014 Doubleleft. All rights reserved.
 //
 
-#import "MyScene.h"
-#import "BackgroundController.h"
+#import "PQScene.h"
+#import "PQBackgroundController.h"
 
-@interface MyScene()
-@property BackgroundController * background;
+@interface PQScene()
+@property PQBackgroundController * background;
 @end
 
-@implementation MyScene
+@implementation PQScene
 
 -(id)initWithSize:(CGSize)size {    
     if (self = [super initWithSize:size]) {
@@ -28,7 +28,7 @@
 }
 
 -(void)setup{
-    _background = [[BackgroundController alloc]init];
+    _background = [[PQBackgroundController alloc]init];
     [_background setup];
     
     
