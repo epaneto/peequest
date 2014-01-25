@@ -1,0 +1,90 @@
+{
+	"canvas": {
+		"width": 2000,
+		"height": 320
+	},
+	"name": "peeQuest",
+	"layers": [
+               {
+               "id": "default",
+               "entities": [
+                            {
+                            "name": "",
+                            "bounds": {
+                            "x": 0,
+                            "y": 0,
+                            "w": 30,
+                            "h": 30
+                            },
+                            "offset": {
+                            "x": 200,
+                            "y": 300
+                            },
+                            "tag": 0,
+                            "scale": {
+                            "x": 1,
+                            "y": 1
+                            },
+                            "zIndex": 1
+                            },
+                            {
+                            "name": "",
+                            "bounds": {
+                            "x": 0,
+                            "y": 0,
+                            "w": 30,
+                            "h": 30
+                            },
+                            "offset": {
+                            "x": 250,
+                            "y": 300
+                            },
+                            "tag": 0,
+                            "scale": {
+                            "x": 1,
+                            "y": 1
+                            },
+                            "zIndex": 1
+                            },
+                            {
+                            "name": "",
+                            "bounds": {
+                            "x": 0,
+                            "y": 0,
+                            "w": 30,
+                            "h": 30
+                            },
+                            "offset": {
+                            "x": 300,
+                            "y": 300
+                            },
+                            "tag": 0,
+                            "scale": {
+                            "x": 1,
+                            "y": 1
+                            },
+                            "zIndex": 1
+                            },
+                            {
+                            "name": "",
+                            "bounds": {
+                            "x": 0,
+                            "y": 0,
+                            "w": 30,
+                            "h": 30
+                            },
+                            "offset": {
+                            "x": 350,
+                            "y": 300
+                            },
+                            "tag": 0,
+                            "scale": {
+                            "x": 1,
+                            "y": 1
+                            },
+                            "zIndex": 1
+                            }
+                            ]
+               }
+               ]
+}
