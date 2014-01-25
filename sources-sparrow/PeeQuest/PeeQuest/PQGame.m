@@ -52,7 +52,7 @@
     SPSprite *levelContainer = [[PQLevelController sharedInstance] makeLevelWithDict:dict];
     [container addChild:levelContainer];
     
-    [self setState:STATE_HOME];
+    //[self setState:STATE_HOME];
 }
 
 - (void)setState:(int)state

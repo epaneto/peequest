@@ -9,5 +9,8 @@
 #import "PQPauseUI.h"
 
 @implementation PQPauseUI
+{
 
+}
 @end
+
