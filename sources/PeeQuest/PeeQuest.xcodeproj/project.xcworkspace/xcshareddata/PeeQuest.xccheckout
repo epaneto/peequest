@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>48EE4EA9-0BC0-420C-8268-1567193BA80A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>PeeQuest</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>4AEB254A-2E4C-4D2C-9D99-70D8C373AD05</key>
+		<string>https://github.com/epaneto/peequest</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>sources/PeeQuest/PeeQuest.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>4AEB254A-2E4C-4D2C-9D99-70D8C373AD05</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/epaneto/peequest</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>4AEB254A-2E4C-4D2C-9D99-70D8C373AD05</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4AEB254A-2E4C-4D2C-9D99-70D8C373AD05</string>
+			<key>IDESourceControlWCCName</key>
+			<string>peequest</string>
+		</dict>
+	</array>
+</dict>
+</plist>
