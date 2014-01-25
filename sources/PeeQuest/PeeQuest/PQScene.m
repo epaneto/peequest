@@ -39,7 +39,7 @@
     
     [self show];
     
-    _mainTimer = [NSTimer scheduledTimerWithTimeInterval: 0.1 target: self selector:@selector(onTick:) userInfo: nil repeats:YES];
+    _mainTimer = [NSTimer scheduledTimerWithTimeInterval: 0.01 target: self selector:@selector(onTick:) userInfo: nil repeats:YES];
     [_mainTimer fire];
 }
 
@@ -56,7 +56,7 @@
 }
 
 -(void)onTick:(NSTimer *)timer {
-    [self updatePosition:10];
+    [self updatePosition:1];
 }
 
 -(void)updatePosition :(int) speed
