@@ -82,6 +82,10 @@
 		54F2B1651894281D003D25D3 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F2B1641894281D003D25D3 /* AudioToolbox.framework */; };
 		54F2B16718942821003D25D3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F2B16618942821003D25D3 /* AVFoundation.framework */; };
 		54F2B16A18942858003D25D3 /* PQGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F2B16918942858003D25D3 /* PQGame.m */; };
+		54F2B1BD18945BFB003D25D3 /* PQBaseUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F2B1B618945BFB003D25D3 /* PQBaseUI.m */; };
+		54F2B1BE18945BFB003D25D3 /* PQFinishUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F2B1B818945BFB003D25D3 /* PQFinishUI.m */; };
+		54F2B1BF18945BFB003D25D3 /* PQHomeUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F2B1BA18945BFB003D25D3 /* PQHomeUI.m */; };
+		54F2B1C018945BFB003D25D3 /* PQPauseUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F2B1BC18945BFB003D25D3 /* PQPauseUI.m */; };
 		A3EB2CE718943D35001CEEC1 /* PQLevelController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3EB2CE618943D35001CEEC1 /* PQLevelController.m */; };
 		A3EB2CE918943ED3001CEEC1 /* peeQuest.json in Resources */ = {isa = PBXBuildFile; fileRef = A3EB2CE818943ED3001CEEC1 /* peeQuest.json */; };
 		E5B336CC18942C0500D95FAC /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = E5B336CA18942C0500D95FAC /* background.png */; };
@@ -251,6 +255,14 @@
 		54F2B16618942821003D25D3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		54F2B16818942858003D25D3 /* PQGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PQGame.h; sourceTree = "<group>"; };
 		54F2B16918942858003D25D3 /* PQGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PQGame.m; sourceTree = "<group>"; };
+		54F2B1B518945BFB003D25D3 /* PQBaseUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PQBaseUI.h; sourceTree = "<group>"; };
+		54F2B1B618945BFB003D25D3 /* PQBaseUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PQBaseUI.m; sourceTree = "<group>"; };
+		54F2B1B718945BFB003D25D3 /* PQFinishUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PQFinishUI.h; sourceTree = "<group>"; };
+		54F2B1B818945BFB003D25D3 /* PQFinishUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PQFinishUI.m; sourceTree = "<group>"; };
+		54F2B1B918945BFB003D25D3 /* PQHomeUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PQHomeUI.h; sourceTree = "<group>"; };
+		54F2B1BA18945BFB003D25D3 /* PQHomeUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PQHomeUI.m; sourceTree = "<group>"; };
+		54F2B1BB18945BFB003D25D3 /* PQPauseUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PQPauseUI.h; sourceTree = "<group>"; };
+		54F2B1BC18945BFB003D25D3 /* PQPauseUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PQPauseUI.m; sourceTree = "<group>"; };
 		A3EB2CE518943D35001CEEC1 /* PQLevelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PQLevelController.h; path = controllers/PQLevelController.h; sourceTree = "<group>"; };
 		A3EB2CE618943D35001CEEC1 /* PQLevelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PQLevelController.m; path = controllers/PQLevelController.m; sourceTree = "<group>"; };
 		A3EB2CE818943ED3001CEEC1 /* peeQuest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = peeQuest.json; sourceTree = "<group>"; };
@@ -341,6 +353,7 @@
 		54F2AFCE18942680003D25D3 /* PeeQuest */ = {
 			isa = PBXGroup;
 			children = (
+				54F2B1B418945BFB003D25D3 /* ui */,
 				E5B336D218942C7700D95FAC /* models */,
 				E5B336CE18942C4A00D95FAC /* controllers */,
 				54F2AFD718942680003D25D3 /* PQAppDelegate.h */,
@@ -525,6 +538,21 @@
 			path = assets;
 			sourceTree = "<group>";
 		};
+		54F2B1B418945BFB003D25D3 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				54F2B1B518945BFB003D25D3 /* PQBaseUI.h */,
+				54F2B1B618945BFB003D25D3 /* PQBaseUI.m */,
+				54F2B1B718945BFB003D25D3 /* PQFinishUI.h */,
+				54F2B1B818945BFB003D25D3 /* PQFinishUI.m */,
+				54F2B1B918945BFB003D25D3 /* PQHomeUI.h */,
+				54F2B1BA18945BFB003D25D3 /* PQHomeUI.m */,
+				54F2B1BB18945BFB003D25D3 /* PQPauseUI.h */,
+				54F2B1BC18945BFB003D25D3 /* PQPauseUI.m */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
 		E5B336CE18942C4A00D95FAC /* controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -660,6 +688,7 @@
 				54F2B14718942731003D25D3 /* SPResizeEvent.m in Sources */,
 				54F2B14F18942731003D25D3 /* SPTexture.m in Sources */,
 				54F2B13718942731003D25D3 /* SPJuggler.m in Sources */,
+				54F2B1BD18945BFB003D25D3 /* PQBaseUI.m in Sources */,
 				54F2AFD518942680003D25D3 /* main.m in Sources */,
 				54F2B14418942731003D25D3 /* SPRectangle.m in Sources */,
 				54F2B13B18942731003D25D3 /* SPNSExtensions.m in Sources */,
@@ -689,11 +718,13 @@
 				E5B336D118942C7000D95FAC /* PQBackgroundController.m in Sources */,
 				54F2B13F18942731003D25D3 /* SPPoolObject.m in Sources */,
 				E5B336D818942D9500D95FAC /* PQGameController.m in Sources */,
+				54F2B1BF18945BFB003D25D3 /* PQHomeUI.m in Sources */,
 				54F2B14818942731003D25D3 /* SPSound.m in Sources */,
 				54F2B13818942731003D25D3 /* SPMacros.m in Sources */,
 				54F2B13A18942731003D25D3 /* SPMovieClip.m in Sources */,
 				54F2B13D18942731003D25D3 /* SPOverlayView.m in Sources */,
 				54F2B13C18942731003D25D3 /* SPOpenGL.m in Sources */,
+				54F2B1BE18945BFB003D25D3 /* PQFinishUI.m in Sources */,
 				54F2B12B18942731003D25D3 /* SPBitmapFont.m in Sources */,
 				54F2B15718942731003D25D3 /* SPURLConnection.m in Sources */,
 				54F2B14C18942731003D25D3 /* SPStatsDisplay.m in Sources */,
@@ -704,6 +735,7 @@
 				54F2B13618942731003D25D3 /* SPImage.m in Sources */,
 				E5B336D518942C8A00D95FAC /* PQBaseObstacle.m in Sources */,
 				54F2B13518942731003D25D3 /* SPGLTexture.m in Sources */,
+				54F2B1C018945BFB003D25D3 /* PQPauseUI.m in Sources */,
 				E5B336DC189433E000D95FAC /* PQPlayerController.m in Sources */,
 				54F2B12318942731003D25D3 /* SPALSound.m in Sources */,
 				54F2B12618942731003D25D3 /* SPAudioEngine.m in Sources */,
