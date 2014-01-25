@@ -18,11 +18,15 @@
 {
     if(logo == NULL){
         logo = [[SPImage alloc] initWithContentsOfFile:@"logo.png"];
+        logo.x = Sparrow.stage.width / 2 - logo.width / 2;
+        logo.y = 45;
         [self addChild:logo];
     }
     
     if(tapToStart == NULL){
         tapToStart = [[SPImage alloc] initWithContentsOfFile:@"taptostart-title.png"];
+        tapToStart.x = Sparrow.stage.width / 2 - tapToStart.width / 2;
+        tapToStart.y = logo.y + 100;
         [self addChild:tapToStart];
     }
 }

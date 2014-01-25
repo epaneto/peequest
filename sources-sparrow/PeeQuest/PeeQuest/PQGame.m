@@ -13,18 +13,24 @@
 #import "PQPauseUI.h"
 #import "PQFinishUI.h"
 #import "PQBaseUI.h"
-
-#define STATE_HOME 1
-#define STATE_PLAY 2
-#define STATE_PAUSE 3
-#define STATE_FINISH 4
+#import "PQGameplayUI.h"
 
 @interface PQGame()
+{
+    BOOL _soundMuted;
+}
 @property PQGameController * game;
 @property PQBaseUI *currentView;
 @end
 
 @implementation PQGame : SPSprite
+
+static PQGame *_sharedInstance = nil;
+
++ (PQGame *)sharedInstance {
+    
+    return _sharedInstance;
+}
 
 - (id)init
 {
@@ -32,12 +38,17 @@
     {
         [self setup];
     }
+    _sharedInstance = self;
     return self;
 }
 
 - (void)setup
 {
     [SPAudioEngine start];
+    _soundMuted = NO;
+    
+    SPSound *sound = [[SPSound alloc] initWithContentsOfFile:@"track.wav"];
+    [sound play];
     
     container = [SPSprite sprite];
     [self addChild:container];
@@ -52,26 +63,35 @@
     SPSprite *levelContainer = [[PQLevelController sharedInstance] makeLevelWithDict:dict];
     [container addChild:levelContainer];
     
-    //[self setState:STATE_HOME];
+    [self setState:STATE_HOME];
 }
 
 - (void)setState:(int)state
 {
+    NSLog(@"setState %i", state);
     switch(state){
         case STATE_HOME:
             [self setView:[PQHomeUI class]];
+            [container addEventListener:@selector(onStartTouch:)  atObject:self forType:SP_EVENT_TYPE_TOUCH];
             break;
             
         case STATE_PLAY:
-            [self setView:NULL];
+            [self setView:[PQGameplayUI class]];
+            [_game resume];
             break;
             
         case STATE_PAUSE:
             [self setView:[PQPauseUI class]];
+            [_game pause];
             break;
             
         case STATE_FINISH:
             [self setView:[PQFinishUI class]];
+            break;
+            
+        case STATE_RESTART:
+            [_game start];
+            [self setState:STATE_PLAY];
             break;
     }
 }
@@ -89,6 +109,31 @@
         [view show];
         _currentView = view;
     }
+}
+
+- (void)onStartTouch:(SPTouchEvent*)event
+{
+    [container removeEventListener:@selector(onStartTouch:)  atObject:self forType:SP_EVENT_TYPE_TOUCH];
+    [self setState:STATE_RESTART];
+}
+
+- (void)muteSound
+{
+    NSLog(@"mute");
+   _soundMuted = YES;
+    [SPAudioEngine setMasterVolume:0.0];
+}
+
+- (void)unmuteSound
+{
+        NSLog(@"unmute");
+    _soundMuted = NO;
+    [SPAudioEngine setMasterVolume:1.0];
+}
+
+- (BOOL)isSoundMuted
+{
+    return _soundMuted;
 }
 
 @end

@@ -10,4 +10,12 @@
 
 @implementation PQBaseUI
 
+-(void)show
+{
+}
+
+-(void)hide
+{
+    
+}
 @end

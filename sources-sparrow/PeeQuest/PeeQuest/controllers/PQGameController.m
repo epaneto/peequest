@@ -14,6 +14,7 @@
 @property SPSprite * mainContainer;
 @property PQBackgroundController * background;
 @property PQPlayerController * player;
+@property BOOL paused;
 @property NSTimer * mainTimer;
 @end
 
@@ -33,15 +34,13 @@
     [_player setup];
     [_player show:_mainContainer];
     
-    ////initialize timer
-    [self initRainTimer];
-    
     ////initialize enter frame
     [_mainContainer addEventListener:@selector(updateGame:) atObject:self forType:SP_EVENT_TYPE_ENTER_FRAME];
     
-    
     ////initialize touch
     [_mainContainer addEventListener:@selector(onUserTouch:)  atObject:self forType:SP_EVENT_TYPE_TOUCH];
+    
+    _paused = YES;
 }
 
 -(void)initRainTimer
@@ -52,6 +51,9 @@
 }
 
 -(void)initRain:(NSTimer *)timer {
+    if(_paused){
+        return;
+    }
     [self showRain];
     [self initRainTimer];
 }
@@ -60,11 +62,33 @@
     [_background showRain];
 }
 
+- (void)pause
+{
+    _paused = YES;
+    if(_mainTimer != NULL){
+        [_mainTimer invalidate];
+    }
+}
+
+- (void)resume
+{
+    _paused = NO;
+    
+    ////initialize timer
+    [self initRainTimer];
+}
+
+- (void)start
+{
+    [self resume];
+}
+
 - (void)onUserTouch:(SPTouchEvent*)event
 {
+    if(_paused) return;
     SPTouch *touch = [[event touchesWithTarget:_mainContainer
                                       andPhase:SPTouchPhaseBegan] anyObject];
-    if (touch)
+    if (touch && touch.globalY > 100)
     {
         [_player toogleMove];
     }
@@ -72,6 +96,7 @@
 
 - (void)updateGame:(SPEnterFrameEvent *)event
 {
+    if(_paused) return;
     [_background updatePosition:[_player getVelocity]];
 }
 @end

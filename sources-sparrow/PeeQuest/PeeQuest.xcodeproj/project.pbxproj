@@ -86,6 +86,20 @@
 		54F2B1BE18945BFB003D25D3 /* PQFinishUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F2B1B818945BFB003D25D3 /* PQFinishUI.m */; };
 		54F2B1BF18945BFB003D25D3 /* PQHomeUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F2B1BA18945BFB003D25D3 /* PQHomeUI.m */; };
 		54F2B1C018945BFB003D25D3 /* PQPauseUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F2B1BC18945BFB003D25D3 /* PQPauseUI.m */; };
+		54F2B1CF1894629E003D25D3 /* facebook-btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54F2B1C21894629E003D25D3 /* facebook-btn@2x.png */; };
+		54F2B1D11894629E003D25D3 /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54F2B1C41894629E003D25D3 /* logo@2x.png */; };
+		54F2B1D21894629E003D25D3 /* lose-title@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54F2B1C51894629E003D25D3 /* lose-title@2x.png */; };
+		54F2B1D31894629E003D25D3 /* pause-btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54F2B1C61894629E003D25D3 /* pause-btn@2x.png */; };
+		54F2B1D41894629E003D25D3 /* pause-retry-btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54F2B1C71894629E003D25D3 /* pause-retry-btn@2x.png */; };
+		54F2B1D51894629E003D25D3 /* pause-return-btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54F2B1C81894629E003D25D3 /* pause-return-btn@2x.png */; };
+		54F2B1D61894629E003D25D3 /* pause-soundoff-btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54F2B1C91894629E003D25D3 /* pause-soundoff-btn@2x.png */; };
+		54F2B1D71894629E003D25D3 /* pause-soundon-btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54F2B1CA1894629E003D25D3 /* pause-soundon-btn@2x.png */; };
+		54F2B1D81894629E003D25D3 /* pause-title@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54F2B1CB1894629E003D25D3 /* pause-title@2x.png */; };
+		54F2B1D91894629E003D25D3 /* taptostart-title@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54F2B1CC1894629E003D25D3 /* taptostart-title@2x.png */; };
+		54F2B1DA1894629E003D25D3 /* twitter-btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54F2B1CD1894629E003D25D3 /* twitter-btn@2x.png */; };
+		54F2B1DB1894629E003D25D3 /* win-title@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54F2B1CE1894629E003D25D3 /* win-title@2x.png */; };
+		54F2B1DE18947335003D25D3 /* PQGameplayUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F2B1DD18947335003D25D3 /* PQGameplayUI.m */; };
+		54F2B1E11894812B003D25D3 /* track.wav in Resources */ = {isa = PBXBuildFile; fileRef = 54F2B1E01894812B003D25D3 /* track.wav */; };
 		A3EB2CE718943D35001CEEC1 /* PQLevelController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3EB2CE618943D35001CEEC1 /* PQLevelController.m */; };
 		A3EB2CE918943ED3001CEEC1 /* peeQuest.json in Resources */ = {isa = PBXBuildFile; fileRef = A3EB2CE818943ED3001CEEC1 /* peeQuest.json */; };
 		E5B336CC18942C0500D95FAC /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = E5B336CA18942C0500D95FAC /* background.png */; };
@@ -263,6 +277,21 @@
 		54F2B1BA18945BFB003D25D3 /* PQHomeUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PQHomeUI.m; sourceTree = "<group>"; };
 		54F2B1BB18945BFB003D25D3 /* PQPauseUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PQPauseUI.h; sourceTree = "<group>"; };
 		54F2B1BC18945BFB003D25D3 /* PQPauseUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PQPauseUI.m; sourceTree = "<group>"; };
+		54F2B1C21894629E003D25D3 /* facebook-btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "facebook-btn@2x.png"; sourceTree = "<group>"; };
+		54F2B1C41894629E003D25D3 /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
+		54F2B1C51894629E003D25D3 /* lose-title@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lose-title@2x.png"; sourceTree = "<group>"; };
+		54F2B1C61894629E003D25D3 /* pause-btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pause-btn@2x.png"; sourceTree = "<group>"; };
+		54F2B1C71894629E003D25D3 /* pause-retry-btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pause-retry-btn@2x.png"; sourceTree = "<group>"; };
+		54F2B1C81894629E003D25D3 /* pause-return-btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pause-return-btn@2x.png"; sourceTree = "<group>"; };
+		54F2B1C91894629E003D25D3 /* pause-soundoff-btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pause-soundoff-btn@2x.png"; sourceTree = "<group>"; };
+		54F2B1CA1894629E003D25D3 /* pause-soundon-btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pause-soundon-btn@2x.png"; sourceTree = "<group>"; };
+		54F2B1CB1894629E003D25D3 /* pause-title@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pause-title@2x.png"; sourceTree = "<group>"; };
+		54F2B1CC1894629E003D25D3 /* taptostart-title@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "taptostart-title@2x.png"; sourceTree = "<group>"; };
+		54F2B1CD1894629E003D25D3 /* twitter-btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitter-btn@2x.png"; sourceTree = "<group>"; };
+		54F2B1CE1894629E003D25D3 /* win-title@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "win-title@2x.png"; sourceTree = "<group>"; };
+		54F2B1DC18947335003D25D3 /* PQGameplayUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PQGameplayUI.h; sourceTree = "<group>"; };
+		54F2B1DD18947335003D25D3 /* PQGameplayUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PQGameplayUI.m; sourceTree = "<group>"; };
+		54F2B1E01894812B003D25D3 /* track.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = track.wav; sourceTree = "<group>"; };
 		A3EB2CE518943D35001CEEC1 /* PQLevelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PQLevelController.h; path = controllers/PQLevelController.h; sourceTree = "<group>"; };
 		A3EB2CE618943D35001CEEC1 /* PQLevelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PQLevelController.m; path = controllers/PQLevelController.m; sourceTree = "<group>"; };
 		A3EB2CE818943ED3001CEEC1 /* peeQuest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = peeQuest.json; sourceTree = "<group>"; };
@@ -353,6 +382,8 @@
 		54F2AFCE18942680003D25D3 /* PeeQuest */ = {
 			isa = PBXGroup;
 			children = (
+				54F2B1DF1894812B003D25D3 /* sounds */,
+				54F2B1C11894629E003D25D3 /* ui-assets */,
 				54F2B1B418945BFB003D25D3 /* ui */,
 				E5B336D218942C7700D95FAC /* models */,
 				E5B336CE18942C4A00D95FAC /* controllers */,
@@ -549,9 +580,38 @@
 				54F2B1BA18945BFB003D25D3 /* PQHomeUI.m */,
 				54F2B1BB18945BFB003D25D3 /* PQPauseUI.h */,
 				54F2B1BC18945BFB003D25D3 /* PQPauseUI.m */,
+				54F2B1DC18947335003D25D3 /* PQGameplayUI.h */,
+				54F2B1DD18947335003D25D3 /* PQGameplayUI.m */,
 			);
 			path = ui;
 			sourceTree = "<group>";
+		};
+		54F2B1C11894629E003D25D3 /* ui-assets */ = {
+			isa = PBXGroup;
+			children = (
+				54F2B1C21894629E003D25D3 /* facebook-btn@2x.png */,
+				54F2B1C41894629E003D25D3 /* logo@2x.png */,
+				54F2B1C51894629E003D25D3 /* lose-title@2x.png */,
+				54F2B1C61894629E003D25D3 /* pause-btn@2x.png */,
+				54F2B1C71894629E003D25D3 /* pause-retry-btn@2x.png */,
+				54F2B1C81894629E003D25D3 /* pause-return-btn@2x.png */,
+				54F2B1C91894629E003D25D3 /* pause-soundoff-btn@2x.png */,
+				54F2B1CA1894629E003D25D3 /* pause-soundon-btn@2x.png */,
+				54F2B1CB1894629E003D25D3 /* pause-title@2x.png */,
+				54F2B1CC1894629E003D25D3 /* taptostart-title@2x.png */,
+				54F2B1CD1894629E003D25D3 /* twitter-btn@2x.png */,
+				54F2B1CE1894629E003D25D3 /* win-title@2x.png */,
+			);
+			path = "ui-assets";
+			sourceTree = SOURCE_ROOT;
+		};
+		54F2B1DF1894812B003D25D3 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				54F2B1E01894812B003D25D3 /* track.wav */,
+			);
+			path = sounds;
+			sourceTree = SOURCE_ROOT;
 		};
 		E5B336CE18942C4A00D95FAC /* controllers */ = {
 			isa = PBXGroup;
@@ -656,12 +716,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54F2B1D31894629E003D25D3 /* pause-btn@2x.png in Resources */,
+				54F2B1D81894629E003D25D3 /* pause-title@2x.png in Resources */,
+				54F2B1D61894629E003D25D3 /* pause-soundoff-btn@2x.png in Resources */,
+				54F2B1D21894629E003D25D3 /* lose-title@2x.png in Resources */,
 				54F2AFD318942680003D25D3 /* InfoPlist.strings in Resources */,
 				E5B336CC18942C0500D95FAC /* background.png in Resources */,
+				54F2B1D91894629E003D25D3 /* taptostart-title@2x.png in Resources */,
+				54F2B1DA1894629E003D25D3 /* twitter-btn@2x.png in Resources */,
 				E5B336DF1894347600D95FAC /* character.png in Resources */,
+				54F2B1D71894629E003D25D3 /* pause-soundon-btn@2x.png in Resources */,
+				54F2B1CF1894629E003D25D3 /* facebook-btn@2x.png in Resources */,
+				54F2B1D11894629E003D25D3 /* logo@2x.png in Resources */,
 				A3EB2CE918943ED3001CEEC1 /* peeQuest.json in Resources */,
+				54F2B1D41894629E003D25D3 /* pause-retry-btn@2x.png in Resources */,
+				54F2B1D51894629E003D25D3 /* pause-return-btn@2x.png in Resources */,
 				E5B336CD18942C0500D95FAC /* background@2x.png in Resources */,
 				E5B336E01894347600D95FAC /* character@2x.png in Resources */,
+				54F2B1DB1894629E003D25D3 /* win-title@2x.png in Resources */,
+				54F2B1E11894812B003D25D3 /* track.wav in Resources */,
 				54F2AFDB18942680003D25D3 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -689,6 +762,7 @@
 				54F2B14F18942731003D25D3 /* SPTexture.m in Sources */,
 				54F2B13718942731003D25D3 /* SPJuggler.m in Sources */,
 				54F2B1BD18945BFB003D25D3 /* PQBaseUI.m in Sources */,
+				54F2B1DE18947335003D25D3 /* PQGameplayUI.m in Sources */,
 				54F2AFD518942680003D25D3 /* main.m in Sources */,
 				54F2B14418942731003D25D3 /* SPRectangle.m in Sources */,
 				54F2B13B18942731003D25D3 /* SPNSExtensions.m in Sources */,

@@ -10,4 +10,7 @@
 
 @interface PQGameController : NSObject
 -(void)setup :(SPSprite * )container;
+-(void)start;
+-(void)resume;
+-(void)pause;
 @end
