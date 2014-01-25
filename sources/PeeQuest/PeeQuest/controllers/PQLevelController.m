@@ -20,17 +20,17 @@
     return _sharedInstance;
 }
 
-- (SKScene *)levelMakerWithDict:(NSDictionary *)levelDict {
-    SKScene *newScene = [SKScene new];
+- (PQScene *)levelMakerWithDict:(NSDictionary *)levelDict {
+    PQScene *newScene = [SKScene new];
     
     PQ_LEVEL_SET_SJON(levelDict)
     
-    
+    float chunkSize = PQ_LEVEL_SCENE_CHUNK_SIZE;
     
     return newScene;
 }
 
-- (SKScene *)updatedScene:(SKScene *)scene withCurrentPosition:(CGPoint)point {
+- (PQScene *)updatedScene:(PQScene *)scene withCurrentPosition:(CGPoint)point {
     
     return scene;
 }

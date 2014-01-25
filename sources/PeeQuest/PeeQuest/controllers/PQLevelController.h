@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 Doubleleft. All rights reserved.
 //
 
+#import "PQScene.h"
 #import <SpriteKit/SpriteKit.h>
 #import <Foundation/Foundation.h>
 
@@ -13,7 +14,7 @@
 
 + (PQLevelController *)sharedInstance;
 
-- (SKScene *)levelMakerWithDict:(NSDictionary *)levelDict;
-- (SKScene *)updatedScene:(SKScene *)scene withCurrentPosition:(CGPoint)point;
+- (PQScene *)levelMakerWithDict:(NSDictionary *)levelDict;
+- (PQScene *)updatedScene:(PQScene *)scene withCurrentPosition:(CGPoint)point;
 
 @end

@@ -13,6 +13,7 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+    #import "PQLevelController.h"
 #endif
 
 
@@ -23,4 +24,4 @@
 #pragma mark - LEVEL
 #define PQ_LEVEL_JSON [[NSUserDefaults standardUserDefaults] objectForKey:@"Current JSON"]
 #define PQ_LEVEL_SET_SJON(json) [[NSUserDefaults standardUserDefaults] setObject:json forKey:@"Current JSON"];
-#define PQ_LEVEL_SCENE_CHUNK_SIZE 
+#define PQ_LEVEL_SCENE_CHUNK_SIZE isiPhone568 ? 852 : 720

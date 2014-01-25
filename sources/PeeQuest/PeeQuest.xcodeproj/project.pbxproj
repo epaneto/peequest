@@ -274,6 +274,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = Doubleleft;
 				TargetAttributes = {
+					E5E335F01893E60C00D2C445 = {
+						DevelopmentTeam = 2TZU65Y8G4;
+					};
 					E5E336181893E60C00D2C445 = {
 						TestTargetID = E5E335F01893E60C00D2C445;
 					};
@@ -460,6 +463,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Gabriel Pacheco (87TNYHMEF8)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PeeQuest/PeeQuest-Prefix.pch";
 				INFOPLIST_FILE = "PeeQuest/PeeQuest-Info.plist";
@@ -475,6 +479,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PeeQuest/PeeQuest-Prefix.pch";
 				INFOPLIST_FILE = "PeeQuest/PeeQuest-Info.plist";
