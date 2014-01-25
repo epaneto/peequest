@@ -7,6 +7,11 @@
 //
 
 #import "MyScene.h"
+#import "BackgroundController.h"
+
+@interface MyScene()
+@property BackgroundController * background;
+@end
 
 @implementation MyScene
 
@@ -16,16 +21,29 @@
         
         self.backgroundColor = [SKColor colorWithRed:0.15 green:0.15 blue:0.3 alpha:1.0];
         
-        SKLabelNode *myLabel = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
         
-        myLabel.text = @"Press to Play!";
-        myLabel.fontSize = 30;
-        myLabel.position = CGPointMake(CGRectGetMidX(self.frame),
-                                       CGRectGetMidY(self.frame));
-        
-        [self addChild:myLabel];
+        [self setup];
     }
     return self;
+}
+
+-(void)setup{
+    _background = [[BackgroundController alloc]init];
+    [_background setup];
+    
+    
+    [self show];
+}
+
+-(void)show{
+    [_background show:self];
+    
+    SKLabelNode *myLabel = [SKLabelNode labelNodeWithFontNamed:@"Verdana"];
+    myLabel.text = @"Press to Play!";
+    myLabel.fontSize = 30;
+    myLabel.position = CGPointMake(CGRectGetMidX(self.frame),
+                                   CGRectGetMidY(self.frame));
+    [self addChild:myLabel];
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
