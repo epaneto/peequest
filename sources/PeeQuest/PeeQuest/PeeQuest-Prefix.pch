@@ -14,3 +14,13 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
 #endif
+
+
+#pragma mark - GENERAL
+
+#define isiPhone568 ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone && [UIScreen mainScreen].bounds.size.height == 568)
+
+#pragma mark - LEVEL
+#define PQ_LEVEL_JSON [[NSUserDefaults standardUserDefaults] objectForKey:@"Current JSON"]
+#define PQ_LEVEL_SET_SJON(json) [[NSUserDefaults standardUserDefaults] setObject:json forKey:@"Current JSON"];
+#define PQ_LEVEL_SCENE_CHUNK_SIZE 
