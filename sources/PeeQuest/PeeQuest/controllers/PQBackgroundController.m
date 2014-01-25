@@ -10,19 +10,20 @@
 #import "PQBackgroundView.h"
 
 @interface PQBackgroundController()
-@property PQBackgroundView * view;
+@property SKSpriteNode * view;
 @end
 
 @implementation PQBackgroundController
 
 -(void)setup
 {
-    _view = [[PQBackgroundView alloc]init];
-    _view.texture = [SKTexture textureWithImageNamed:@"background.png"];
+    _view = [SKSpriteNode spriteNodeWithImageNamed:@"bg"];
+
 }
 
 -(void)show:(SKScene *)scene
 {
+    _view.position = CGPointMake(100,_view.size.height);
     [scene addChild:_view];
 }
 

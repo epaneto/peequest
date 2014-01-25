@@ -9,5 +9,5 @@
 #import <SpriteKit/SpriteKit.h>
 
 @interface PQBackgroundView : SKSpriteNode
-
+-(void)setup;
 @end

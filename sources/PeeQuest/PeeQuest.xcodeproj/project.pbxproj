@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A32DC9B61893F68D005D6B41 /* PQLevelController.m in Sources */ = {isa = PBXBuildFile; fileRef = A32DC9B51893F68D005D6B41 /* PQLevelController.m */; };
+		E5574C991894001C00F80B28 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = E5574C971894001C00F80B28 /* bg.png */; };
+		E5574C9A1894001C00F80B28 /* bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5574C981894001C00F80B28 /* bg@2x.png */; };
 		E5E335F51893E60C00D2C445 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5E335F41893E60C00D2C445 /* Foundation.framework */; };
 		E5E335F71893E60C00D2C445 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5E335F61893E60C00D2C445 /* CoreGraphics.framework */; };
 		E5E335F91893E60C00D2C445 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5E335F81893E60C00D2C445 /* UIKit.framework */; };
@@ -25,8 +27,6 @@
 		E5E336251893E60C00D2C445 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E5E336231893E60C00D2C445 /* InfoPlist.strings */; };
 		E5E336271893E60C00D2C445 /* PeeQuestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E336261893E60C00D2C445 /* PeeQuestTests.m */; };
 		E5E336391893E9FE00D2C445 /* PQBackgroundController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E336381893E9FE00D2C445 /* PQBackgroundController.m */; };
-		E5E336401893EF3800D2C445 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = E5E3363E1893EF3800D2C445 /* background.png */; };
-		E5E336411893EF3800D2C445 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5E3363F1893EF3800D2C445 /* background@2x.png */; };
 		E5E336441893F24800D2C445 /* PQBaseObstacle.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E336431893F24800D2C445 /* PQBaseObstacle.m */; };
 		E5E336471893F26400D2C445 /* PQBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E336461893F26400D2C445 /* PQBackgroundView.m */; };
 /* End PBXBuildFile section */
@@ -44,6 +44,8 @@
 /* Begin PBXFileReference section */
 		A32DC9B41893F68D005D6B41 /* PQLevelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PQLevelController.h; path = controllers/PQLevelController.h; sourceTree = "<group>"; };
 		A32DC9B51893F68D005D6B41 /* PQLevelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PQLevelController.m; path = controllers/PQLevelController.m; sourceTree = "<group>"; };
+		E5574C971894001C00F80B28 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg.png; path = assets/bg.png; sourceTree = "<group>"; };
+		E5574C981894001C00F80B28 /* bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bg@2x.png"; path = "assets/bg@2x.png"; sourceTree = "<group>"; };
 		E5E335F11893E60C00D2C445 /* PeeQuest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeeQuest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5E335F41893E60C00D2C445 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E5E335F61893E60C00D2C445 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -68,8 +70,6 @@
 		E5E336261893E60C00D2C445 /* PeeQuestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PeeQuestTests.m; sourceTree = "<group>"; };
 		E5E336371893E9FE00D2C445 /* PQBackgroundController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PQBackgroundController.h; path = controllers/PQBackgroundController.h; sourceTree = "<group>"; };
 		E5E336381893E9FE00D2C445 /* PQBackgroundController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PQBackgroundController.m; path = controllers/PQBackgroundController.m; sourceTree = "<group>"; };
-		E5E3363E1893EF3800D2C445 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background.png; path = assets/scenario/background.png; sourceTree = "<group>"; };
-		E5E3363F1893EF3800D2C445 /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background@2x.png"; path = "assets/scenario/background@2x.png"; sourceTree = "<group>"; };
 		E5E336421893F24800D2C445 /* PQBaseObstacle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PQBaseObstacle.h; path = model/PQBaseObstacle.h; sourceTree = "<group>"; };
 		E5E336431893F24800D2C445 /* PQBaseObstacle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PQBaseObstacle.m; path = model/PQBaseObstacle.m; sourceTree = "<group>"; };
 		E5E336451893F26400D2C445 /* PQBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PQBackgroundView.h; path = view/PQBackgroundView.h; sourceTree = "<group>"; };
@@ -221,8 +221,8 @@
 		E5E336341893E94900D2C445 /* scenario */ = {
 			isa = PBXGroup;
 			children = (
-				E5E3363E1893EF3800D2C445 /* background.png */,
-				E5E3363F1893EF3800D2C445 /* background@2x.png */,
+				E5574C971894001C00F80B28 /* bg.png */,
+				E5574C981894001C00F80B28 /* bg@2x.png */,
 			);
 			name = scenario;
 			sourceTree = "<group>";
@@ -307,9 +307,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5E336011893E60C00D2C445 /* InfoPlist.strings in Resources */,
-				E5E336401893EF3800D2C445 /* background.png in Resources */,
+				E5574C991894001C00F80B28 /* bg.png in Resources */,
+				E5574C9A1894001C00F80B28 /* bg@2x.png in Resources */,
 				E5E336141893E60C00D2C445 /* Images.xcassets in Resources */,
-				E5E336411893EF3800D2C445 /* background@2x.png in Resources */,
 				E5E3360A1893E60C00D2C445 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

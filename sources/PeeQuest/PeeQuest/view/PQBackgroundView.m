@@ -9,5 +9,9 @@
 #import "PQBackgroundView.h"
 
 @implementation PQBackgroundView
-
+-(void)setup
+{
+    self.texture = [SKTexture textureWithImageNamed:@"bg.png"];
+    [self setTexture:self.texture];
+}
 @end
