@@ -12,4 +12,5 @@
 @interface PQBackgroundController : NSObject
 -(void)setup;
 -(void)show:(SKScene *)scene;
+-(void)updatePosition:(int)speed;
 @end

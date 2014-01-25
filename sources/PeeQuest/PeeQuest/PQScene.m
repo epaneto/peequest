@@ -13,6 +13,7 @@
 @interface PQScene()
 @property PQBackgroundController * background;
 @property PQCharacterController * character;
+@property NSTimer * mainTimer;
 @end
 
 @implementation PQScene
@@ -37,6 +38,9 @@
     [_character setup];
     
     [self show];
+    
+    _mainTimer = [NSTimer scheduledTimerWithTimeInterval: 0.1 target: self selector:@selector(onTick:) userInfo: nil repeats:YES];
+    [_mainTimer fire];
 }
 
 -(void)show{
@@ -49,6 +53,15 @@
     myLabel.position = CGPointMake(CGRectGetMidX(self.frame),
                                    CGRectGetMidY(self.frame));
     [self addChild:myLabel];
+}
+
+-(void)onTick:(NSTimer *)timer {
+    [self updatePosition:10];
+}
+
+-(void)updatePosition :(int) speed
+{
+    [_background updatePosition:speed];
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
