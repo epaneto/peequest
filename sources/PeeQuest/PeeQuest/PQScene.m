@@ -46,13 +46,6 @@
 -(void)show{
     [_background show:self];
     [_character show:self];
-    
-    SKLabelNode *myLabel = [SKLabelNode labelNodeWithFontNamed:@"Verdana"];
-    myLabel.text = @"Press to Play!";
-    myLabel.fontSize = 30;
-    myLabel.position = CGPointMake(CGRectGetMidX(self.frame),
-                                   CGRectGetMidY(self.frame));
-    [self addChild:myLabel];
 }
 
 -(void)onTick:(NSTimer *)timer {
@@ -61,10 +54,12 @@
 
 -(void)updatePosition :(int) speed
 {
+    [_character updatePosition:speed];
     [_background updatePosition:speed];
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    [_character toggleWalk];
     /* Called when a touch begins */
     
 //    for (UITouch *touch in touches) {

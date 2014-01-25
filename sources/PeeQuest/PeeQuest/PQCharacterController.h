@@ -12,4 +12,8 @@
 @interface PQCharacterController : NSObject
 -(void)setup;
 -(void)show:(SKScene *)scene;
+-(void)updatePosition:(int)speed;
+-(void)walk;
+-(void)idle;
+-(void)toggleWalk;
 @end
