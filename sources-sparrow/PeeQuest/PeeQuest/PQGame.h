@@ -13,6 +13,7 @@
 #define STATE_PAUSE 3
 #define STATE_FINISH 4
 #define STATE_RESTART 5
+#define STATE_CREDITS 6
 
 
 

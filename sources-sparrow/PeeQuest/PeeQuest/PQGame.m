@@ -15,6 +15,7 @@
 #import "PQGameplayUI.h"
 #import "SPAVSoundChannel.h"
 #import "PQWinScene.h"
+#import "PQCredits.h"
 
 @interface PQGame()
 {
@@ -80,6 +81,9 @@ static PQGame *_sharedInstance = nil;
         [winnerScreen hide];
         winnerScreen = NULL;
     }
+
+    [containerUI removeEventListener:@selector(onStartTouch:)  atObject:self forType:SP_EVENT_TYPE_TOUCH];
+
     
     NSLog(@"setState %i", state);
     _state = state;
@@ -136,6 +140,10 @@ static PQGame *_sharedInstance = nil;
         case STATE_RESTART:
             [_game start];
             [self setState:STATE_PLAY];
+            break;
+            
+        case STATE_CREDITS:
+            [self setView:[PQCredits class]];
             break;
     }
 }
