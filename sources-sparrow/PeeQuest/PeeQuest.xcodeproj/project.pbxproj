@@ -77,6 +77,11 @@
 		543CE7A21895812C0087D1FD /* track-intro.caf in Resources */ = {isa = PBXBuildFile; fileRef = 543CE79818957FE80087D1FD /* track-intro.caf */; };
 		543CE7A5189584300087D1FD /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 543CE7A3189584300087D1FD /* logo.png */; };
 		543CE7A6189584300087D1FD /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 543CE7A4189584300087D1FD /* logo@2x.png */; };
+		543CE7AC18959D1C0087D1FD /* tutorial01-568@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 543CE7A718959D1C0087D1FD /* tutorial01-568@2x.png */; };
+		543CE7AD18959D1C0087D1FD /* tutorial02-568@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 543CE7A818959D1C0087D1FD /* tutorial02-568@2x.png */; };
+		543CE7AE18959D1C0087D1FD /* tutorial03-568@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 543CE7A918959D1C0087D1FD /* tutorial03-568@2x.png */; };
+		543CE7AF18959D1C0087D1FD /* tutorial04-568@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 543CE7AA18959D1C0087D1FD /* tutorial04-568@2x.png */; };
+		543CE7B018959D1C0087D1FD /* tutorial05-568@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 543CE7AB18959D1C0087D1FD /* tutorial05-568@2x.png */; };
 		54F2AFC918942680003D25D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F2AFC818942680003D25D3 /* Foundation.framework */; };
 		54F2AFCB18942680003D25D3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F2AFCA18942680003D25D3 /* CoreGraphics.framework */; };
 		54F2AFCD18942680003D25D3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F2AFCC18942680003D25D3 /* UIKit.framework */; };
@@ -316,6 +321,11 @@
 		543CE79C18957FFE0087D1FD /* logo@2x.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "logo@2x.xml"; sourceTree = "<group>"; };
 		543CE7A3189584300087D1FD /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		543CE7A4189584300087D1FD /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
+		543CE7A718959D1C0087D1FD /* tutorial01-568@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tutorial01-568@2x.png"; sourceTree = "<group>"; };
+		543CE7A818959D1C0087D1FD /* tutorial02-568@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tutorial02-568@2x.png"; sourceTree = "<group>"; };
+		543CE7A918959D1C0087D1FD /* tutorial03-568@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tutorial03-568@2x.png"; sourceTree = "<group>"; };
+		543CE7AA18959D1C0087D1FD /* tutorial04-568@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tutorial04-568@2x.png"; sourceTree = "<group>"; };
+		543CE7AB18959D1C0087D1FD /* tutorial05-568@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tutorial05-568@2x.png"; sourceTree = "<group>"; };
 		54F2AFC518942680003D25D3 /* PeeQuest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeeQuest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54F2AFC818942680003D25D3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		54F2AFCA18942680003D25D3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -869,6 +879,11 @@
 		54F2B1C11894629E003D25D3 /* ui-assets */ = {
 			isa = PBXGroup;
 			children = (
+				543CE7A718959D1C0087D1FD /* tutorial01-568@2x.png */,
+				543CE7A818959D1C0087D1FD /* tutorial02-568@2x.png */,
+				543CE7A918959D1C0087D1FD /* tutorial03-568@2x.png */,
+				543CE7AA18959D1C0087D1FD /* tutorial04-568@2x.png */,
+				543CE7AB18959D1C0087D1FD /* tutorial05-568@2x.png */,
 				543CE76C189574E30087D1FD /* credits-close.png */,
 				543CE76D189574E30087D1FD /* credits-close@2x.png */,
 				543CE76E189574E30087D1FD /* credits-info.png */,
@@ -1120,6 +1135,7 @@
 				543CE78F189574E30087D1FD /* credits7@2x.png in Resources */,
 				A316F3DF1894A6F9004253F5 /* vaso_sombra.png in Resources */,
 				A316F3D41894A6F9004253F5 /* quadro_sombra@2x.png in Resources */,
+				543CE7AE18959D1C0087D1FD /* tutorial03-568@2x.png in Resources */,
 				543CE7A6189584300087D1FD /* logo@2x.png in Resources */,
 				54F2B1D31894629E003D25D3 /* pause-btn@2x.png in Resources */,
 				A316F3F518957329004253F5 /* rato.png in Resources */,
@@ -1148,6 +1164,7 @@
 				543CE781189574E30087D1FD /* credits-info@2x.png in Resources */,
 				A316F3D61894A6F9004253F5 /* rato_menino@2x.png in Resources */,
 				543CE77F189574E30087D1FD /* credits-close@2x.png in Resources */,
+				543CE7AC18959D1C0087D1FD /* tutorial01-568@2x.png in Resources */,
 				A316F3D11894A6F9004253F5 /* quadro_normal.png in Resources */,
 				543CE6FE1894B09D0087D1FD /* thunder.caf in Resources */,
 				A316F3C81894A6F9004253F5 /* alcapao_normal@2x.png in Resources */,
@@ -1164,6 +1181,7 @@
 				A316F3DE1894A6F9004253F5 /* vaso_normal@2x.png in Resources */,
 				A316F3E41894C3D2004253F5 /* Icon@2x.png in Resources */,
 				E526AA9F18951AD7005892AE /* player_shadow@2x.png in Resources */,
+				543CE7AF18959D1C0087D1FD /* tutorial04-568@2x.png in Resources */,
 				E5B336EF1894874700D95FAC /* player.xml in Resources */,
 				E526AAA018951AD7005892AE /* player_shadow@2x.xml in Resources */,
 				A316F3E01894A6F9004253F5 /* vaso_sombra@2x.png in Resources */,
@@ -1217,6 +1235,7 @@
 				543CE73A189567DA0087D1FD /* ending_hero.png in Resources */,
 				543CE6FB1894B09D0087D1FD /* rat_on_wood.caf in Resources */,
 				A316F3C61894A6F9004253F5 /* alcapao_menino@2x.png in Resources */,
+				543CE7B018959D1C0087D1FD /* tutorial05-568@2x.png in Resources */,
 				E526AA9D18951AD7005892AE /* player_shadow.png in Resources */,
 				A316F3F818957329004253F5 /* rato@2x.xml in Resources */,
 				E5B336F11894874700D95FAC /* player@2x.xml in Resources */,
@@ -1228,6 +1247,7 @@
 				E5B336E01894347600D95FAC /* character@2x.png in Resources */,
 				A316F3F718957329004253F5 /* rato@2x.png in Resources */,
 				54F2B1DB1894629E003D25D3 /* win-title@2x.png in Resources */,
+				543CE7AD18959D1C0087D1FD /* tutorial02-568@2x.png in Resources */,
 				54F2AFDB18942680003D25D3 /* Images.xcassets in Resources */,
 				543CE73418955BA80087D1FD /* tutorial04@2x.png in Resources */,
 				543CE73B189567DA0087D1FD /* ending_hero.xml in Resources */,
