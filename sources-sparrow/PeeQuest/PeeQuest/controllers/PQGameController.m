@@ -166,7 +166,12 @@
     for (PQBaseObstacle *movingObstacle in placedObstacles) {
         [[movingObstacle container] setX:(movingObstacle.container.x - [_player getVelocity]/1.77)];
         if ([placedObstacles indexOfObject:movingObstacle] < 2 && [movingObstacle checkColisionWithPlayer:_player]) {
-            [self damage];
+            if([movingObstacle isKindOfClass:[PQDoorController class]]){
+                [self complete];
+            }else{
+                [self damage];
+            }
+            
         }
     }
     
@@ -320,4 +325,10 @@
     }
     
 }
+
+- (BOOL)tutorialIsOpened
+{
+    return tutorial != NULL;
+}
+
 @end
