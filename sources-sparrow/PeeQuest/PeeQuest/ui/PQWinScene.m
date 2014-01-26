@@ -56,6 +56,7 @@
 
 -(void)loopAnimation
 {
+    [[PQSoundPlayer sharedInstance] play:@"pee.caf"];
     if(player != NULL){
         [player removeEventListener:@selector(loopAnimation) atObject:self forType:SP_EVENT_TYPE_COMPLETED];
     }

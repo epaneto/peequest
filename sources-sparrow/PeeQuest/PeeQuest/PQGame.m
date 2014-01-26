@@ -76,6 +76,7 @@ static PQGame *_sharedInstance = nil;
     }
     
     if(winnerScreen != NULL){
+        container.alpha = 1.0;
         [winnerScreen hide];
         winnerScreen = NULL;
     }
@@ -103,8 +104,28 @@ static PQGame *_sharedInstance = nil;
             
             if([self isWinner]){
                 if(winnerScreen == NULL){
+                    SPTween *fadeTween = [SPTween tweenWithTarget:container time:1.0];
+                    [fadeTween fadeTo:0.0];
+                    [Sparrow.juggler addObject:fadeTween];
+                    //
                     winnerScreen = [[PQWinScene alloc] init];
-                    [winnerScreen show];
+                    winnerScreen.alpha = 0.0;
+                    containerUI.alpha = 0.0;
+                    //
+                    SPTween *fadeIn = [SPTween tweenWithTarget:winnerScreen time:0.5];
+                    [fadeIn setDelay:1.5];
+                    [fadeIn fadeTo:1.0];
+                    fadeIn.onStart = ^(){
+                        [winnerScreen show];
+                    };
+                    [Sparrow.juggler addObject:fadeIn];
+
+                    SPTween *fadeIn2 = [SPTween tweenWithTarget:containerUI time:0.5];
+                    [fadeIn2 fadeTo:1.0];
+                    [fadeIn2 setDelay:1.5];
+                    [Sparrow.juggler addObject:fadeIn2];
+                    //
+                    
                     [self addChild:winnerScreen];
                     [self swapChild:winnerScreen withChild:containerUI];
                 }
@@ -172,8 +193,7 @@ static PQGame *_sharedInstance = nil;
 
 - (BOOL)isWinner
 {
-//    return [_game playerState] == PLAYER_STATE_WIN;
-    return YES;
+    return [_game playerState] == PLAYER_STATE_WIN;
 }
 
 -(int)state
