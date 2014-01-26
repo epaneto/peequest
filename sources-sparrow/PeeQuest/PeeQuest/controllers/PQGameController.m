@@ -9,8 +9,14 @@
 #import "PQGameController.h"
 #import "PQBackgroundController.h"
 #import "PQPlayerController.h"
+#import "PQGame.h"
 
 @interface PQGameController ()
+{
+    BOOL win;
+    int tempTickCounter;
+}
+
 @property SPSprite * mainContainer;
 @property PQBackgroundController * background;
 @property PQPlayerController * player;
@@ -19,6 +25,7 @@
 @end
 
 @implementation PQGameController
+@synthesize playerState;
 
 -(void)setup:(SPSprite *)container
 {
@@ -70,12 +77,15 @@
     if(_mainTimer != NULL){
         [_mainTimer invalidate];
     }
+    [Sparrow.juggler pause];
 }
 
 - (void)resume
 {
+    tempTickCounter = 0;
+    playerState = PLAYER_STATE_PLAYING;
     _paused = NO;
-    
+    [Sparrow.juggler resume];
     ////initialize timer
     [self initRainTimer];
 }
@@ -90,6 +100,7 @@
     if(_paused) return;
     SPTouch *touch = [[event touchesWithTarget:_mainContainer
                                       andPhase:SPTouchPhaseBegan] anyObject];
+    
     if (touch && touch.globalY > 100)
     {
         [_player toogleMove];
@@ -100,5 +111,12 @@
 {
     if(_paused) return;
     [_background updatePosition:[_player getVelocity]];
+    if(playerState == PLAYER_STATE_PLAYING) {
+        if(tempTickCounter > 300){
+            playerState = PLAYER_STATE_WIN;
+            [[PQGame sharedInstance] setState:STATE_FINISH];
+        }
+    }
+    tempTickCounter++;
 }
 @end

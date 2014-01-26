@@ -45,7 +45,9 @@
 ------------------------------------------------------------------------------------------------- */
 
 @interface SPJuggler : NSObject <SPAnimatable>
-
+{
+    BOOL paused;
+}
 /// ------------------
 /// @name Initializers
 /// ------------------
@@ -80,6 +82,8 @@
 /// Delays the execution of a block by a certain time in seconds.
 - (id)delayInvocationByTime:(double)time block:(SPCallbackBlock)block;
 
+- (void) pause;
+- (void) resume;
 /// ----------------
 /// @name Properties
 /// ----------------

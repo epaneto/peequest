@@ -126,7 +126,7 @@ static PQGame *_sharedInstance = nil;
 
 - (void)unmuteSound
 {
-        NSLog(@"unmute");
+    NSLog(@"unmute");
     _soundMuted = NO;
     [SPAudioEngine setMasterVolume:1.0];
 }
@@ -134,6 +134,11 @@ static PQGame *_sharedInstance = nil;
 - (BOOL)isSoundMuted
 {
     return _soundMuted;
+}
+
+- (BOOL)isWinner
+{
+    return [_game playerState] == PLAYER_STATE_WIN;
 }
 
 @end
