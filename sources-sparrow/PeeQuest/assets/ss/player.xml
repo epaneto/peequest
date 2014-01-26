@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:8b79ad6c48e1a1f92bf304ba2defc663:a82cd8ebee6b8a4781e6584bc3733541:2b8ce506fda4d5664accfe8f6e48eb22$ -->
+<TextureAtlas imagePath="player.png">
+    <SubTexture name="hero_test/walk_0000" x="256" y="390" width="49" height="95" frameX="-2" frameY="-3" frameWidth="60" frameHeight="110"/>
+    <SubTexture name="hero_test/walk_0001" x="103" y="398" width="49" height="96" frameX="-2" frameY="-2" frameWidth="60" frameHeight="110"/>
+    <SubTexture name="hero_test/walk_0002" x="52" y="300" width="50" height="96" frameX="-1" frameY="-2" frameWidth="60" frameHeight="110"/>
+    <SubTexture name="hero_test/walk_0003" x="153" y="198" width="48" height="96" frameX="-2" frameY="-2" frameWidth="60" frameHeight="110"/>
+    <SubTexture name="hero_test/walk_0004" x="52" y="398" width="49" height="96" frameX="-1" frameY="-2" frameWidth="60" frameHeight="110"/>
+    <SubTexture name="hero_test/walk_0005" x="103" y="100" width="49" height="96" frameX="-1" frameY="-2" frameWidth="60" frameHeight="110"/>
+    <SubTexture name="hero_test/walk_0006" x="104" y="298" width="48" height="96" frameX="-1" frameY="-2" frameWidth="60" frameHeight="110"/>
+    <SubTexture name="hero_test/walk_0007" x="53" y="101" width="48" height="97" frameX="-1" frameY="-1" frameWidth="60" frameHeight="110"/>
+    <SubTexture name="hero_test/walk_0008" x="51" y="2" width="49" height="97" frameX="0" frameY="-1" frameWidth="60" frameHeight="110"/>
+    <SubTexture name="hero_test/walk_0009" x="52" y="201" width="48" height="97" frameX="0" frameY="-1" frameWidth="60" frameHeight="110"/>
+    <SubTexture name="hero_test/walk_0010" x="2" y="399" width="48" height="97" frameX="0" frameY="-1" frameWidth="60" frameHeight="110"/>
+    <SubTexture name="hero_test/walk_0011" x="2" y="300" width="48" height="97" frameX="0" frameY="-1" frameWidth="60" frameHeight="110"/>
+    <SubTexture name="hero_test/walk_0012" x="2" y="2" width="47" height="98" frameX="0" frameY="0" frameWidth="60" frameHeight="110"/>
+    <SubTexture name="hero_test/walk_0013" x="2" y="201" width="48" height="97" frameX="0" frameY="-1" frameWidth="60" frameHeight="110"/>
+    <SubTexture name="hero_test/walk_0014" x="2" y="102" width="49" height="97" frameX="0" frameY="-1" frameWidth="60" frameHeight="110"/>
+    <SubTexture name="hero_test/walk_0015" x="102" y="2" width="50" height="96" frameX="0" frameY="-2" frameWidth="60" frameHeight="110"/>
+    <SubTexture name="hero_test/walk_0016" x="102" y="200" width="49" height="96" frameX="-1" frameY="-2" frameWidth="60" frameHeight="110"/>
+    <SubTexture name="hero_test/walk_0017" x="206" y="293" width="49" height="95" frameX="-2" frameY="-3" frameWidth="60" frameHeight="110"/>
+    <SubTexture name="hero_test/walk_0018" x="154" y="296" width="50" height="95" frameX="-2" frameY="-3" frameWidth="60" frameHeight="110"/>
+    <SubTexture name="hero_test/walk_0019" x="206" y="2" width="51" height="94" frameX="-2" frameY="-4" frameWidth="60" frameHeight="110"/>
+    <SubTexture name="hero_test/walk_0020" x="259" y="2" width="50" height="94" frameX="-3" frameY="-4" frameWidth="60" frameHeight="110"/>
+    <SubTexture name="hero_test/walk_0021" x="307" y="385" width="51" height="93" frameX="-3" frameY="-5" frameWidth="60" frameHeight="110"/>
+    <SubTexture name="hero_test/walk_0022" x="359" y="193" width="52" height="92" frameX="-3" frameY="-6" frameWidth="60" frameHeight="110"/>
+    <SubTexture name="hero_test/walk_0023" x="363" y="97" width="53" height="91" frameX="-3" frameY="-7" frameWidth="60" frameHeight="110"/>
+    <SubTexture name="hero_test/walk_0024" x="360" y="383" width="52" height="91" frameX="-3" frameY="-7" frameWidth="60" frameHeight="110"/>
+    <SubTexture name="hero_test/walk_0025" x="364" y="2" width="52" height="91" frameX="-3" frameY="-7" frameWidth="60" frameHeight="110"/>
+    <SubTexture name="hero_test/walk_0026" x="310" y="289" width="52" height="92" frameX="-3" frameY="-6" frameWidth="60" frameHeight="110"/>
+    <SubTexture name="hero_test/walk_0027" x="311" y="2" width="51" height="93" frameX="-3" frameY="-5" frameWidth="60" frameHeight="110"/>
+    <SubTexture name="hero_test/walk_0028" x="310" y="98" width="51" height="93" frameX="-3" frameY="-5" frameWidth="60" frameHeight="110"/>
+    <SubTexture name="hero_test/walk_0029" x="306" y="194" width="51" height="93" frameX="-3" frameY="-5" frameWidth="60" frameHeight="110"/>
+    <SubTexture name="hero_test/walk_0030" x="257" y="290" width="51" height="93" frameX="-3" frameY="-5" frameWidth="60" frameHeight="110"/>
+    <SubTexture name="hero_test/walk_0031" x="258" y="98" width="50" height="94" frameX="-3" frameY="-4" frameWidth="60" frameHeight="110"/>
+    <SubTexture name="hero_test/walk_0032" x="254" y="194" width="50" height="94" frameX="-3" frameY="-4" frameWidth="60" frameHeight="110"/>
+    <SubTexture name="hero_test/walk_0033" x="206" y="98" width="50" height="94" frameX="-3" frameY="-4" frameWidth="60" frameHeight="110"/>
+    <SubTexture name="hero_test/walk_0034" x="205" y="393" width="49" height="95" frameX="-3" frameY="-3" frameWidth="60" frameHeight="110"/>
+    <SubTexture name="hero_test/walk_0035" x="154" y="393" width="49" height="95" frameX="-3" frameY="-3" frameWidth="60" frameHeight="110"/>
+    <SubTexture name="hero_test/walk_0036" x="154" y="99" width="50" height="95" frameX="-2" frameY="-3" frameWidth="60" frameHeight="110"/>
+    <SubTexture name="hero_test/walk_0037" x="154" y="2" width="50" height="95" frameX="-2" frameY="-3" frameWidth="60" frameHeight="110"/>
+    <SubTexture name="hero_test/walk_0038" x="203" y="196" width="49" height="95" frameX="-2" frameY="-3" frameWidth="60" frameHeight="110"/>
+</TextureAtlas>

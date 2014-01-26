@@ -45,7 +45,7 @@
 
 -(void)initRainTimer
 {
-    int randomTime = 5.0 + arc4random() % 5;
+    int randomTime = 2.0 + arc4random() % 5;
     NSLog(@"%i",randomTime);
     _mainTimer = [NSTimer scheduledTimerWithTimeInterval:randomTime target:self selector:@selector(initRain:) userInfo:nil repeats:NO];
 }
@@ -60,6 +60,7 @@
 
 -(void)showRain {
     [_background showRain];
+    [_player showRain];
 }
 
 - (void)pause

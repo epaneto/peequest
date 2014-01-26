@@ -111,6 +111,10 @@
 		E5B336DF1894347600D95FAC /* character.png in Resources */ = {isa = PBXBuildFile; fileRef = E5B336DD1894347600D95FAC /* character.png */; };
 		E5B336E01894347600D95FAC /* character@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5B336DE1894347600D95FAC /* character@2x.png */; };
 		E5B336E3189455F700D95FAC /* SHAnimatableColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B336E2189455F700D95FAC /* SHAnimatableColor.m */; };
+		E5B336EE1894874700D95FAC /* player.png in Resources */ = {isa = PBXBuildFile; fileRef = E5B336EA1894874700D95FAC /* player.png */; };
+		E5B336EF1894874700D95FAC /* player.xml in Resources */ = {isa = PBXBuildFile; fileRef = E5B336EB1894874700D95FAC /* player.xml */; };
+		E5B336F01894874700D95FAC /* player@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5B336EC1894874700D95FAC /* player@2x.png */; };
+		E5B336F11894874700D95FAC /* player@2x.xml in Resources */ = {isa = PBXBuildFile; fileRef = E5B336ED1894874700D95FAC /* player@2x.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -309,6 +313,10 @@
 		E5B336DE1894347600D95FAC /* character@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "character@2x.png"; sourceTree = "<group>"; };
 		E5B336E1189455F700D95FAC /* SHAnimatableColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHAnimatableColor.h; sourceTree = "<group>"; };
 		E5B336E2189455F700D95FAC /* SHAnimatableColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHAnimatableColor.m; sourceTree = "<group>"; };
+		E5B336EA1894874700D95FAC /* player.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player.png; sourceTree = "<group>"; };
+		E5B336EB1894874700D95FAC /* player.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = player.xml; sourceTree = "<group>"; };
+		E5B336EC1894874700D95FAC /* player@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player@2x.png"; sourceTree = "<group>"; };
+		E5B336ED1894874700D95FAC /* player@2x.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "player@2x.xml"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -560,6 +568,7 @@
 		54F2B16B18942941003D25D3 /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				E5B336E91894874700D95FAC /* ss */,
 				A3EB2CE818943ED3001CEEC1 /* peeQuest.json */,
 				E5B336DD1894347600D95FAC /* character.png */,
 				E5B336DE1894347600D95FAC /* character@2x.png */,
@@ -635,6 +644,17 @@
 				E5B336D418942C8A00D95FAC /* PQBaseObstacle.m */,
 			);
 			name = models;
+			sourceTree = "<group>";
+		};
+		E5B336E91894874700D95FAC /* ss */ = {
+			isa = PBXGroup;
+			children = (
+				E5B336EA1894874700D95FAC /* player.png */,
+				E5B336EB1894874700D95FAC /* player.xml */,
+				E5B336EC1894874700D95FAC /* player@2x.png */,
+				E5B336ED1894874700D95FAC /* player@2x.xml */,
+			);
+			path = ss;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -718,10 +738,12 @@
 			files = (
 				54F2B1D31894629E003D25D3 /* pause-btn@2x.png in Resources */,
 				54F2B1D81894629E003D25D3 /* pause-title@2x.png in Resources */,
+				E5B336F01894874700D95FAC /* player@2x.png in Resources */,
 				54F2B1D61894629E003D25D3 /* pause-soundoff-btn@2x.png in Resources */,
 				54F2B1D21894629E003D25D3 /* lose-title@2x.png in Resources */,
 				54F2AFD318942680003D25D3 /* InfoPlist.strings in Resources */,
 				E5B336CC18942C0500D95FAC /* background.png in Resources */,
+				E5B336EF1894874700D95FAC /* player.xml in Resources */,
 				54F2B1D91894629E003D25D3 /* taptostart-title@2x.png in Resources */,
 				54F2B1DA1894629E003D25D3 /* twitter-btn@2x.png in Resources */,
 				E5B336DF1894347600D95FAC /* character.png in Resources */,
@@ -730,8 +752,10 @@
 				54F2B1D11894629E003D25D3 /* logo@2x.png in Resources */,
 				A3EB2CE918943ED3001CEEC1 /* peeQuest.json in Resources */,
 				54F2B1D41894629E003D25D3 /* pause-retry-btn@2x.png in Resources */,
+				E5B336EE1894874700D95FAC /* player.png in Resources */,
 				54F2B1D51894629E003D25D3 /* pause-return-btn@2x.png in Resources */,
 				E5B336CD18942C0500D95FAC /* background@2x.png in Resources */,
+				E5B336F11894874700D95FAC /* player@2x.xml in Resources */,
 				E5B336E01894347600D95FAC /* character@2x.png in Resources */,
 				54F2B1DB1894629E003D25D3 /* win-title@2x.png in Resources */,
 				54F2B1E11894812B003D25D3 /* track.wav in Resources */,

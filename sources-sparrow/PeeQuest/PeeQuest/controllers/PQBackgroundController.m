@@ -29,7 +29,7 @@
     _view = [[SPImage alloc] initWithTexture:_texture];
     _idleColor = _view.color;
     _view.width = Sparrow.stage.width;
-    _darkColor = 0x524949;
+    _darkColor = 0xb49c9c;
     _view.color = _darkColor;
 }
 

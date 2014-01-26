@@ -13,4 +13,5 @@
 -(void)setup;
 -(void)show :(SPSprite * )container;
 -(void)toogleMove;
+-(void)showRain;
 @end
