@@ -56,12 +56,12 @@
 -(void)show:(SPSprite *)container
 {
     _view.x = 123;
-    _view.y = 150;
+    _view.y = 190;
     
     _shadow_view.x = 130;
-    _shadow_view.y = 42;
+    _shadow_view.y = 50;
     
-    _shadow_view.scaleX = _shadow_view.scaleY = 1.5;
+    _shadow_view.scaleX = _shadow_view.scaleY = 1.7;
     
     [container addChild:_shadow_view];
     [container addChild:_view];
