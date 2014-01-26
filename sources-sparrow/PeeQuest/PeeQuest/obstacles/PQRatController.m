@@ -41,10 +41,10 @@ typedef enum {
     if ([[[self container] bounds] x] > Sparrow.stage.width) {
         return NO;
     }
-    if (currentAnimation == PQRatAnimationTypeIdle) {
-        return NO;
-    } else if (currentAnimation == PQRatAnimationTypeShadow) {
-        return NO;
+    if (currentAnimation == PQRatAnimationTypeIdle && (player.getBody.x + player.getBody.width) - 45 > self.container.bounds.x) {
+        return YES;
+    } else if (currentAnimation == PQRatAnimationTypeShadow && (player.getShadow.x + player.getShadow.width) - 80 > self.container.bounds.x) {
+        return YES;
     }
     
     return NO;
