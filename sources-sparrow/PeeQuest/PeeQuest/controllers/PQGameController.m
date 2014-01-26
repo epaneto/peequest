@@ -6,18 +6,27 @@
 //  Copyright (c) 2014 Doubleleft. All rights reserved.
 //
 
+#import "PQBaseObstacle.h"
 #import "PQGameController.h"
 #import "PQBackgroundController.h"
 #import "PQPlayerController.h"
 
 @interface PQGameController ()
-@property SPSprite * mainContainer;
-@property PQBackgroundController * background;
-@property PQPlayerController * player;
-@property NSTimer * mainTimer;
+
+@property SPSprite *mainContainer;
+@property PQBackgroundController *background;
+@property PQPlayerController *player;
+@property NSTimer *mainTimer;
+@property (nonatomic, strong) NSMutableArray *allObstacles;
+@property (nonatomic, strong) NSMutableArray *placedObstacles;
+@property (nonatomic, assign) float levelOffset;
+
 @end
 
 @implementation PQGameController
+@synthesize allObstacles;
+@synthesize placedObstacles;
+@synthesize levelOffset;
 
 -(void)setup:(SPSprite *)container
 {
@@ -42,6 +51,10 @@
     
     ////initialize touch
     [_mainContainer addEventListener:@selector(onUserTouch:)  atObject:self forType:SP_EVENT_TYPE_TOUCH];
+    
+    [self loadJSONObstacles];
+    
+    
 }
 
 -(void)initRainTimer
@@ -54,6 +67,73 @@
 -(void)initRain:(NSTimer *)timer {
     [self showRain];
     [self initRainTimer];
+}
+
+- (void)loadJSONObstacles {
+    NSData *jsonData = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"peeQuest" ofType:@"json"]];
+    
+    NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingAllowFragments error:nil];
+    
+    if (allObstacles == nil) {
+        allObstacles = [NSMutableArray new];
+    }
+    if (placedObstacles == nil) {
+        placedObstacles = [NSMutableArray new];
+    }
+    
+    NSArray *objects = [[[dict objectForKey:@"layers"] lastObject] objectForKey:@"entities"];
+    
+    for (NSDictionary *currentObject in objects) {
+        PQBaseObstacle *obstacleObject = [[PQBaseObstacle alloc] initWithDict:currentObject];
+        [allObstacles addObject:obstacleObject];
+    }
+}
+
+- (void)updatePlacedObstacles {
+    float chunkSize = PQ_LEVEL_SCENE_CHUNK_SIZE;
+    
+    //adding obstacles
+    NSPredicate *predicate = [NSPredicate predicateWithBlock: ^BOOL(id obj, NSDictionary *bind) {
+        return ((CGPoint)[obj offset]).x >= levelOffset && ((CGPoint)[obj offset]).x < (chunkSize + levelOffset);
+    }];
+    
+    NSArray *obstacles = [allObstacles filteredArrayUsingPredicate:predicate];
+    
+    for (PQBaseObstacle *currentObstacle in obstacles) {
+        if (![placedObstacles containsObject:currentObstacle]) {
+            SPImage *image = [SPImage imageWithContentsOfFile:[currentObstacle assestName]];
+            [image setX:0];
+            [image setY:0];
+            [image setScaleX:currentObstacle.scale.width];
+            [image setScaleY:currentObstacle.scale.height];
+            
+            SPSprite *obstacleContainer = [SPSprite sprite];
+            [obstacleContainer addChild:image];
+            [obstacleContainer setX:currentObstacle.offset.x - levelOffset];
+            [obstacleContainer setY:currentObstacle.offset.y];
+            
+            [currentObstacle setContainer:obstacleContainer];
+            
+            [_mainContainer addChild:[currentObstacle container]];
+            [placedObstacles addObject:currentObstacle];
+        }
+    }
+    
+    for (PQBaseObstacle *movingObstacle in placedObstacles) {
+        [[movingObstacle container] setX:(movingObstacle.offset.x - levelOffset)];
+    }
+    
+    //removing obstacles
+    if ([placedObstacles count] > 0) {
+        NSPredicate *predicate = [NSPredicate predicateWithBlock: ^BOOL(id obj, NSDictionary *bind) {
+            return (((CGPoint)[obj offset]).x + [[obj container] width]) < (levelOffset - PQ_LEVEL_INITIAL_POSITION);
+        }];
+        NSArray *removingArray = [placedObstacles filteredArrayUsingPredicate:predicate];
+        for (id currentObstacle in removingArray) {
+            [_mainContainer removeChild:[currentObstacle container]];
+            [placedObstacles removeObject:currentObstacle];
+        }
+    }
 }
 
 -(void)showRain {
@@ -73,5 +153,9 @@
 - (void)updateGame:(SPEnterFrameEvent *)event
 {
     [_background updatePosition:[_player getVelocity]];
+    levelOffset += [_player getVelocity];
+    if (allObstacles != nil && [allObstacles count] > 0) {
+        [self updatePlacedObstacles];
+    }
 }
 @end

@@ -11,6 +11,7 @@
 @implementation PQBaseObstacle
 
 @synthesize assestName = _assestName;
+@synthesize container = _container;
 @synthesize bounds = _bounds;
 @synthesize offset = _offset;
 @synthesize scale = _scale;
@@ -22,12 +23,12 @@
     
     if (nil != self) {
         self.assestName = [dict objectForKey:@"name"];
-        self.bounds = CGRectMake([[[dict objectForKey:@"bounds"] objectForKey:@"x"] floatValue],
-                                 [[[dict objectForKey:@"bounds"] objectForKey:@"y"] floatValue],
-                                 [[[dict objectForKey:@"bounds"] objectForKey:@"w"] floatValue],
-                                 [[[dict objectForKey:@"bounds"] objectForKey:@"h"] floatValue]);
-        self.offset = CGPointMake([[[dict objectForKey:@"offset"] objectForKey:@"x"] floatValue],
-                                  [[[dict objectForKey:@"offset"] objectForKey:@"y"] floatValue]);
+        self.bounds = CGRectMake([[[dict objectForKey:@"bounds"] objectForKey:@"x"] floatValue]/2,
+                                 [[[dict objectForKey:@"bounds"] objectForKey:@"y"] floatValue]/2,
+                                 [[[dict objectForKey:@"bounds"] objectForKey:@"w"] floatValue]/2,
+                                 [[[dict objectForKey:@"bounds"] objectForKey:@"h"] floatValue]/2);
+        self.offset = CGPointMake([[[dict objectForKey:@"bounds"] objectForKey:@"x"] floatValue]/2,
+                                  [[[dict objectForKey:@"bounds"] objectForKey:@"y"] floatValue]/2);
         self.scale = CGSizeMake([[[dict objectForKey:@"scale"] objectForKey:@"x"] floatValue],
                                 [[[dict objectForKey:@"scale"] objectForKey:@"y"] floatValue]);
         self.zIndex = [[dict objectForKey:@"zIndex"] floatValue];

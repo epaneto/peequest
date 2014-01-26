@@ -16,6 +16,7 @@ typedef enum {
 @interface PQBaseObstacle : NSObject
 
 @property (nonatomic, strong) NSString *assestName;
+@property (nonatomic, strong) SPSprite *container;
 
 @property (nonatomic, assign) CGRect bounds;
 @property (nonatomic, assign) CGPoint offset;
