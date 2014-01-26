@@ -14,12 +14,14 @@
 #import "PQBaseUI.h"
 #import "PQGameplayUI.h"
 #import "SPAVSoundChannel.h"
+#import "PQWinScene.h"
 
 @interface PQGame()
 {
     BOOL _soundMuted;
     SPSound* trackSound;
     SPSoundChannel *trackSoundChannel;
+    PQWinScene *winnerScreen;
     int _state;
 }
 @property PQGameController * game;
@@ -73,6 +75,11 @@ static PQGame *_sharedInstance = nil;
         return;
     }
     
+    if(winnerScreen != NULL){
+        [winnerScreen hide];
+        winnerScreen = NULL;
+    }
+    
     NSLog(@"setState %i", state);
     _state = state;
     switch(state){
@@ -93,6 +100,15 @@ static PQGame *_sharedInstance = nil;
             
         case STATE_FINISH:
             [self setView:[PQFinishUI class]];
+            
+            if([self isWinner]){
+                if(winnerScreen == NULL){
+                    winnerScreen = [[PQWinScene alloc] init];
+                    [winnerScreen show];
+                    [self addChild:winnerScreen];
+                    [self swapChild:winnerScreen withChild:containerUI];
+                }
+            }
             [containerUI addEventListener:@selector(onStartTouch:)  atObject:self forType:SP_EVENT_TYPE_TOUCH];
             break;
             
@@ -156,7 +172,8 @@ static PQGame *_sharedInstance = nil;
 
 - (BOOL)isWinner
 {
-    return [_game playerState] == PLAYER_STATE_WIN;
+//    return [_game playerState] == PLAYER_STATE_WIN;
+    return YES;
 }
 
 -(int)state
