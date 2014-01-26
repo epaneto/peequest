@@ -18,7 +18,6 @@
 		543CE6FC1894B09D0087D1FD /* sound-of.caf in Resources */ = {isa = PBXBuildFile; fileRef = 543CE6EC1894B09D0087D1FD /* sound-of.caf */; };
 		543CE6FD1894B09D0087D1FD /* sound-on.caf in Resources */ = {isa = PBXBuildFile; fileRef = 543CE6ED1894B09D0087D1FD /* sound-on.caf */; };
 		543CE6FE1894B09D0087D1FD /* thunder.caf in Resources */ = {isa = PBXBuildFile; fileRef = 543CE6EE1894B09D0087D1FD /* thunder.caf */; };
-		543CE6FF1894B09D0087D1FD /* track.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 543CE6EF1894B09D0087D1FD /* track.aifc */; };
 		543CE7001894B09D0087D1FD /* wind-plant.caf in Resources */ = {isa = PBXBuildFile; fileRef = 543CE6F01894B09D0087D1FD /* wind-plant.caf */; };
 		543CE7011894B09D0087D1FD /* wood1.caf in Resources */ = {isa = PBXBuildFile; fileRef = 543CE6F11894B09D0087D1FD /* wood1.caf */; };
 		543CE7021894B09D0087D1FD /* wood2.caf in Resources */ = {isa = PBXBuildFile; fileRef = 543CE6F21894B09D0087D1FD /* wood2.caf */; };
@@ -26,6 +25,7 @@
 		543CE7091894D0BE0087D1FD /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 543CE7061894D0BE0087D1FD /* Default-568h@2x.png */; };
 		543CE70A1894D0BE0087D1FD /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 543CE7071894D0BE0087D1FD /* Default.png */; };
 		543CE70B1894D0BE0087D1FD /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 543CE7081894D0BE0087D1FD /* Default@2x.png */; };
+		543CE7111895281F0087D1FD /* track.caf in Resources */ = {isa = PBXBuildFile; fileRef = 543CE710189528160087D1FD /* track.caf */; };
 		54F2AFC918942680003D25D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F2AFC818942680003D25D3 /* Foundation.framework */; };
 		54F2AFCB18942680003D25D3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F2AFCA18942680003D25D3 /* CoreGraphics.framework */; };
 		54F2AFCD18942680003D25D3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F2AFCC18942680003D25D3 /* UIKit.framework */; };
@@ -190,7 +190,6 @@
 		543CE6EC1894B09D0087D1FD /* sound-of.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sound-of.caf"; sourceTree = "<group>"; };
 		543CE6ED1894B09D0087D1FD /* sound-on.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sound-on.caf"; sourceTree = "<group>"; };
 		543CE6EE1894B09D0087D1FD /* thunder.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = thunder.caf; sourceTree = "<group>"; };
-		543CE6EF1894B09D0087D1FD /* track.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = track.aifc; sourceTree = "<group>"; };
 		543CE6F01894B09D0087D1FD /* wind-plant.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "wind-plant.caf"; sourceTree = "<group>"; };
 		543CE6F11894B09D0087D1FD /* wood1.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = wood1.caf; sourceTree = "<group>"; };
 		543CE6F21894B09D0087D1FD /* wood2.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = wood2.caf; sourceTree = "<group>"; };
@@ -199,6 +198,7 @@
 		543CE7061894D0BE0087D1FD /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		543CE7071894D0BE0087D1FD /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		543CE7081894D0BE0087D1FD /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		543CE710189528160087D1FD /* track.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = track.caf; sourceTree = "<group>"; };
 		54F2AFC518942680003D25D3 /* PeeQuest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeeQuest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54F2AFC818942680003D25D3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		54F2AFCA18942680003D25D3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -454,6 +454,7 @@
 		543CE6E21894B09D0087D1FD /* sounds */ = {
 			isa = PBXGroup;
 			children = (
+				543CE710189528160087D1FD /* track.caf */,
 				543CE6E31894B09D0087D1FD /* btn-press.caf */,
 				543CE6E41894B09D0087D1FD /* damage1.caf */,
 				543CE6E51894B09D0087D1FD /* damage2.caf */,
@@ -465,7 +466,6 @@
 				543CE6EC1894B09D0087D1FD /* sound-of.caf */,
 				543CE6ED1894B09D0087D1FD /* sound-on.caf */,
 				543CE6EE1894B09D0087D1FD /* thunder.caf */,
-				543CE6EF1894B09D0087D1FD /* track.aifc */,
 				543CE6F01894B09D0087D1FD /* wind-plant.caf */,
 				543CE6F11894B09D0087D1FD /* wood1.caf */,
 				543CE6F21894B09D0087D1FD /* wood2.caf */,
@@ -897,6 +897,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				543CE7111895281F0087D1FD /* track.caf in Resources */,
 				A316F3E31894C3D2004253F5 /* Icon.png in Resources */,
 				543CE6F51894B09D0087D1FD /* damage2.caf in Resources */,
 				A316F3DF1894A6F9004253F5 /* vaso_sombra.png in Resources */,
@@ -935,7 +936,6 @@
 				543CE7091894D0BE0087D1FD /* Default-568h@2x.png in Resources */,
 				543CE6F41894B09D0087D1FD /* damage1.caf in Resources */,
 				A316F3DD1894A6F9004253F5 /* vaso_normal.png in Resources */,
-				543CE6FF1894B09D0087D1FD /* track.aifc in Resources */,
 				54F2B1DA1894629E003D25D3 /* twitter-btn@2x.png in Resources */,
 				A316F3D31894A6F9004253F5 /* quadro_sombra.png in Resources */,
 				543CE6F61894B09D0087D1FD /* door1.caf in Resources */,
