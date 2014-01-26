@@ -159,7 +159,6 @@ typedef enum {
     [self showAssetAnimation:@"rato_2/idle_" :YES];
     
     currentAnimation = PQRatAnimationTypeIdle;
-
 }
 
 @end

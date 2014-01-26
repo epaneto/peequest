@@ -7,6 +7,12 @@
 //
 
 #import "PQBaseObstacle.h"
+#import "SHAnimatableColor.h"
+
+@interface PQBaseObstacle ()
+@property uint idleColor;
+@property uint darkColor;
+@end
 
 @implementation PQBaseObstacle
 
@@ -17,6 +23,7 @@
 @synthesize scale = _scale;
 @synthesize zIndex = _zIndex;
 @synthesize type = _type;
+
 
 - (id)initWithDict:(NSDictionary *)dict {
     self = [super init];
@@ -44,12 +51,28 @@
 
 -(void)showRain
 {
+    SPImage * image = (SPImage *)[_container childAtIndex:0];
     
+    if(image){
+        SPTween * tween = [SPTween tweenWithTarget:image time:0.4 transition:SP_TRANSITION_EASE_OUT_BOUNCE];
+        [tween animateColorWithTargetValue:_idleColor];
+        tween.repeatCount = 2;
+        tween.reverse = YES;
+        [Sparrow.juggler addObject:tween];
+    }
+
 }
 
 -(void)setup
 {
+    SPImage * image = (SPImage *)[_container childAtIndex:0];
     
+    if(image)
+    {
+        _idleColor = image.color;
+        _darkColor = 0xb49c9c;
+        image.color = _darkColor;
+    }
 }
 
 -(void)dispose

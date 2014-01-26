@@ -9,8 +9,7 @@
 
 typedef enum{
     PQPlantModeIdle,
-    PQPLantModeShadow,
-    PQPlantModePlayer
+    PQPLantModeShadow
 } PQPlantMode;
 
 #import "PQPlantController.h"
@@ -38,26 +37,36 @@ typedef enum{
     
     if(_mode == PQPlantModeIdle)
     {
-        [self showAssetAnimation:@"vaso/idle_"];
-        
-    }else if(_mode == PQPlantModePlayer){
-        [self showAssetAnimation:@"vaso/idle_"];
+        [self showAssetAnimation:@"vaso/"];
         
     }else if(_mode == PQPLantModeShadow)
     {
-        [self showShadowAnimation:@"vaso/shadow_"];
-        [self showAssetAnimation:@"vaso/idle_"];
+        [self showShadowAnimation:@"medusa/idle_"];
+        [self showAssetAnimation:@"vaso/"];
     }
+    
+    int random = rand() % 100;
+    
+    if(random > 40)
+    {
+        _mode = PQPLantModeShadow;
+    }else{
+        _mode = PQPlantModeIdle;
+    }
+    
+    NSLog(@"mode %d",_mode);
 }
 
 -(void)setup
 {
+    self.container = [SPSprite sprite];
+    
     NSString * path = [NSString stringWithFormat:@"%@.xml", self.assestName];
     
     // initialize player atlas
     _atlas = [SPTextureAtlas atlasWithContentsOfFile:path];
     
-    [self showAssetAnimation:@"vaso/idle_"];
+    [self showAssetAnimation:@"vaso/"];
     
     _mode = PQPlantModeIdle;
 }
@@ -80,6 +89,11 @@ typedef enum{
     
     _shadowView = [[SPMovieClip alloc] initWithFrames:_shadow_textures fps:31];
     _shadowView.loop = YES;
+    
+    _shadowView.scaleX = _shadowView.scaleY = 1.5;
+    _shadowView.x = 10;
+    _shadowView.y = -140;
+    
     [Sparrow.juggler addObject:_shadowView];
     [_shadowView play];
     
@@ -103,21 +117,12 @@ typedef enum{
 
 -(BOOL)checkColisionWithPlayer:(PQPlayerController *)player
 {
-    
     if(_mode == PQPlantModeIdle)
         return NO;
     
-    if(_mode == PQPlantModePlayer)
-    {
-        if([player.getBody intersectsRectangle:_assetView.bounds])
-        {
-            return YES;
-        }
-    }
-    
     if(_mode == PQPLantModeShadow)
     {
-        if([player.getShadow intersectsRectangle:_shadowView.bounds])
+        if((player.getBody.x + player.getShadow.width) - 45 > self.container.bounds.x)
         {
             return YES;
         }

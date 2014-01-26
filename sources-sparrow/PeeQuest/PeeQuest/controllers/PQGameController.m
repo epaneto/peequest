@@ -149,9 +149,12 @@
             
             [_obstaclesContainer addChild:[currentObstacle container]];
             [placedObstacles addObject:currentObstacle];
+            [currentObstacle setup];
         } else if (![placedObstacles containsObject:currentObstacle]) {
             if ([currentObstacle isKindOfClass:[PQRatController class]]) {
                 [(PQRatController *) currentObstacle setup];
+            }else if([currentObstacle isKindOfClass:[PQPlantController class]]) {
+                [(PQPlantController *) currentObstacle setup];
             }
             [[currentObstacle container] setX:currentObstacle.offset.x - levelOffset];
             [[currentObstacle container] setY:currentObstacle.offset.y];

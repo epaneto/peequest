@@ -218,6 +218,10 @@
 		E5B336EF1894874700D95FAC /* player.xml in Resources */ = {isa = PBXBuildFile; fileRef = E5B336EB1894874700D95FAC /* player.xml */; };
 		E5B336F01894874700D95FAC /* player@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5B336EC1894874700D95FAC /* player@2x.png */; };
 		E5B336F11894874700D95FAC /* player@2x.xml in Resources */ = {isa = PBXBuildFile; fileRef = E5B336ED1894874700D95FAC /* player@2x.xml */; };
+		E5BF5F57189583660009D77B /* vaso.png in Resources */ = {isa = PBXBuildFile; fileRef = E5BF5F53189583660009D77B /* vaso.png */; };
+		E5BF5F58189583660009D77B /* vaso.xml in Resources */ = {isa = PBXBuildFile; fileRef = E5BF5F54189583660009D77B /* vaso.xml */; };
+		E5BF5F59189583660009D77B /* vaso@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5BF5F55189583660009D77B /* vaso@2x.png */; };
+		E5BF5F5A189583660009D77B /* vaso@2x.xml in Resources */ = {isa = PBXBuildFile; fileRef = E5BF5F56189583660009D77B /* vaso@2x.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -530,6 +534,10 @@
 		E5B336EB1894874700D95FAC /* player.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = player.xml; sourceTree = "<group>"; };
 		E5B336EC1894874700D95FAC /* player@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player@2x.png"; sourceTree = "<group>"; };
 		E5B336ED1894874700D95FAC /* player@2x.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "player@2x.xml"; sourceTree = "<group>"; };
+		E5BF5F53189583660009D77B /* vaso.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vaso.png; sourceTree = "<group>"; };
+		E5BF5F54189583660009D77B /* vaso.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = vaso.xml; sourceTree = "<group>"; };
+		E5BF5F55189583660009D77B /* vaso@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vaso@2x.png"; sourceTree = "<group>"; };
+		E5BF5F56189583660009D77B /* vaso@2x.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "vaso@2x.xml"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -976,6 +984,10 @@
 		E5B336E91894874700D95FAC /* ss */ = {
 			isa = PBXGroup;
 			children = (
+				E5BF5F53189583660009D77B /* vaso.png */,
+				E5BF5F54189583660009D77B /* vaso.xml */,
+				E5BF5F55189583660009D77B /* vaso@2x.png */,
+				E5BF5F56189583660009D77B /* vaso@2x.xml */,
 				543CE736189567D90087D1FD /* ending_hero.png */,
 				543CE737189567D90087D1FD /* ending_hero.xml */,
 				543CE738189567D90087D1FD /* ending_hero@2x.png */,
@@ -1076,6 +1088,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				543CE73118955BA80087D1FD /* tutorial03.png in Resources */,
+				E5BF5F59189583660009D77B /* vaso@2x.png in Resources */,
 				543CE788189574E30087D1FD /* credits4.png in Resources */,
 				543CE73018955BA80087D1FD /* tutorial02@2x.png in Resources */,
 				543CE7111895281F0087D1FD /* track.caf in Resources */,
@@ -1167,12 +1180,15 @@
 				543CE783189574E30087D1FD /* credits1@2x.png in Resources */,
 				E5B336EE1894874700D95FAC /* player.png in Resources */,
 				54F2B1D51894629E003D25D3 /* pause-return-btn@2x.png in Resources */,
+				E5BF5F5A189583660009D77B /* vaso@2x.xml in Resources */,
 				A316F3C51894A6F9004253F5 /* alcapao_menino.png in Resources */,
 				543CE78E189574E30087D1FD /* credits7.png in Resources */,
+				E5BF5F57189583660009D77B /* vaso.png in Resources */,
 				A316F3D81894A6F9004253F5 /* rato_normal@2x.png in Resources */,
 				E5B336CD18942C0500D95FAC /* background@2x.png in Resources */,
 				543CE71E189552620087D1FD /* heart-active.png in Resources */,
 				543CE6FC1894B09D0087D1FD /* sound-of.caf in Resources */,
+				E5BF5F58189583660009D77B /* vaso.xml in Resources */,
 				543CE6F81894B09D0087D1FD /* medusa.caf in Resources */,
 				543CE73A189567DA0087D1FD /* ending_hero.png in Resources */,
 				543CE6FB1894B09D0087D1FD /* rat_on_wood.caf in Resources */,
