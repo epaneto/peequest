@@ -38,4 +38,8 @@
     return  self;
 }
 
+- (BOOL)checkColisionWithPlayer:(PQPlayerController *)player {
+    return NO;
+}
+
 @end

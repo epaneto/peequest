@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 Doubleleft. All rights reserved.
 //
 
+#import "PQDoorController.h"
 #import "PQBaseObstacle.h"
 #import "PQGameController.h"
 #import "PQBackgroundController.h"
@@ -98,7 +99,12 @@
     NSArray *objects = [[[dict objectForKey:@"layers"] lastObject] objectForKey:@"entities"];
     
     for (NSDictionary *currentObject in objects) {
-        PQBaseObstacle *obstacleObject = [[PQBaseObstacle alloc] initWithDict:currentObject];
+        id obstacleObject;
+        if ([[currentObject objectForKey:@"tag"] integerValue] == PQObstacleTypeDoor) {
+            obstacleObject = [[PQDoorController alloc] initWithDict:currentObject];
+        } else {
+            obstacleObject = [[PQBaseObstacle alloc] initWithDict:currentObject];
+        }
         [allObstacles addObject:obstacleObject];
     }
 }
@@ -133,13 +139,11 @@
         }
     }
     
-    SPRectangle *playerBounds = [_player bounds];
     for (PQBaseObstacle *movingObstacle in placedObstacles) {
-        if([playerBounds intersectsRectangle:movingObstacle.container.bounds]){
-            //TOOD: collision
-            //[self damage];
-        }
         [[movingObstacle container] setX:(movingObstacle.container.x - [_player getVelocity]/1.77)];
+        if ([placedObstacles indexOfObject:movingObstacle] < 2 && [movingObstacle checkColisionWithPlayer:_player]) {
+            [self complete];
+        }
     }
     
     //removing obstacles
@@ -224,13 +228,14 @@
 
 -(void)complete
 {
+    [_player stopWalk];
     playerState = PLAYER_STATE_WIN;
     [[PQGame sharedInstance] setState:STATE_FINISH];
 }
 
 - (void)updateGame:(SPEnterFrameEvent *)event
 {
-    if(_paused) return;
+    if(_paused || playerState != PLAYER_STATE_PLAYING) return;
     [_background updatePosition:[_player getVelocity]];
     if (allObstacles != nil && [allObstacles count] > 0) {
         if ([placedObstacles count] > 0) {
