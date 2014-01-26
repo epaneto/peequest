@@ -10,6 +10,9 @@
 #import "SHAnimatableColor.h"
 
 @interface PQPlayerController()
+{
+    int walkStep;
+}
 @property SPMovieClip * view;
 @property SPMovieClip * shadow_view;
 @property (nonatomic,strong) SPTexture * texture;
@@ -24,7 +27,7 @@
 //    _texture = [[SPTexture alloc] initWithContentsOfFile:@"character.png"];
 //    _view = [[SPImage alloc] initWithTexture:_texture];
     
-    _isWalking = YES;
+    _isWalking = NO;
     
     // we're using the textures from an atlas
     SPTextureAtlas *atlas = [SPTextureAtlas atlasWithContentsOfFile:@"player.xml"];
@@ -45,12 +48,20 @@
     _view.loop = YES;
     [Sparrow.juggler addObject:_view];
     [_view play];
-    
-    
+    [_view addEventListener:@selector(walkLoop) atObject:self forType:SP_EVENT_TYPE_COMPLETED];
     
     _idleColor = _view.color;
     _darkColor = 0xb49c9c;
     _view.color = _darkColor;
+}
+
+-(void)walkLoop
+{
+    if(_isWalking){
+        NSString *soundName = walkStep % 2 == 0 ? @"wood2.caf" : @"wood1.caf";
+        [[PQSoundPlayer sharedInstance] play:soundName];
+        walkStep++;
+    }
 }
 
 -(void)show:(SPSprite *)container

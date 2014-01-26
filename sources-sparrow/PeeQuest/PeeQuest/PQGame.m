@@ -136,9 +136,9 @@ static PQGame *_sharedInstance = nil;
     if(!_soundMuted){
         return;
     }
+    NSLog(@"unmute");
     _soundMuted = NO;
     [SPAudioEngine setMasterVolume:1.0];
-    [trackSoundChannel play];
 }
 
 - (BOOL)isSoundMuted
