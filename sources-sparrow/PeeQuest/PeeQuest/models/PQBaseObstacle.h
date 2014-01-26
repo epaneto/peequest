@@ -29,5 +29,6 @@ typedef enum {
 
 - (id)initWithDict:(NSDictionary *)dict;
 - (BOOL)checkColisionWithPlayer:(PQPlayerController *)player;
-
+- (void)showRain;
+-(void) setup;
 @end
