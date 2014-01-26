@@ -9,6 +9,7 @@
 #import "PQBackgroundController.h"
 #import "SHAnimatableColor.h"
 
+
 @interface PQBackgroundController()
 @property SPImage * view;
 @property (nonatomic,strong) SPTexture * texture;
@@ -40,11 +41,9 @@
 
 -(void)updatePosition:(float)speed
 {
-    _offset += (speed) * 0.001;
-//    if(_offset > 1.0){
-//        _offset = 0.0;
-//    }
-    
+    float val = speed * 0.001;
+    _offset += val >= 1.0 ? 1.0-val : val;
+
     [_view setTexCoordsWithX:  _offset y:0 ofVertex:0];
     [_view setTexCoordsWithX:1+_offset y:0 ofVertex:1];
     [_view setTexCoordsWithX:  _offset y:1 ofVertex:2];
