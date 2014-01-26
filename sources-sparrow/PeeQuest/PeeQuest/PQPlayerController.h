@@ -16,4 +16,6 @@
 -(void)showRain;
 -(void)startWalk;
 -(void)stopWalk;
+-(SPRectangle*)bounds;
+-(SPRectangle*)shadowBounds;
 @end

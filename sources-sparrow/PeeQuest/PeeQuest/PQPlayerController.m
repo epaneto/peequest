@@ -101,4 +101,15 @@
     NSLog(@"show rain");
 }
 
+-(SPRectangle*)bounds
+{
+    return _view.bounds;
+}
+
+
+-(SPRectangle*)shadowBounds
+{
+    return _shadow_view.bounds;
+}
+
 @end

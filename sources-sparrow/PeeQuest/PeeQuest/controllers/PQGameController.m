@@ -133,7 +133,11 @@
         }
     }
     
+    SPRectangle *playerBounds = [_player bounds];
     for (PQBaseObstacle *movingObstacle in placedObstacles) {
+        if([playerBounds intersectsRectangle:movingObstacle.container.bounds]){
+            //TOOD: collision
+        }
         [[movingObstacle container] setX:(movingObstacle.container.x - [_player getVelocity]/1.77)];
     }
     
