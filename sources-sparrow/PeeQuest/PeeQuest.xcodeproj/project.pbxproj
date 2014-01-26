@@ -866,6 +866,8 @@
 		E526AAA118953325005892AE /* obstacles */ = {
 			isa = PBXGroup;
 			children = (
+				A316F3E818951A7D004253F5 /* PQDoorController.h */,
+				A316F3E918951A7D004253F5 /* PQDoorController.m */,
 				E526AAA21895334A005892AE /* PQPlantController.h */,
 				E526AAA31895334A005892AE /* PQPlantController.m */,
 				A316F3EE18955AC4004253F5 /* PQRatController.h */,
@@ -885,8 +887,6 @@
 				E5B336DB189433E000D95FAC /* PQPlayerController.m */,
 				543CE7031894B6140087D1FD /* PQSoundPlayer.h */,
 				543CE7041894B6140087D1FD /* PQSoundPlayer.m */,
-				A316F3E818951A7D004253F5 /* PQDoorController.h */,
-				A316F3E918951A7D004253F5 /* PQDoorController.m */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
