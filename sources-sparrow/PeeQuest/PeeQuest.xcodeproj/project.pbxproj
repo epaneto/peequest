@@ -149,6 +149,10 @@
 		A316F3E31894C3D2004253F5 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A316F3E11894C3D2004253F5 /* Icon.png */; };
 		A316F3E41894C3D2004253F5 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A316F3E21894C3D2004253F5 /* Icon@2x.png */; };
 		A3EB2CE918943ED3001CEEC1 /* peeQuest.json in Resources */ = {isa = PBXBuildFile; fileRef = A3EB2CE818943ED3001CEEC1 /* peeQuest.json */; };
+		E526AA9D18951AD7005892AE /* player_shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = E526AA9918951AD7005892AE /* player_shadow.png */; };
+		E526AA9E18951AD7005892AE /* player_shadow.xml in Resources */ = {isa = PBXBuildFile; fileRef = E526AA9A18951AD7005892AE /* player_shadow.xml */; };
+		E526AA9F18951AD7005892AE /* player_shadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E526AA9B18951AD7005892AE /* player_shadow@2x.png */; };
+		E526AAA018951AD7005892AE /* player_shadow@2x.xml in Resources */ = {isa = PBXBuildFile; fileRef = E526AA9C18951AD7005892AE /* player_shadow@2x.xml */; };
 		E5B336CC18942C0500D95FAC /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = E5B336CA18942C0500D95FAC /* background.png */; };
 		E5B336CD18942C0500D95FAC /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5B336CB18942C0500D95FAC /* background@2x.png */; };
 		E5B336D118942C7000D95FAC /* PQBackgroundController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B336D018942C7000D95FAC /* PQBackgroundController.m */; };
@@ -393,6 +397,10 @@
 		A316F3E11894C3D2004253F5 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = assets/Icon.png; sourceTree = SOURCE_ROOT; };
 		A316F3E21894C3D2004253F5 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "assets/Icon@2x.png"; sourceTree = SOURCE_ROOT; };
 		A3EB2CE818943ED3001CEEC1 /* peeQuest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = peeQuest.json; sourceTree = "<group>"; };
+		E526AA9918951AD7005892AE /* player_shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player_shadow.png; sourceTree = "<group>"; };
+		E526AA9A18951AD7005892AE /* player_shadow.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = player_shadow.xml; sourceTree = "<group>"; };
+		E526AA9B18951AD7005892AE /* player_shadow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_shadow@2x.png"; sourceTree = "<group>"; };
+		E526AA9C18951AD7005892AE /* player_shadow@2x.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "player_shadow@2x.xml"; sourceTree = "<group>"; };
 		E5B336CA18942C0500D95FAC /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		E5B336CB18942C0500D95FAC /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
 		E5B336CF18942C7000D95FAC /* PQBackgroundController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PQBackgroundController.h; path = controllers/PQBackgroundController.h; sourceTree = "<group>"; };
@@ -798,6 +806,10 @@
 		E5B336E91894874700D95FAC /* ss */ = {
 			isa = PBXGroup;
 			children = (
+				E526AA9918951AD7005892AE /* player_shadow.png */,
+				E526AA9A18951AD7005892AE /* player_shadow.xml */,
+				E526AA9B18951AD7005892AE /* player_shadow@2x.png */,
+				E526AA9C18951AD7005892AE /* player_shadow@2x.xml */,
 				E5B336EA1894874700D95FAC /* player.png */,
 				E5B336EB1894874700D95FAC /* player.xml */,
 				E5B336EC1894874700D95FAC /* player@2x.png */,
@@ -914,7 +926,9 @@
 				E5B336CC18942C0500D95FAC /* background.png in Resources */,
 				A316F3DE1894A6F9004253F5 /* vaso_normal@2x.png in Resources */,
 				A316F3E41894C3D2004253F5 /* Icon@2x.png in Resources */,
+				E526AA9F18951AD7005892AE /* player_shadow@2x.png in Resources */,
 				E5B336EF1894874700D95FAC /* player.xml in Resources */,
+				E526AAA018951AD7005892AE /* player_shadow@2x.xml in Resources */,
 				A316F3E01894A6F9004253F5 /* vaso_sombra@2x.png in Resources */,
 				54F2B1D91894629E003D25D3 /* taptostart-title@2x.png in Resources */,
 				A316F3CF1894A6F9004253F5 /* porta.png in Resources */,
@@ -947,6 +961,7 @@
 				543CE6F81894B09D0087D1FD /* medusa.caf in Resources */,
 				543CE6FB1894B09D0087D1FD /* rat_on_wood.caf in Resources */,
 				A316F3C61894A6F9004253F5 /* alcapao_menino@2x.png in Resources */,
+				E526AA9D18951AD7005892AE /* player_shadow.png in Resources */,
 				E5B336F11894874700D95FAC /* player@2x.xml in Resources */,
 				A316F3D51894A6F9004253F5 /* rato_menino.png in Resources */,
 				543CE7001894B09D0087D1FD /* wind-plant.caf in Resources */,
@@ -954,6 +969,7 @@
 				54F2B1DB1894629E003D25D3 /* win-title@2x.png in Resources */,
 				54F2AFDB18942680003D25D3 /* Images.xcassets in Resources */,
 				A316F3CB1894A6F9004253F5 /* janela_normal.png in Resources */,
+				E526AA9E18951AD7005892AE /* player_shadow.xml in Resources */,
 				A316F3CA1894A6F9004253F5 /* barata@2x.png in Resources */,
 				543CE6F71894B09D0087D1FD /* door2.caf in Resources */,
 			);

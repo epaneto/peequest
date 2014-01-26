@@ -18,4 +18,6 @@
 -(void)stopWalk;
 -(SPRectangle*)bounds;
 -(SPRectangle*)shadowBounds;
+-(SPMovieClip * )getShadow;
+-(SPMovieClip * )getBody;
 @end
