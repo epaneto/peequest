@@ -101,7 +101,7 @@ static PQGame *_sharedInstance = nil;
     [containerUI removeEventListener:@selector(onStartTouch:)  atObject:self forType:SP_EVENT_TYPE_TOUCH];
 
     
-    NSLog(@"setState %i", state);
+//    NSLog(@"setState %i", state);
     _state = state;
     switch(state){
         case STATE_HOME:

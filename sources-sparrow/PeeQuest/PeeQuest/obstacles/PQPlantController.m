@@ -55,7 +55,7 @@ typedef enum{
         [self showAssetAnimation:@"vaso/"];
     }
 
-    NSLog(@"mode %d",_mode);
+//    NSLog(@"mode %d",_mode);
 }
 
 -(void)setup
@@ -123,7 +123,7 @@ typedef enum{
     
     if(_mode == PQPLantModeShadow)
     {
-        NSLog(@"%f %f %f",self.container.x,self.container.width/2, player.getBody.x);
+//        NSLog(@"%f %f %f",self.container.x,self.container.width/2, player.getBody.x);
         if(self.container.x + 70 < player.getBody.x)
             return NO;
         

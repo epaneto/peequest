@@ -25,4 +25,8 @@
     return NO;
 }
 
+- (void)setup {
+    self.container = [SPSprite sprite];
+}
+
 @end

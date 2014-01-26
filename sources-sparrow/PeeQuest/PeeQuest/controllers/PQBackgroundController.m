@@ -58,7 +58,7 @@
     tween.reverse = YES;
     [Sparrow.juggler addObject:tween];
     
-    NSLog(@"show rain");
+//    NSLog(@"show rain");
 }
 
 @end

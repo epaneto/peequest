@@ -190,7 +190,7 @@
 -(int)getVelocity
 {
     if(_isDamaged)
-        return -5;
+        return -10;
     else if(_isWalking)
         return 3;
     else
@@ -215,7 +215,7 @@
     tween.reverse = YES;
     [Sparrow.juggler addObject:tween];
     
-    NSLog(@"show rain");
+//    NSLog(@"show rain");
 }
 
 -(SPRectangle*)bounds

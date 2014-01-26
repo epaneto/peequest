@@ -1,9 +1,9 @@
 {
 	"canvas": {
-		"width": 9088,
+		"width": 7000,
 		"height": 640
 	},
-	"name": "peeQuest",
+	"name": "level",
 	"layers": [
 		{
 			"id": "default",
@@ -28,46 +28,107 @@
 					"zIndex": 0,
 					"type": 0
 				},
-                {
-                    "name": "rato",
-                    "bounds": {
-                         "x": 1260,
-                         "y": 370,
-                         "w": 0,
-                         "h": 0
-                    },
-                    "offset": {
-                         "x": 0,
-                         "y": 0
-                         },
-                         "tag": 2,
-                         "scale": {
-                         "x": 1,
-                         "y": 1
-                         },
-                         "zIndex": 0,
-                         "type": 2
-                         },
-                         {
-                         "name": "vaso",
-                         "bounds": {
-                         "x": 2100,
-                         "y": 370,
-                         "w": 0,
-                         "h": 0
-                         },
-                         "offset": {
-                         "x": 0,
-                         "y": 0
-                         },
-                         "tag": 4,
-                         "scale": {
-                         "x": 1,
-                         "y": 1
-                         },
-                         "zIndex": 0,
-                         "type": 2
-                         }				]
+				{
+					"name": "rato",
+					"bounds": {
+						"x": 1257,
+						"y": 446,
+						"w": 0,
+						"h": 0
+					},
+					"offset": {
+						"x": 0,
+						"y": 0
+					},
+					"tag": 2,
+					"scale": {
+						"x": 1,
+						"y": 1
+					},
+					"zIndex": 0,
+					"type": 2
+				},
+				{
+					"name": "vaso",
+					"bounds": {
+						"x": 2535,
+						"y": 370,
+						"w": 0,
+						"h": 0
+					},
+					"offset": {
+						"x": 0,
+						"y": 0
+					},
+					"tag": 4,
+					"scale": {
+						"x": 1,
+						"y": 1
+					},
+					"zIndex": 0,
+					"type": 4
+				},
+				{
+					"name": "rato",
+					"bounds": {
+						"x": 3583,
+						"y": 446,
+						"w": 0,
+						"h": 0
+					},
+					"offset": {
+						"x": 0,
+						"y": 0
+					},
+					"tag": 2,
+					"scale": {
+						"x": 1,
+						"y": 1
+					},
+					"zIndex": 0,
+					"type": 2
+				},
+				{
+					"name": "vaso",
+					"bounds": {
+						"x": 4980,
+						"y": 370,
+						"w": 0,
+						"h": 0
+					},
+					"offset": {
+						"x": 0,
+						"y": 0
+					},
+					"tag": 4,
+					"scale": {
+						"x": 1,
+						"y": 1
+					},
+					"zIndex": 0,
+					"type": 4
+				},
+				{
+					"name": "porta.png",
+					"bounds": {
+						"x": 6000,
+						"y": 100,
+						"w": 0,
+						"h": 0
+					},
+					"offset": {
+						"x": 0,
+						"y": 0
+					},
+					"tag": 1,
+					"scale": {
+						"x": 1,
+						"y": 1
+					},
+					"zIndex": 0,
+					"type": 1
+				}
+			]
 		}
 	]
 }

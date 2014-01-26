@@ -76,9 +76,9 @@
 
 -(void)initRainTimer
 {
-    NSLog(@"initRainTimer");
+//    NSLog(@"initRainTimer");
     int randomTime = 5.0 + arc4random() % 4;
-    NSLog(@"%i",randomTime);
+//    NSLog(@"%i",randomTime);
     if(_mainTimer != NULL){
         [_mainTimer invalidate];
     }
@@ -155,6 +155,8 @@
                 [(PQRatController *) currentObstacle setup];
             }else if([currentObstacle isKindOfClass:[PQPlantController class]]) {
                 [(PQPlantController *) currentObstacle setup];
+            } else if ([currentObstacle isKindOfClass:[PQDoorController class]]) {
+                [(PQDoorController *) currentObstacle setup];
             }
             [[currentObstacle container] setX:currentObstacle.offset.x - levelOffset];
             [[currentObstacle container] setY:currentObstacle.offset.y];

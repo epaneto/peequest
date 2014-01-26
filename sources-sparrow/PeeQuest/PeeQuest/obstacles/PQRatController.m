@@ -42,7 +42,7 @@ typedef enum {
         return NO;
     }
     
-    if(self.container.x + 70 < player.getBody.x)
+    if(self.container.x + 60 < player.getBody.x)
         return NO;
     
     if (currentAnimation == PQRatAnimationTypeIdle && (player.getBody.x + player.getBody.width) - 45 > self.container.bounds.x) {
@@ -66,7 +66,7 @@ typedef enum {
 
             break;
         case PQRatAnimationTypeShadow:
-            if ((rand() % 1000) % 2 == 0) {
+            if ((rand() % 100) < 65) {
                 currentAnimation = PQRatAnimationTypeGoing;
                 [self showAssetAnimation:@"rato_2/correndo_": YES];
                 [self leaveStage];
