@@ -82,6 +82,8 @@
 		543CE7AE18959D1C0087D1FD /* tutorial03-568@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 543CE7A918959D1C0087D1FD /* tutorial03-568@2x.png */; };
 		543CE7AF18959D1C0087D1FD /* tutorial04-568@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 543CE7AA18959D1C0087D1FD /* tutorial04-568@2x.png */; };
 		543CE7B018959D1C0087D1FD /* tutorial05-568@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 543CE7AB18959D1C0087D1FD /* tutorial05-568@2x.png */; };
+		543CE7B318959E250087D1FD /* retry-btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 543CE7B118959E250087D1FD /* retry-btn@2x.png */; };
+		543CE7B418959E250087D1FD /* retry.png in Resources */ = {isa = PBXBuildFile; fileRef = 543CE7B218959E250087D1FD /* retry.png */; };
 		54F2AFC918942680003D25D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F2AFC818942680003D25D3 /* Foundation.framework */; };
 		54F2AFCB18942680003D25D3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F2AFCA18942680003D25D3 /* CoreGraphics.framework */; };
 		54F2AFCD18942680003D25D3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F2AFCC18942680003D25D3 /* UIKit.framework */; };
@@ -326,6 +328,8 @@
 		543CE7A918959D1C0087D1FD /* tutorial03-568@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tutorial03-568@2x.png"; sourceTree = "<group>"; };
 		543CE7AA18959D1C0087D1FD /* tutorial04-568@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tutorial04-568@2x.png"; sourceTree = "<group>"; };
 		543CE7AB18959D1C0087D1FD /* tutorial05-568@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tutorial05-568@2x.png"; sourceTree = "<group>"; };
+		543CE7B118959E250087D1FD /* retry-btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "retry-btn@2x.png"; sourceTree = "<group>"; };
+		543CE7B218959E250087D1FD /* retry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = retry.png; sourceTree = "<group>"; };
 		54F2AFC518942680003D25D3 /* PeeQuest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeeQuest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54F2AFC818942680003D25D3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		54F2AFCA18942680003D25D3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -881,6 +885,8 @@
 			children = (
 				543CE7A718959D1C0087D1FD /* tutorial01-568@2x.png */,
 				543CE7A818959D1C0087D1FD /* tutorial02-568@2x.png */,
+				543CE7B118959E250087D1FD /* retry-btn@2x.png */,
+				543CE7B218959E250087D1FD /* retry.png */,
 				543CE7A918959D1C0087D1FD /* tutorial03-568@2x.png */,
 				543CE7AA18959D1C0087D1FD /* tutorial04-568@2x.png */,
 				543CE7AB18959D1C0087D1FD /* tutorial05-568@2x.png */,
@@ -1218,6 +1224,7 @@
 				543CE70A1894D0BE0087D1FD /* Default.png in Resources */,
 				543CE72F18955BA80087D1FD /* tutorial02.png in Resources */,
 				E5C3D765189589880046CFA2 /* vaso@2x.png in Resources */,
+				543CE7B318959E250087D1FD /* retry-btn@2x.png in Resources */,
 				543CE6FD1894B09D0087D1FD /* sound-on.caf in Resources */,
 				54F2B1D41894629E003D25D3 /* pause-retry-btn@2x.png in Resources */,
 				543CE79E18957FFE0087D1FD /* logo.xml in Resources */,
@@ -1225,6 +1232,7 @@
 				E5B336EE1894874700D95FAC /* player.png in Resources */,
 				54F2B1D51894629E003D25D3 /* pause-return-btn@2x.png in Resources */,
 				543CE7A018957FFE0087D1FD /* logo@2x.xml in Resources */,
+				543CE7B418959E250087D1FD /* retry.png in Resources */,
 				A316F3C51894A6F9004253F5 /* alcapao_menino.png in Resources */,
 				543CE78E189574E30087D1FD /* credits7.png in Resources */,
 				A316F3D81894A6F9004253F5 /* rato_normal@2x.png in Resources */,

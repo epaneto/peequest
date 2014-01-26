@@ -14,6 +14,7 @@
     SPImage *title;
     SPButton *facebookButton;
     SPButton *twitterButton;
+    SPButton *retryButton;
     SPSprite *buttons;
     SPQuad *hitArea;
     
@@ -65,9 +66,32 @@
     }
     
     
-    buttons.x = Sparrow.stage.width / 2 - buttons.width / 2;
-    buttons.y = Sparrow.stage.height - buttons.height - (winner ? 30 : 50);
+    if(retryButton == NULL){
+        SPTexture *retryTexture = [[SPTexture alloc] initWithContentsOfFile:@"retry-btn.png"];
+        retryButton = [[SPButton alloc] initWithUpState:retryTexture];
+        retryButton.x = twitterButton.x + twitterButton.width + 20;
+        
+        [retryButton addEventListener:@selector(retry:) atObject:self forType:SP_EVENT_TYPE_TOUCH];
+        [buttons addChild:retryButton];
+    }
     
+    
+    buttons.x = Sparrow.stage.width / 2 - buttons.width / 2;
+    buttons.y = Sparrow.stage.height - buttons.height - (winner ? 30 : 150);
+    
+}
+
+-(void)retry:(SPTouchEvent*)event
+{
+    SPButton *button = (SPButton*)event.currentTarget;
+    SPTouch *touch = [[event touchesWithTarget:self andPhase:SPTouchPhaseBegan] anyObject];
+    
+    NSSet *touches = [event touchesWithTarget:self];
+    if (touches.count) [event stopPropagation];
+    
+    if([touch phase] == SPTouchPhaseBegan && button.isDown){
+        [[PQGame sharedInstance] setState:STATE_RESTART];
+    }
 }
 
 -(void)share:(SPTouchEvent*)event
