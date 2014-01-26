@@ -166,6 +166,7 @@
 		A316F3E31894C3D2004253F5 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A316F3E11894C3D2004253F5 /* Icon.png */; };
 		A316F3E41894C3D2004253F5 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A316F3E21894C3D2004253F5 /* Icon@2x.png */; };
 		A316F3EA18951A7D004253F5 /* PQDoorController.m in Sources */ = {isa = PBXBuildFile; fileRef = A316F3E918951A7D004253F5 /* PQDoorController.m */; };
+		A316F3F018955AC4004253F5 /* PQRatController.m in Sources */ = {isa = PBXBuildFile; fileRef = A316F3EF18955AC4004253F5 /* PQRatController.m */; };
 		A3EB2CE918943ED3001CEEC1 /* peeQuest.json in Resources */ = {isa = PBXBuildFile; fileRef = A3EB2CE818943ED3001CEEC1 /* peeQuest.json */; };
 		E526AA9D18951AD7005892AE /* player_shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = E526AA9918951AD7005892AE /* player_shadow.png */; };
 		E526AA9E18951AD7005892AE /* player_shadow.xml in Resources */ = {isa = PBXBuildFile; fileRef = E526AA9A18951AD7005892AE /* player_shadow.xml */; };
@@ -435,6 +436,8 @@
 		A316F3E21894C3D2004253F5 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "assets/Icon@2x.png"; sourceTree = SOURCE_ROOT; };
 		A316F3E818951A7D004253F5 /* PQDoorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PQDoorController.h; path = controllers/PQDoorController.h; sourceTree = "<group>"; };
 		A316F3E918951A7D004253F5 /* PQDoorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PQDoorController.m; path = controllers/PQDoorController.m; sourceTree = "<group>"; };
+		A316F3EE18955AC4004253F5 /* PQRatController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PQRatController.h; path = obstacles/PQRatController.h; sourceTree = "<group>"; };
+		A316F3EF18955AC4004253F5 /* PQRatController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PQRatController.m; path = obstacles/PQRatController.m; sourceTree = "<group>"; };
 		A3EB2CE818943ED3001CEEC1 /* peeQuest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = peeQuest.json; sourceTree = "<group>"; };
 		E526AA9918951AD7005892AE /* player_shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player_shadow.png; sourceTree = "<group>"; };
 		E526AA9A18951AD7005892AE /* player_shadow.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = player_shadow.xml; sourceTree = "<group>"; };
@@ -844,6 +847,8 @@
 			children = (
 				E526AAA21895334A005892AE /* PQPlantController.h */,
 				E526AAA31895334A005892AE /* PQPlantController.m */,
+				A316F3EE18955AC4004253F5 /* PQRatController.h */,
+				A316F3EF18955AC4004253F5 /* PQRatController.m */,
 			);
 			name = obstacles;
 			sourceTree = "<group>";
@@ -1126,6 +1131,7 @@
 				54F2B13C18942731003D25D3 /* SPOpenGL.m in Sources */,
 				54F2B1BE18945BFB003D25D3 /* PQFinishUI.m in Sources */,
 				54F2B12B18942731003D25D3 /* SPBitmapFont.m in Sources */,
+				A316F3F018955AC4004253F5 /* PQRatController.m in Sources */,
 				54F2B15718942731003D25D3 /* SPURLConnection.m in Sources */,
 				54F2B14C18942731003D25D3 /* SPStatsDisplay.m in Sources */,
 				54F2B15918942731003D25D3 /* SPVertexData.m in Sources */,
@@ -1268,7 +1274,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Gabriel Pacheco (87TNYHMEF8)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PeeQuest/PeeQuest-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
@@ -1279,7 +1285,7 @@
 				INFOPLIST_FILE = "PeeQuest/PeeQuest-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "EAE62E39-718C-4CCD-A950-277ED8EEF3F3";
+				PROVISIONING_PROFILE = "7458011B-A7CB-4CCF-86AE-5F8F92743EF3";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1300,7 +1306,7 @@
 				INFOPLIST_FILE = "PeeQuest/PeeQuest-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "EAE62E39-718C-4CCD-A950-277ED8EEF3F3";
+				PROVISIONING_PROFILE = "7458011B-A7CB-4CCF-86AE-5F8F92743EF3";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
