@@ -55,9 +55,10 @@ typedef enum {
     
     switch (currentAnimation) {
         case PQRatAnimationTypeIdle:
+            [rat setY:self.bounds.origin.y];
             currentAnimation = PQRatAnimationTypeShadow;
-            [self showAssetAnimation:@"rato_2/levantando_" :NO];
             [self showShadowAnimation:@"sombra/" :YES];
+            [self showAssetAnimation:@"rato_2/levantando_" :NO];
 
             break;
         case PQRatAnimationTypeShadow:
@@ -71,7 +72,8 @@ typedef enum {
             }
             break;
         case PQRatAnimationTypeGoing: {
-            currentAnimation = PQRatAnimationTypeComing;
+            currentAnimation = PQRatAnimationTypeIdle;
+            [rat setY:self.bounds.origin.y];
             [self showAssetAnimation:@"rato_2/idle_": YES];
             break;
         }
@@ -108,6 +110,11 @@ typedef enum {
     [Sparrow.juggler addObject:shadow];
     [shadow play];
     
+    [shadow setScaleX:1.3];
+    [shadow setScaleY:1.3];
+    [shadow setY:shadow.y - (97 * 1.3)];
+    [shadow setX:shadow.x - (36 * 1.3)];
+    
     [self.container addChild:shadow];
 }
 
@@ -136,10 +143,9 @@ typedef enum {
 
 -(void)leaveStage
 {
-    SPTween * tween = [SPTween tweenWithTarget:rat time:0.4];
-    [tween moveToX:rat.x y:rat.y + 200];
+    SPTween * tween = [SPTween tweenWithTarget:rat time:1.6];
+    [tween moveToX:rat.x y:rat.y + 150];
     [Sparrow.juggler addObject:tween];
-
 }
 
 - (void)setup {
