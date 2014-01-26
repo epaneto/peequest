@@ -21,6 +21,7 @@
         steps = [[NSMutableArray alloc] init];
         [steps addObject:[[SPImage alloc] initWithContentsOfFile:@"tutorial01.png"]];
         [steps addObject:[[SPImage alloc] initWithContentsOfFile:@"tutorial02.png"]];
+        [steps addObject:[[SPImage alloc] initWithContentsOfFile:@"tutorial05.png"]];
         [steps addObject:[[SPImage alloc] initWithContentsOfFile:@"tutorial03.png"]];
         [steps addObject:[[SPImage alloc] initWithContentsOfFile:@"tutorial04.png"]];
     }
@@ -29,6 +30,7 @@
     [self update];
     [self performSelector:@selector(next) withObject:self afterDelay:4.0];
     [self performSelector:@selector(next) withObject:self afterDelay:7.0];
+    [self performSelector:@selector(next) withObject:self afterDelay:10.0];
     
     [self setTouchable:NO];
     

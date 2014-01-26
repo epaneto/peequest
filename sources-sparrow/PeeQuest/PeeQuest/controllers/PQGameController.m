@@ -253,8 +253,8 @@
     if (touch && touch.globalY > 100)
     {
         if(tutorial != NULL){
-            if([tutorial step] >= 2){
-                if([tutorial step] == 3){
+            if([tutorial step] >= 3){
+                if([tutorial step] == 4){
                     [tutorial hide];
                     tutorial = NULL;
                     [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"tutorialWatched"];
