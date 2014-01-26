@@ -213,9 +213,12 @@
     lifes--;
     if(lifes <= 0){
         lifes = 0;
+        [[PQSoundPlayer sharedInstance] play:@"pee.caf"];
         playerState = PLAYER_STATE_LOSE;
         [[PQGame sharedInstance] setState:STATE_FINISH];
-
+    }else{
+        NSString *damageSound = arc4random() * 2.0 < 1.0 ? @"damage1.caf" : @"damage2.caf";
+        [[PQSoundPlayer sharedInstance] play:damageSound];
     }
 }
 

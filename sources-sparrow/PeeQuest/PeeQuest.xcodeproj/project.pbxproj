@@ -24,6 +24,9 @@
 		543CE7011894B09D0087D1FD /* wood1.caf in Resources */ = {isa = PBXBuildFile; fileRef = 543CE6F11894B09D0087D1FD /* wood1.caf */; };
 		543CE7021894B09D0087D1FD /* wood2.caf in Resources */ = {isa = PBXBuildFile; fileRef = 543CE6F21894B09D0087D1FD /* wood2.caf */; };
 		543CE7051894B6140087D1FD /* PQSoundPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 543CE7041894B6140087D1FD /* PQSoundPlayer.m */; };
+		543CE7091894D0BE0087D1FD /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 543CE7061894D0BE0087D1FD /* Default-568h@2x.png */; };
+		543CE70A1894D0BE0087D1FD /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 543CE7071894D0BE0087D1FD /* Default.png */; };
+		543CE70B1894D0BE0087D1FD /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 543CE7081894D0BE0087D1FD /* Default@2x.png */; };
 		54F2AFC918942680003D25D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F2AFC818942680003D25D3 /* Foundation.framework */; };
 		54F2AFCB18942680003D25D3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F2AFCA18942680003D25D3 /* CoreGraphics.framework */; };
 		54F2AFCD18942680003D25D3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F2AFCC18942680003D25D3 /* UIKit.framework */; };
@@ -191,6 +194,9 @@
 		543CE6F21894B09D0087D1FD /* wood2.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = wood2.caf; sourceTree = "<group>"; };
 		543CE7031894B6140087D1FD /* PQSoundPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PQSoundPlayer.h; path = controllers/PQSoundPlayer.h; sourceTree = "<group>"; };
 		543CE7041894B6140087D1FD /* PQSoundPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PQSoundPlayer.m; path = controllers/PQSoundPlayer.m; sourceTree = "<group>"; };
+		543CE7061894D0BE0087D1FD /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		543CE7071894D0BE0087D1FD /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		543CE7081894D0BE0087D1FD /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		54F2AFC518942680003D25D3 /* PeeQuest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeeQuest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54F2AFC818942680003D25D3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		54F2AFCA18942680003D25D3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -683,6 +689,9 @@
 		54F2B16B18942941003D25D3 /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				543CE7061894D0BE0087D1FD /* Default-568h@2x.png */,
+				543CE7071894D0BE0087D1FD /* Default.png */,
+				543CE7081894D0BE0087D1FD /* Default@2x.png */,
 				A316F3A81894A6F9004253F5 /* Obstacles */,
 				E5B336E91894874700D95FAC /* ss */,
 				A3EB2CE818943ED3001CEEC1 /* peeQuest.json */,
@@ -912,6 +921,7 @@
 				A316F3E01894A6F9004253F5 /* vaso_sombra@2x.png in Resources */,
 				54F2B1D91894629E003D25D3 /* taptostart-title@2x.png in Resources */,
 				A316F3CF1894A6F9004253F5 /* porta.png in Resources */,
+				543CE7091894D0BE0087D1FD /* Default-568h@2x.png in Resources */,
 				543CE6F41894B09D0087D1FD /* damage1.caf in Resources */,
 				A316F3DD1894A6F9004253F5 /* vaso_normal.png in Resources */,
 				543CE6FF1894B09D0087D1FD /* track.aifc in Resources */,
@@ -926,8 +936,10 @@
 				54F2B1CF1894629E003D25D3 /* facebook-btn@2x.png in Resources */,
 				A316F3DC1894A6F9004253F5 /* vaso_menino@2x.png in Resources */,
 				54F2B1D11894629E003D25D3 /* logo@2x.png in Resources */,
+				543CE70B1894D0BE0087D1FD /* Default@2x.png in Resources */,
 				A3EB2CE918943ED3001CEEC1 /* peeQuest.json in Resources */,
 				A316F3DB1894A6F9004253F5 /* vaso_menino.png in Resources */,
+				543CE70A1894D0BE0087D1FD /* Default.png in Resources */,
 				543CE6FD1894B09D0087D1FD /* sound-on.caf in Resources */,
 				54F2B1D41894629E003D25D3 /* pause-retry-btn@2x.png in Resources */,
 				E5B336EE1894874700D95FAC /* player.png in Resources */,
@@ -1153,7 +1165,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1175,7 +1186,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
