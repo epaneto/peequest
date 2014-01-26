@@ -23,6 +23,7 @@
     SPSound* trackSound;
     SPSoundChannel *trackSoundChannel;
     PQWinScene *winnerScreen;
+    NSString *currentTrack;
     int _state;
 }
 @property PQGameController * game;
@@ -53,11 +54,6 @@ static PQGame *_sharedInstance = nil;
     [SPAudioEngine start];
     _soundMuted = NO;
     
-    trackSound = [[SPSound alloc] initWithContentsOfFile:@"track.caf"];
-    trackSoundChannel = [trackSound createChannel];
-    trackSoundChannel.loop = YES;
-    [trackSoundChannel play];
-    
     container = [SPSprite sprite];
     [self addChild:container];
     
@@ -68,6 +64,26 @@ static PQGame *_sharedInstance = nil;
     [_game setup:container];
     
     [self setState:STATE_HOME];
+}
+
+- (void)playTrack:(NSString*)identifier
+{
+    if([identifier isEqualToString:currentTrack]){
+        return;
+    }
+    
+    currentTrack = identifier;
+    if(trackSound != NULL){
+        [trackSoundChannel stop];
+        trackSoundChannel = NULL;
+        trackSound = NULL;
+    }
+    
+    trackSound = [[SPSound alloc] initWithContentsOfFile:identifier];
+    trackSoundChannel = [trackSound createChannel];
+    trackSoundChannel.loop = YES;
+    [trackSoundChannel play];
+    
 }
 
 - (void)setState:(int)state
@@ -89,11 +105,13 @@ static PQGame *_sharedInstance = nil;
     _state = state;
     switch(state){
         case STATE_HOME:
+            [self playTrack:@"track-intro.caf"];
             [self setView:[PQHomeUI class]];
             [containerUI addEventListener:@selector(onStartTouch:)  atObject:self forType:SP_EVENT_TYPE_TOUCH];
             break;
             
         case STATE_PLAY:
+            [self playTrack:@"track.caf"];
             [self setView:[PQGameplayUI class]];
             [_game resume];
             break;
@@ -104,6 +122,7 @@ static PQGame *_sharedInstance = nil;
             break;
             
         case STATE_FINISH:
+            [self playTrack:@"track-finish.caf"];
             [self setView:[PQFinishUI class]];
             
             if([self isWinner]){

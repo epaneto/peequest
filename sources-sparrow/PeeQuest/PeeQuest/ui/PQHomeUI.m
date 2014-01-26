@@ -11,24 +11,42 @@
 
 @implementation PQHomeUI
 {
-    SPImage *logo;
+    SPMovieClip *logo;
     SPImage *tapToStart;
     SPButton *creditsButton;
+    SPTextureAtlas* logoAtlas;
+    NSArray *textures;
 }
 
 -(void)build
 {
     if(logo == NULL){
-        logo = [[SPImage alloc] initWithContentsOfFile:@"logo.png"];
+        
+        logoAtlas = [[SPTextureAtlas alloc] initWithContentsOfFile:@"logo.xml"];
+        textures = [logoAtlas texturesStartingWith:@"logo/intro_"];
+        
+        logo = [[SPMovieClip alloc] initWithFrames:textures fps:30];
+        logo.loop = NO;
         logo.x = Sparrow.stage.width / 2 - logo.width / 2;
         logo.y = 45;
         [self addChild:logo];
+        
+        [Sparrow.juggler addObject:logo];
+        [logo play];
+
     }
     
     if(tapToStart == NULL){
         tapToStart = [[SPImage alloc] initWithContentsOfFile:@"taptostart-title.png"];
         tapToStart.x = Sparrow.stage.width / 2 - tapToStart.width / 2;
-        tapToStart.y = logo.y + logo.height + 10;
+        tapToStart.y = logo.y + logo.height + 20;
+        tapToStart.alpha = 0.0;
+        
+        SPTween *tapToStartTween = [SPTween tweenWithTarget:tapToStart time:0.5 transition:SP_TRANSITION_EASE_OUT];
+        [tapToStartTween setDelay:1.2];
+        [tapToStartTween fadeTo:1.0];
+        [tapToStartTween moveToX:tapToStart.x y:logo.y + logo.height + 10];
+        [Sparrow.juggler addObject:tapToStartTween];
         [self addChild:tapToStart];
     }
     
@@ -41,6 +59,7 @@
         [self addChild:creditsButton];
     }
 }
+
 
 - (void)buttonTouch:(SPTouchEvent*)event
 {
