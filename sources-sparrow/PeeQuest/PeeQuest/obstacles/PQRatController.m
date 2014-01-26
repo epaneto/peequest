@@ -41,6 +41,10 @@ typedef enum {
     if ([[[self container] bounds] x] > Sparrow.stage.width) {
         return NO;
     }
+    
+    if(self.container.x + 70 < player.getBody.x)
+        return NO;
+    
     if (currentAnimation == PQRatAnimationTypeIdle && (player.getBody.x + player.getBody.width) - 45 > self.container.bounds.x) {
         return YES;
     } else if (currentAnimation == PQRatAnimationTypeShadow && (player.getShadow.x + player.getShadow.width) - 80 > self.container.bounds.x) {
@@ -58,7 +62,7 @@ typedef enum {
             [rat setY:self.bounds.origin.y];
             currentAnimation = PQRatAnimationTypeShadow;
             [self showShadowAnimation:@"sombra/" :YES];
-            [self showAssetAnimation:@"rato_2/levantando_" :NO];
+            [self showAssetAnimation:@"rato_2/depe_" :YES];
 
             break;
         case PQRatAnimationTypeShadow:

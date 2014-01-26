@@ -77,7 +77,7 @@
 -(void)initRainTimer
 {
     NSLog(@"initRainTimer");
-    int randomTime = 2.0 + arc4random() % 5;
+    int randomTime = 5.0 + arc4random() % 4;
     NSLog(@"%i",randomTime);
     if(_mainTimer != NULL){
         [_mainTimer invalidate];

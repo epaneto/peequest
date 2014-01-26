@@ -1,121 +1,225 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
-<!-- $TexturePacker:SmartUpdate:f1cf0b6a65fce78921fa3d1245be98f0:727464e1b4cd572e8fcede1480512611:cb33f0be2b0de4caf4c1ac30edb75ebf$ -->
+<!-- $TexturePacker:SmartUpdate:d7b03aa69dd038dfc6272010d28ebf86:659b94900dd3ef968aa9a2f04d03a320:cb33f0be2b0de4caf4c1ac30edb75ebf$ -->
 <TextureAtlas imagePath="rato.png">
-    <SubTexture name="rato_2/correndo_0000" x="596" y="955" width="62" height="41" frameX="-11" frameY="-17" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/correndo_0000" x="845" y="293" width="62" height="41" frameX="-11" frameY="-17" frameWidth="568" frameHeight="320"/>
     <SubTexture name="rato_2/correndo_0001" x="324" y="413" width="64" height="41" frameX="-7" frameY="-17" frameWidth="568" frameHeight="320"/>
     <SubTexture name="rato_2/correndo_0002" x="327" y="370" width="64" height="41" frameX="-5" frameY="-17" frameWidth="568" frameHeight="320"/>
     <SubTexture name="rato_2/correndo_0003" x="327" y="326" width="64" height="42" frameX="-4" frameY="-16" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/correndo_0004" x="337" y="918" width="63" height="42" frameX="-4" frameY="-16" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/correndo_0005" x="282" y="963" width="63" height="42" frameX="-4" frameY="-16" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/correndo_0004" x="652" y="912" width="63" height="42" frameX="-4" frameY="-16" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/correndo_0005" x="587" y="912" width="63" height="42" frameX="-4" frameY="-16" frameWidth="568" frameHeight="320"/>
     <SubTexture name="rato_2/correndo_0006" x="327" y="282" width="64" height="42" frameX="-3" frameY="-16" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/correndo_0007" x="214" y="918" width="61" height="43" frameX="-4" frameY="-15" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/correndo_0008" x="107" y="921" width="56" height="44" frameX="-7" frameY="-14" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/correndo_0009" x="277" y="918" width="58" height="43" frameX="-6" frameY="-16" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/correndo_0010" x="938" y="170" width="59" height="41" frameX="-6" frameY="-18" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/correndo_0011" x="787" y="385" width="59" height="40" frameX="-6" frameY="-19" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/correndo_0012" x="917" y="213" width="59" height="40" frameX="-6" frameY="-19" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/correndo_0013" x="60" y="972" width="56" height="48" frameX="-8" frameY="-11" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/correndo_0014" x="228" y="963" width="52" height="52" frameX="-11" frameY="-6" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/correndo_0015" x="118" y="967" width="52" height="54" frameX="-11" frameY="-4" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/correndo_0007" x="464" y="916" width="61" height="43" frameX="-4" frameY="-15" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/correndo_0008" x="357" y="918" width="56" height="44" frameX="-7" frameY="-14" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/correndo_0009" x="527" y="916" width="58" height="43" frameX="-6" frameY="-16" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/correndo_0010" x="856" y="637" width="59" height="41" frameX="-6" frameY="-18" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/correndo_0011" x="845" y="680" width="59" height="40" frameX="-6" frameY="-19" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/correndo_0012" x="921" y="672" width="59" height="40" frameX="-6" frameY="-19" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/correndo_0013" x="166" y="921" width="56" height="48" frameX="-8" frameY="-11" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/correndo_0014" x="189" y="971" width="52" height="52" frameX="-11" frameY="-6" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/correndo_0015" x="674" y="956" width="52" height="54" frameX="-11" frameY="-4" frameWidth="568" frameHeight="320"/>
     <SubTexture name="rato_2/correndo_0016" x="54" y="915" width="51" height="55" frameX="-12" frameY="-3" frameWidth="568" frameHeight="320"/>
     <SubTexture name="rato_2/correndo_0017" x="1" y="915" width="51" height="55" frameX="-12" frameY="-3" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/correndo_0018" x="172" y="967" width="54" height="52" frameX="-11" frameY="-6" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/correndo_0019" x="1" y="972" width="57" height="48" frameX="-11" frameY="-10" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/correndo_0020" x="596" y="955" width="62" height="41" frameX="-11" frameY="-17" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/idle_0000" x="596" y="955" width="62" height="41" frameX="-11" frameY="-17" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/idle_0001" x="596" y="955" width="62" height="41" frameX="-11" frameY="-17" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/idle_0002" x="596" y="955" width="62" height="41" frameX="-11" frameY="-17" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/idle_0003" x="596" y="955" width="62" height="41" frameX="-11" frameY="-17" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/idle_0004" x="596" y="955" width="62" height="41" frameX="-11" frameY="-17" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/correndo_0018" x="133" y="971" width="54" height="52" frameX="-11" frameY="-6" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/correndo_0019" x="107" y="921" width="57" height="48" frameX="-11" frameY="-10" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/correndo_0020" x="845" y="293" width="62" height="41" frameX="-11" frameY="-17" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0000" x="532" y="355" width="43" height="54" frameX="-23" frameY="-4" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0001" x="532" y="299" width="43" height="54" frameX="-23" frameY="-4" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0002" x="533" y="243" width="43" height="54" frameX="-23" frameY="-4" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0003" x="532" y="299" width="43" height="54" frameX="-23" frameY="-4" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0004" x="533" y="187" width="43" height="54" frameX="-23" frameY="-4" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0005" x="795" y="239" width="42" height="53" frameX="-24" frameY="-5" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0006" x="786" y="459" width="42" height="52" frameX="-24" frameY="-6" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0007" x="786" y="405" width="42" height="52" frameX="-24" frameY="-6" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0008" x="287" y="971" width="42" height="52" frameX="-24" frameY="-6" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0009" x="268" y="918" width="42" height="51" frameX="-24" frameY="-7" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0010" x="224" y="918" width="42" height="51" frameX="-24" frameY="-7" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0011" x="89" y="972" width="42" height="51" frameX="-24" frameY="-7" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0012" x="45" y="972" width="42" height="51" frameX="-24" frameY="-7" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0013" x="45" y="972" width="42" height="51" frameX="-24" frameY="-7" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0014" x="1" y="972" width="42" height="51" frameX="-24" frameY="-7" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0015" x="224" y="918" width="42" height="51" frameX="-24" frameY="-7" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0016" x="268" y="918" width="42" height="51" frameX="-24" frameY="-7" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0017" x="224" y="918" width="42" height="51" frameX="-24" frameY="-7" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0018" x="89" y="972" width="42" height="51" frameX="-24" frameY="-7" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0019" x="45" y="972" width="42" height="51" frameX="-24" frameY="-7" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0020" x="45" y="972" width="42" height="51" frameX="-24" frameY="-7" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0021" x="1" y="972" width="42" height="51" frameX="-24" frameY="-7" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0022" x="224" y="918" width="42" height="51" frameX="-24" frameY="-7" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0023" x="268" y="918" width="42" height="51" frameX="-24" frameY="-7" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0024" x="224" y="918" width="42" height="51" frameX="-24" frameY="-7" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0025" x="89" y="972" width="42" height="51" frameX="-24" frameY="-7" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0026" x="45" y="972" width="42" height="51" frameX="-24" frameY="-7" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0027" x="45" y="972" width="42" height="51" frameX="-24" frameY="-7" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0028" x="1" y="972" width="42" height="51" frameX="-24" frameY="-7" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0029" x="224" y="918" width="42" height="51" frameX="-24" frameY="-7" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0030" x="268" y="918" width="42" height="51" frameX="-24" frameY="-7" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0031" x="224" y="918" width="42" height="51" frameX="-24" frameY="-7" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0032" x="89" y="972" width="42" height="51" frameX="-24" frameY="-7" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0033" x="45" y="972" width="42" height="51" frameX="-24" frameY="-7" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0034" x="45" y="972" width="42" height="51" frameX="-24" frameY="-7" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0035" x="1" y="972" width="42" height="51" frameX="-24" frameY="-7" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0036" x="224" y="918" width="42" height="51" frameX="-24" frameY="-7" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0037" x="268" y="918" width="42" height="51" frameX="-24" frameY="-7" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0038" x="224" y="918" width="42" height="51" frameX="-24" frameY="-7" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0039" x="89" y="972" width="42" height="51" frameX="-24" frameY="-7" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0040" x="45" y="972" width="42" height="51" frameX="-24" frameY="-7" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0041" x="45" y="972" width="42" height="51" frameX="-24" frameY="-7" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0042" x="1" y="972" width="42" height="51" frameX="-24" frameY="-7" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0043" x="1" y="972" width="42" height="51" frameX="-24" frameY="-7" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0044" x="1" y="972" width="42" height="51" frameX="-24" frameY="-7" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0045" x="1" y="972" width="42" height="51" frameX="-24" frameY="-7" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0046" x="1" y="972" width="42" height="51" frameX="-24" frameY="-7" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0047" x="1" y="972" width="42" height="51" frameX="-24" frameY="-7" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0048" x="1" y="972" width="42" height="51" frameX="-24" frameY="-7" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0049" x="1" y="972" width="42" height="51" frameX="-24" frameY="-7" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0050" x="1" y="972" width="42" height="51" frameX="-24" frameY="-7" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0051" x="982" y="555" width="41" height="52" frameX="-25" frameY="-6" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0052" x="813" y="586" width="41" height="52" frameX="-25" frameY="-6" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0053" x="795" y="184" width="42" height="53" frameX="-25" frameY="-5" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0054" x="982" y="500" width="41" height="53" frameX="-26" frameY="-5" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0055" x="771" y="306" width="41" height="53" frameX="-26" frameY="-5" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0056" x="795" y="128" width="42" height="54" frameX="-26" frameY="-4" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0057" x="728" y="306" width="41" height="54" frameX="-27" frameY="-4" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0058" x="632" y="956" width="40" height="55" frameX="-28" frameY="-3" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0059" x="589" y="956" width="41" height="55" frameX="-28" frameY="-3" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0060" x="546" y="961" width="41" height="55" frameX="-28" frameY="-3" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0061" x="503" y="961" width="41" height="55" frameX="-28" frameY="-3" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0062" x="460" y="964" width="41" height="55" frameX="-28" frameY="-3" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0063" x="460" y="964" width="41" height="55" frameX="-28" frameY="-3" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0064" x="503" y="961" width="41" height="55" frameX="-28" frameY="-3" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0065" x="417" y="964" width="41" height="55" frameX="-28" frameY="-3" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0066" x="589" y="956" width="41" height="55" frameX="-28" frameY="-3" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0067" x="546" y="961" width="41" height="55" frameX="-28" frameY="-3" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0068" x="503" y="961" width="41" height="55" frameX="-28" frameY="-3" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0069" x="460" y="964" width="41" height="55" frameX="-28" frameY="-3" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0070" x="460" y="964" width="41" height="55" frameX="-28" frameY="-3" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0071" x="503" y="961" width="41" height="55" frameX="-28" frameY="-3" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0072" x="417" y="964" width="41" height="55" frameX="-28" frameY="-3" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0073" x="589" y="956" width="41" height="55" frameX="-28" frameY="-3" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0074" x="546" y="961" width="41" height="55" frameX="-28" frameY="-3" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0075" x="503" y="961" width="41" height="55" frameX="-28" frameY="-3" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0076" x="460" y="964" width="41" height="55" frameX="-28" frameY="-3" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0077" x="460" y="964" width="41" height="55" frameX="-28" frameY="-3" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0078" x="503" y="961" width="41" height="55" frameX="-28" frameY="-3" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0079" x="417" y="964" width="41" height="55" frameX="-28" frameY="-3" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0080" x="589" y="956" width="41" height="55" frameX="-28" frameY="-3" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0081" x="546" y="961" width="41" height="55" frameX="-28" frameY="-3" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0082" x="503" y="961" width="41" height="55" frameX="-28" frameY="-3" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0083" x="460" y="964" width="41" height="55" frameX="-28" frameY="-3" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0084" x="460" y="964" width="41" height="55" frameX="-28" frameY="-3" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0085" x="503" y="961" width="41" height="55" frameX="-28" frameY="-3" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0086" x="417" y="964" width="41" height="55" frameX="-28" frameY="-3" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0087" x="417" y="964" width="41" height="55" frameX="-28" frameY="-3" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0088" x="417" y="964" width="41" height="55" frameX="-28" frameY="-3" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0089" x="417" y="964" width="41" height="55" frameX="-28" frameY="-3" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0090" x="417" y="964" width="41" height="55" frameX="-28" frameY="-3" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0091" x="417" y="964" width="41" height="55" frameX="-28" frameY="-3" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0092" x="417" y="964" width="41" height="55" frameX="-28" frameY="-3" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0093" x="417" y="964" width="41" height="55" frameX="-28" frameY="-3" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0094" x="417" y="964" width="41" height="55" frameX="-28" frameY="-3" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0095" x="417" y="964" width="41" height="55" frameX="-28" frameY="-3" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0096" x="417" y="964" width="41" height="55" frameX="-28" frameY="-3" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0097" x="417" y="964" width="41" height="55" frameX="-28" frameY="-3" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0098" x="417" y="964" width="41" height="55" frameX="-28" frameY="-3" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0099" x="417" y="964" width="41" height="55" frameX="-28" frameY="-3" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0100" x="374" y="964" width="41" height="55" frameX="-27" frameY="-3" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0101" x="331" y="968" width="41" height="55" frameX="-26" frameY="-3" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0102" x="772" y="956" width="42" height="54" frameX="-25" frameY="-4" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0103" x="685" y="294" width="41" height="54" frameX="-25" frameY="-4" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/depe_0104" x="532" y="299" width="43" height="54" frameX="-23" frameY="-4" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/idle_0000" x="845" y="293" width="62" height="41" frameX="-11" frameY="-17" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/idle_0001" x="845" y="293" width="62" height="41" frameX="-11" frameY="-17" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/idle_0002" x="845" y="293" width="62" height="41" frameX="-11" frameY="-17" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/idle_0003" x="845" y="293" width="62" height="41" frameX="-11" frameY="-17" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/idle_0004" x="845" y="293" width="62" height="41" frameX="-11" frameY="-17" frameWidth="568" frameHeight="320"/>
     <SubTexture name="rato_2/idle_0005" x="324" y="456" width="64" height="40" frameX="-11" frameY="-18" frameWidth="568" frameHeight="320"/>
     <SubTexture name="rato_2/idle_0006" x="324" y="498" width="64" height="38" frameX="-12" frameY="-20" frameWidth="568" frameHeight="320"/>
     <SubTexture name="rato_2/idle_0007" x="322" y="577" width="64" height="37" frameX="-14" frameY="-21" frameWidth="568" frameHeight="320"/>
     <SubTexture name="rato_2/idle_0008" x="357" y="209" width="65" height="35" frameX="-15" frameY="-23" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/idle_0009" x="500" y="440" width="64" height="34" frameX="-17" frameY="-24" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/idle_0010" x="500" y="440" width="64" height="34" frameX="-17" frameY="-24" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/idle_0011" x="500" y="440" width="64" height="34" frameX="-17" frameY="-24" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/idle_0012" x="500" y="440" width="64" height="34" frameX="-17" frameY="-24" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/idle_0013" x="500" y="440" width="64" height="34" frameX="-17" frameY="-24" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/idle_0014" x="500" y="440" width="64" height="34" frameX="-17" frameY="-24" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/idle_0015" x="500" y="440" width="64" height="34" frameX="-17" frameY="-24" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/idle_0016" x="877" y="128" width="63" height="34" frameX="-18" frameY="-24" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/idle_0017" x="750" y="349" width="63" height="34" frameX="-18" frameY="-24" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/idle_0018" x="809" y="128" width="62" height="35" frameX="-19" frameY="-23" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/idle_0019" x="750" y="349" width="63" height="34" frameX="-18" frameY="-24" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/idle_0020" x="685" y="349" width="63" height="34" frameX="-18" frameY="-24" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/idle_0021" x="500" y="440" width="64" height="34" frameX="-17" frameY="-24" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/idle_0022" x="500" y="440" width="64" height="34" frameX="-17" frameY="-24" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/idle_0023" x="877" y="128" width="63" height="34" frameX="-18" frameY="-24" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/idle_0024" x="750" y="349" width="63" height="34" frameX="-18" frameY="-24" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/idle_0025" x="809" y="128" width="62" height="35" frameX="-19" frameY="-23" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/idle_0026" x="750" y="349" width="63" height="34" frameX="-18" frameY="-24" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/idle_0027" x="685" y="349" width="63" height="34" frameX="-18" frameY="-24" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/idle_0028" x="500" y="440" width="64" height="34" frameX="-17" frameY="-24" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/idle_0009" x="500" y="448" width="64" height="34" frameX="-17" frameY="-24" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/idle_0010" x="500" y="448" width="64" height="34" frameX="-17" frameY="-24" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/idle_0011" x="500" y="448" width="64" height="34" frameX="-17" frameY="-24" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/idle_0012" x="500" y="448" width="64" height="34" frameX="-17" frameY="-24" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/idle_0013" x="500" y="448" width="64" height="34" frameX="-17" frameY="-24" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/idle_0014" x="500" y="448" width="64" height="34" frameX="-17" frameY="-24" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/idle_0015" x="500" y="448" width="64" height="34" frameX="-17" frameY="-24" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/idle_0016" x="921" y="164" width="63" height="34" frameX="-18" frameY="-24" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/idle_0017" x="845" y="128" width="63" height="34" frameX="-18" frameY="-24" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/idle_0018" x="500" y="484" width="62" height="35" frameX="-19" frameY="-23" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/idle_0019" x="845" y="128" width="63" height="34" frameX="-18" frameY="-24" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/idle_0020" x="921" y="128" width="63" height="34" frameX="-18" frameY="-24" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/idle_0021" x="500" y="448" width="64" height="34" frameX="-17" frameY="-24" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/idle_0022" x="500" y="448" width="64" height="34" frameX="-17" frameY="-24" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/idle_0023" x="921" y="164" width="63" height="34" frameX="-18" frameY="-24" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/idle_0024" x="845" y="128" width="63" height="34" frameX="-18" frameY="-24" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/idle_0025" x="500" y="484" width="62" height="35" frameX="-19" frameY="-23" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/idle_0026" x="845" y="128" width="63" height="34" frameX="-18" frameY="-24" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/idle_0027" x="921" y="128" width="63" height="34" frameX="-18" frameY="-24" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/idle_0028" x="500" y="448" width="64" height="34" frameX="-17" frameY="-24" frameWidth="568" frameHeight="320"/>
     <SubTexture name="rato_2/idle_0029" x="357" y="246" width="65" height="34" frameX="-16" frameY="-24" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/idle_0030" x="500" y="403" width="64" height="35" frameX="-16" frameY="-23" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/idle_0030" x="500" y="411" width="64" height="35" frameX="-16" frameY="-23" frameWidth="568" frameHeight="320"/>
     <SubTexture name="rato_2/idle_0031" x="357" y="171" width="65" height="36" frameX="-14" frameY="-22" frameWidth="568" frameHeight="320"/>
     <SubTexture name="rato_2/idle_0032" x="322" y="538" width="64" height="37" frameX="-13" frameY="-21" frameWidth="568" frameHeight="320"/>
     <SubTexture name="rato_2/idle_0033" x="357" y="130" width="65" height="39" frameX="-11" frameY="-19" frameWidth="568" frameHeight="320"/>
     <SubTexture name="rato_2/idle_0034" x="322" y="616" width="63" height="40" frameX="-12" frameY="-18" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/idle_0035" x="942" y="128" width="61" height="40" frameX="-13" frameY="-18" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/idle_0036" x="856" y="208" width="59" height="41" frameX="-14" frameY="-17" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/idle_0037" x="809" y="251" width="59" height="41" frameX="-14" frameY="-17" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/idle_0038" x="747" y="263" width="60" height="41" frameX="-13" frameY="-17" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/idle_0039" x="685" y="306" width="60" height="41" frameX="-13" frameY="-17" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/idle_0040" x="747" y="263" width="60" height="41" frameX="-13" frameY="-17" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/idle_0041" x="795" y="208" width="59" height="41" frameX="-14" frameY="-17" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/idle_0042" x="809" y="165" width="59" height="41" frameX="-14" frameY="-17" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/idle_0043" x="809" y="165" width="59" height="41" frameX="-14" frameY="-17" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/idle_0044" x="795" y="208" width="59" height="41" frameX="-14" frameY="-17" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/idle_0045" x="747" y="263" width="60" height="41" frameX="-13" frameY="-17" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/idle_0046" x="685" y="306" width="60" height="41" frameX="-13" frameY="-17" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/idle_0047" x="747" y="263" width="60" height="41" frameX="-13" frameY="-17" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/idle_0048" x="795" y="208" width="59" height="41" frameX="-14" frameY="-17" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/idle_0049" x="809" y="165" width="59" height="41" frameX="-14" frameY="-17" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/idle_0050" x="809" y="165" width="59" height="41" frameX="-14" frameY="-17" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/idle_0051" x="795" y="208" width="59" height="41" frameX="-14" frameY="-17" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/idle_0052" x="747" y="263" width="60" height="41" frameX="-13" frameY="-17" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/idle_0053" x="685" y="306" width="60" height="41" frameX="-13" frameY="-17" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/idle_0054" x="747" y="263" width="60" height="41" frameX="-13" frameY="-17" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/idle_0055" x="795" y="208" width="59" height="41" frameX="-14" frameY="-17" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/idle_0056" x="809" y="165" width="59" height="41" frameX="-14" frameY="-17" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/idle_0057" x="809" y="165" width="59" height="41" frameX="-14" frameY="-17" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/idle_0058" x="877" y="164" width="59" height="41" frameX="-14" frameY="-17" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/idle_0059" x="808" y="306" width="59" height="41" frameX="-14" frameY="-17" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/idle_0060" x="747" y="306" width="59" height="41" frameX="-14" frameY="-17" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/idle_0061" x="685" y="263" width="60" height="41" frameX="-13" frameY="-17" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/idle_0062" x="710" y="911" width="60" height="41" frameX="-13" frameY="-17" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/idle_0063" x="660" y="954" width="61" height="41" frameX="-12" frameY="-17" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/idle_0064" x="647" y="911" width="61" height="41" frameX="-12" frameY="-17" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/idle_0065" x="583" y="912" width="62" height="41" frameX="-11" frameY="-17" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/idle_0066" x="532" y="959" width="62" height="41" frameX="-11" frameY="-17" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/idle_0067" x="519" y="916" width="62" height="41" frameX="-11" frameY="-17" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/idle_0068" x="596" y="955" width="62" height="41" frameX="-11" frameY="-17" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/levantando_0000" x="596" y="955" width="62" height="41" frameX="-11" frameY="-17" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/levantando_0001" x="468" y="959" width="62" height="41" frameX="-11" frameY="-17" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/levantando_0002" x="455" y="916" width="62" height="41" frameX="-11" frameY="-17" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/levantando_0003" x="404" y="962" width="62" height="41" frameX="-11" frameY="-17" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/levantando_0004" x="500" y="476" width="62" height="41" frameX="-11" frameY="-17" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/levantando_0005" x="347" y="962" width="55" height="42" frameX="-15" frameY="-16" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/levantando_0006" x="402" y="918" width="51" height="42" frameX="-18" frameY="-15" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/levantando_0007" x="165" y="921" width="47" height="44" frameX="-21" frameY="-14" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/levantando_0008" x="533" y="243" width="43" height="48" frameX="-24" frameY="-10" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/levantando_0009" x="532" y="349" width="42" height="52" frameX="-24" frameY="-6" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/levantando_0010" x="532" y="293" width="42" height="54" frameX="-24" frameY="-4" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/levantando_0011" x="533" y="187" width="43" height="54" frameX="-23" frameY="-4" frameWidth="568" frameHeight="320"/>
-    <SubTexture name="rato_2/levantando_0012" x="533" y="131" width="43" height="54" frameX="-23" frameY="-4" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/idle_0035" x="921" y="372" width="61" height="40" frameX="-13" frameY="-18" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/idle_0036" x="921" y="629" width="59" height="41" frameX="-14" frameY="-17" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/idle_0037" x="856" y="594" width="59" height="41" frameX="-14" frameY="-17" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/idle_0038" x="845" y="465" width="60" height="41" frameX="-13" frameY="-17" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/idle_0039" x="921" y="457" width="60" height="41" frameX="-13" frameY="-17" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/idle_0040" x="845" y="422" width="60" height="41" frameX="-13" frameY="-17" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/idle_0041" x="856" y="551" width="59" height="41" frameX="-14" frameY="-17" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/idle_0042" x="856" y="508" width="59" height="41" frameX="-14" frameY="-17" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/idle_0043" x="856" y="508" width="59" height="41" frameX="-14" frameY="-17" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/idle_0044" x="856" y="551" width="59" height="41" frameX="-14" frameY="-17" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/idle_0045" x="845" y="465" width="60" height="41" frameX="-13" frameY="-17" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/idle_0046" x="921" y="457" width="60" height="41" frameX="-13" frameY="-17" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/idle_0047" x="845" y="422" width="60" height="41" frameX="-13" frameY="-17" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/idle_0048" x="856" y="551" width="59" height="41" frameX="-14" frameY="-17" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/idle_0049" x="856" y="508" width="59" height="41" frameX="-14" frameY="-17" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/idle_0050" x="856" y="508" width="59" height="41" frameX="-14" frameY="-17" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/idle_0051" x="856" y="551" width="59" height="41" frameX="-14" frameY="-17" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/idle_0052" x="845" y="465" width="60" height="41" frameX="-13" frameY="-17" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/idle_0053" x="921" y="457" width="60" height="41" frameX="-13" frameY="-17" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/idle_0054" x="845" y="422" width="60" height="41" frameX="-13" frameY="-17" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/idle_0055" x="856" y="551" width="59" height="41" frameX="-14" frameY="-17" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/idle_0056" x="856" y="508" width="59" height="41" frameX="-14" frameY="-17" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/idle_0057" x="856" y="508" width="59" height="41" frameX="-14" frameY="-17" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/idle_0058" x="921" y="586" width="59" height="41" frameX="-14" frameY="-17" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/idle_0059" x="921" y="543" width="59" height="41" frameX="-14" frameY="-17" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/idle_0060" x="921" y="500" width="59" height="41" frameX="-14" frameY="-17" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/idle_0061" x="921" y="414" width="60" height="41" frameX="-13" frameY="-17" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/idle_0062" x="845" y="379" width="60" height="41" frameX="-13" frameY="-17" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/idle_0063" x="845" y="336" width="61" height="41" frameX="-12" frameY="-17" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/idle_0064" x="921" y="329" width="61" height="41" frameX="-12" frameY="-17" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/idle_0065" x="921" y="286" width="62" height="41" frameX="-11" frameY="-17" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/idle_0066" x="845" y="250" width="62" height="41" frameX="-11" frameY="-17" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/idle_0067" x="921" y="243" width="62" height="41" frameX="-11" frameY="-17" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/idle_0068" x="845" y="293" width="62" height="41" frameX="-11" frameY="-17" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/levantando_0000" x="845" y="293" width="62" height="41" frameX="-11" frameY="-17" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/levantando_0001" x="728" y="263" width="62" height="41" frameX="-11" frameY="-17" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/levantando_0002" x="845" y="207" width="62" height="41" frameX="-11" frameY="-17" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/levantando_0003" x="921" y="200" width="62" height="41" frameX="-11" frameY="-17" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/levantando_0004" x="845" y="164" width="62" height="41" frameX="-11" frameY="-17" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/levantando_0005" x="717" y="912" width="55" height="42" frameX="-15" frameY="-16" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/levantando_0006" x="786" y="361" width="51" height="42" frameX="-18" frameY="-15" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/levantando_0007" x="415" y="918" width="47" height="44" frameX="-21" frameY="-14" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/levantando_0008" x="312" y="918" width="43" height="48" frameX="-24" frameY="-10" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/levantando_0009" x="243" y="971" width="42" height="52" frameX="-24" frameY="-6" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/levantando_0010" x="728" y="956" width="42" height="54" frameX="-24" frameY="-4" frameWidth="568" frameHeight="320"/>
+    <SubTexture name="rato_2/levantando_0011" x="533" y="131" width="43" height="54" frameX="-23" frameY="-4" frameWidth="568" frameHeight="320"/>
     <SubTexture name="sombra/0000" x="424" y="131" width="107" height="125" frameX="-60" frameY="-10" frameWidth="175" frameHeight="135"/>
     <SubTexture name="sombra/0001" x="579" y="128" width="107" height="125" frameX="-60" frameY="-10" frameWidth="175" frameHeight="135"/>
     <SubTexture name="sombra/0002" x="906" y="1" width="107" height="125" frameX="-60" frameY="-10" frameWidth="175" frameHeight="135"/>
     <SubTexture name="sombra/0003" x="797" y="1" width="107" height="125" frameX="-60" frameY="-10" frameWidth="175" frameHeight="135"/>
     <SubTexture name="sombra/0004" x="688" y="1" width="107" height="125" frameX="-60" frameY="-10" frameWidth="175" frameHeight="135"/>
     <SubTexture name="sombra/0005" x="1" y="651" width="105" height="125" frameX="-61" frameY="-10" frameWidth="175" frameHeight="135"/>
-    <SubTexture name="sombra/0006" x="739" y="771" width="104" height="125" frameX="-62" frameY="-10" frameWidth="175" frameHeight="135"/>
-    <SubTexture name="sombra/0007" x="704" y="513" width="104" height="125" frameX="-62" frameY="-10" frameWidth="175" frameHeight="135"/>
+    <SubTexture name="sombra/0006" x="738" y="770" width="104" height="125" frameX="-62" frameY="-10" frameWidth="175" frameHeight="135"/>
+    <SubTexture name="sombra/0007" x="707" y="513" width="104" height="125" frameX="-62" frameY="-10" frameWidth="175" frameHeight="135"/>
     <SubTexture name="sombra/0008" x="215" y="531" width="105" height="125" frameX="-61" frameY="-10" frameWidth="175" frameHeight="135"/>
     <SubTexture name="sombra/0009" x="740" y="640" width="103" height="125" frameX="-62" frameY="-10" frameWidth="175" frameHeight="135"/>
-    <SubTexture name="sombra/0010" x="772" y="898" width="103" height="125" frameX="-62" frameY="-10" frameWidth="175" frameHeight="135"/>
+    <SubTexture name="sombra/0010" x="816" y="897" width="103" height="125" frameX="-62" frameY="-10" frameWidth="175" frameHeight="135"/>
     <SubTexture name="sombra/0011" x="390" y="525" width="104" height="127" frameX="-61" frameY="-8" frameWidth="175" frameHeight="135"/>
     <SubTexture name="sombra/0012" x="107" y="788" width="104" height="131" frameX="-60" frameY="-4" frameWidth="175" frameHeight="135"/>
     <SubTexture name="sombra/0013" x="688" y="128" width="105" height="133" frameX="-59" frameY="-2" frameWidth="175" frameHeight="135"/>
@@ -139,16 +243,16 @@
     <SubTexture name="sombra/0031" x="213" y="788" width="104" height="128" frameX="-59" frameY="-7" frameWidth="175" frameHeight="135"/>
     <SubTexture name="sombra/0032" x="319" y="788" width="103" height="128" frameX="-60" frameY="-7" frameWidth="175" frameHeight="135"/>
     <SubTexture name="sombra/0033" x="320" y="658" width="104" height="127" frameX="-60" frameY="-8" frameWidth="175" frameHeight="135"/>
-    <SubTexture name="sombra/0034" x="576" y="385" width="103" height="127" frameX="-61" frameY="-8" frameWidth="175" frameHeight="135"/>
-    <SubTexture name="sombra/0035" x="531" y="654" width="102" height="127" frameX="-62" frameY="-8" frameWidth="175" frameHeight="135"/>
+    <SubTexture name="sombra/0034" x="529" y="783" width="103" height="127" frameX="-61" frameY="-8" frameWidth="175" frameHeight="135"/>
+    <SubTexture name="sombra/0035" x="634" y="783" width="102" height="127" frameX="-62" frameY="-8" frameWidth="175" frameHeight="135"/>
     <SubTexture name="sombra/0036" x="496" y="525" width="103" height="127" frameX="-62" frameY="-8" frameWidth="175" frameHeight="135"/>
     <SubTexture name="sombra/0037" x="426" y="654" width="103" height="127" frameX="-62" frameY="-8" frameWidth="175" frameHeight="135"/>
-    <SubTexture name="sombra/0038" x="529" y="783" width="102" height="127" frameX="-63" frameY="-8" frameWidth="175" frameHeight="135"/>
-    <SubTexture name="sombra/0039" x="601" y="514" width="101" height="127" frameX="-64" frameY="-8" frameWidth="175" frameHeight="135"/>
+    <SubTexture name="sombra/0038" x="531" y="654" width="102" height="127" frameX="-63" frameY="-8" frameWidth="175" frameHeight="135"/>
+    <SubTexture name="sombra/0039" x="577" y="385" width="101" height="127" frameX="-64" frameY="-8" frameWidth="175" frameHeight="135"/>
     <SubTexture name="sombra/0040" x="424" y="787" width="103" height="127" frameX="-63" frameY="-8" frameWidth="175" frameHeight="135"/>
-    <SubTexture name="sombra/0041" x="635" y="643" width="103" height="126" frameX="-63" frameY="-9" frameWidth="175" frameHeight="135"/>
-    <SubTexture name="sombra/0042" x="633" y="783" width="104" height="126" frameX="-62" frameY="-9" frameWidth="175" frameHeight="135"/>
-    <SubTexture name="sombra/0043" x="681" y="385" width="104" height="126" frameX="-62" frameY="-9" frameWidth="175" frameHeight="135"/>
+    <SubTexture name="sombra/0041" x="635" y="642" width="103" height="126" frameX="-63" frameY="-9" frameWidth="175" frameHeight="135"/>
+    <SubTexture name="sombra/0042" x="680" y="385" width="104" height="126" frameX="-62" frameY="-9" frameWidth="175" frameHeight="135"/>
+    <SubTexture name="sombra/0043" x="601" y="514" width="104" height="126" frameX="-62" frameY="-9" frameWidth="175" frameHeight="135"/>
     <SubTexture name="sombra/0044" x="109" y="387" width="106" height="125" frameX="-61" frameY="-10" frameWidth="175" frameHeight="135"/>
     <SubTexture name="sombra/0045" x="1" y="387" width="106" height="125" frameX="-61" frameY="-10" frameWidth="175" frameHeight="135"/>
     <SubTexture name="sombra/0046" x="579" y="1" width="107" height="125" frameX="-60" frameY="-10" frameWidth="175" frameHeight="135"/>

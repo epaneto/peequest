@@ -149,7 +149,7 @@
     
     ////show next animation
     _player_textures = [_playerAtlas texturesStartingWith:label];
-    _view = [[SPMovieClip alloc] initWithFrames:_player_textures fps:30];
+    _view = [[SPMovieClip alloc] initWithFrames:_player_textures fps:45];
     _view.loop = YES;
     [Sparrow.juggler addObject:_view];
     [_view play];
@@ -174,7 +174,7 @@
     
     ////show next animation
     _shadow_textures = [_shadowAtlas texturesStartingWith:label];
-    _shadow_view = [[SPMovieClip alloc] initWithFrames:_shadow_textures fps:30];
+    _shadow_view = [[SPMovieClip alloc] initWithFrames:_shadow_textures fps:45];
     _shadow_view.loop = YES;
     [Sparrow.juggler addObject:_shadow_view];
     [_shadow_view play];
@@ -190,9 +190,9 @@
 -(int)getVelocity
 {
     if(_isDamaged)
-        return -1;
+        return -5;
     else if(_isWalking)
-        return 2;
+        return 3;
     else
         return 0;
 }

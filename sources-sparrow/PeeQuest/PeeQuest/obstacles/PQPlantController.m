@@ -33,6 +33,16 @@ typedef enum{
 
 -(void)showRain
 {
+    int random = rand() % 100;
+    
+    if(random % 2 == 0)
+    {
+        _mode = PQPLantModeShadow;
+    }else{
+        _mode = PQPlantModeIdle;
+    }
+
+    
     [self clearAnimations];
     
     if(_mode == PQPlantModeIdle)
@@ -44,16 +54,7 @@ typedef enum{
         [self showShadowAnimation:@"medusa/idle_"];
         [self showAssetAnimation:@"vaso/"];
     }
-    
-    int random = rand() % 100;
-    
-    if(random > 40)
-    {
-        _mode = PQPLantModeShadow;
-    }else{
-        _mode = PQPlantModeIdle;
-    }
-    
+
     NSLog(@"mode %d",_mode);
 }
 
@@ -122,6 +123,10 @@ typedef enum{
     
     if(_mode == PQPLantModeShadow)
     {
+        NSLog(@"%f %f %f",self.container.x,self.container.width/2, player.getBody.x);
+        if(self.container.x + 70 < player.getBody.x)
+            return NO;
+        
         if((player.getBody.x + player.getShadow.width) - 45 > self.container.bounds.x)
         {
             return YES;
