@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PQBaseUI.h"
+@interface PQCredits : PQBaseUI
 
-@interface PQCredits : SPSprite
-
+-(void)show;
+-(void)hide;
 @end

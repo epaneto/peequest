@@ -7,6 +7,7 @@
 //
 
 #import "PQHomeUI.h"
+#import "PQGame.h"
 
 @implementation PQHomeUI
 {
@@ -36,7 +37,21 @@
         creditsButton = [[SPButton alloc] initWithUpState:creditsButtonTexture];
         creditsButton.x = Sparrow.stage.width - creditsButton.width - 10;
         creditsButton.y = Sparrow.stage.height - creditsButton.height - 10;
+        [creditsButton addEventListener:@selector(buttonTouch:) atObject:self forType:SP_EVENT_TYPE_TOUCH];
         [self addChild:creditsButton];
+    }
+}
+
+- (void)buttonTouch:(SPTouchEvent*)event
+{
+    SPButton *button = (SPButton*)event.currentTarget;
+    SPTouch *touch = [[event touchesWithTarget:self andPhase:SPTouchPhaseBegan] anyObject];
+    
+    NSSet *touches = [event touchesWithTarget:self];
+    if (touches.count) [event stopPropagation];
+    
+    if([touch phase] == SPTouchPhaseBegan && button.isDown){
+        [[PQGame sharedInstance] setState:STATE_CREDITS];
     }
 }
 
