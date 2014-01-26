@@ -154,6 +154,7 @@
 		E526AA9E18951AD7005892AE /* player_shadow.xml in Resources */ = {isa = PBXBuildFile; fileRef = E526AA9A18951AD7005892AE /* player_shadow.xml */; };
 		E526AA9F18951AD7005892AE /* player_shadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E526AA9B18951AD7005892AE /* player_shadow@2x.png */; };
 		E526AAA018951AD7005892AE /* player_shadow@2x.xml in Resources */ = {isa = PBXBuildFile; fileRef = E526AA9C18951AD7005892AE /* player_shadow@2x.xml */; };
+		E526AAA41895334A005892AE /* PQPlantController.m in Sources */ = {isa = PBXBuildFile; fileRef = E526AAA31895334A005892AE /* PQPlantController.m */; };
 		E5B336CC18942C0500D95FAC /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = E5B336CA18942C0500D95FAC /* background.png */; };
 		E5B336CD18942C0500D95FAC /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5B336CB18942C0500D95FAC /* background@2x.png */; };
 		E5B336D118942C7000D95FAC /* PQBackgroundController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B336D018942C7000D95FAC /* PQBackgroundController.m */; };
@@ -404,6 +405,8 @@
 		E526AA9A18951AD7005892AE /* player_shadow.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = player_shadow.xml; sourceTree = "<group>"; };
 		E526AA9B18951AD7005892AE /* player_shadow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_shadow@2x.png"; sourceTree = "<group>"; };
 		E526AA9C18951AD7005892AE /* player_shadow@2x.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "player_shadow@2x.xml"; sourceTree = "<group>"; };
+		E526AAA21895334A005892AE /* PQPlantController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PQPlantController.h; path = obstacles/PQPlantController.h; sourceTree = "<group>"; };
+		E526AAA31895334A005892AE /* PQPlantController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PQPlantController.m; path = obstacles/PQPlantController.m; sourceTree = "<group>"; };
 		E5B336CA18942C0500D95FAC /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		E5B336CB18942C0500D95FAC /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
 		E5B336CF18942C7000D95FAC /* PQBackgroundController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PQBackgroundController.h; path = controllers/PQBackgroundController.h; sourceTree = "<group>"; };
@@ -519,6 +522,7 @@
 		54F2AFCE18942680003D25D3 /* PeeQuest */ = {
 			isa = PBXGroup;
 			children = (
+				E526AAA118953325005892AE /* obstacles */,
 				54F2B1B418945BFB003D25D3 /* ui */,
 				E5B336D218942C7700D95FAC /* models */,
 				E5B336CE18942C4A00D95FAC /* controllers */,
@@ -780,6 +784,15 @@
 				A316F3C41894A6F9004253F5 /* vaso_sombra@2x.png */,
 			);
 			path = Obstacles;
+			sourceTree = "<group>";
+		};
+		E526AAA118953325005892AE /* obstacles */ = {
+			isa = PBXGroup;
+			children = (
+				E526AAA21895334A005892AE /* PQPlantController.h */,
+				E526AAA31895334A005892AE /* PQPlantController.m */,
+			);
+			name = obstacles;
 			sourceTree = "<group>";
 		};
 		E5B336CE18942C4A00D95FAC /* controllers */ = {
@@ -1061,6 +1074,7 @@
 				54F2B14618942731003D25D3 /* SPRenderTexture.m in Sources */,
 				54F2B15618942731003D25D3 /* SPTweenedProperty.m in Sources */,
 				54F2B13218942731003D25D3 /* SPEvent.m in Sources */,
+				E526AAA41895334A005892AE /* PQPlantController.m in Sources */,
 				54F2AFD918942680003D25D3 /* PQAppDelegate.m in Sources */,
 				54F2B14D18942731003D25D3 /* SPSubTexture.m in Sources */,
 				54F2B15A18942731003D25D3 /* SPViewController.m in Sources */,
