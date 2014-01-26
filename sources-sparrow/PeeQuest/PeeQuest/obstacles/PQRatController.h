@@ -8,12 +8,6 @@
 
 #import "PQBaseObstacle.h"
 
-typedef enum {
-    PQRatAnimationTypeIdle,
-    PQRatAnimationTypeGoing,
-    PQRatAnimationTypeShadow
-} PQRatAnimationType;
-
 @interface PQRatController : PQBaseObstacle
 
 - (BOOL)checkColisionWithPlayer:(PQPlayerController *)player;

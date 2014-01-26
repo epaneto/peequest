@@ -8,6 +8,13 @@
 
 #import "PQRatController.h"
 
+typedef enum {
+    PQRatAnimationTypeIdle,
+    PQRatAnimationTypeComing,
+    PQRatAnimationTypeGoing,
+    PQRatAnimationTypeShadow
+} PQRatAnimationType;
+
 @interface PQRatController ()
 
 @property (nonatomic, strong) SPImage *rat;
@@ -49,6 +56,12 @@
                 currentAnimation = PQRatAnimationTypeIdle;
             }
             break;
+        case PQRatAnimationTypeGoing: {
+            break;
+        }
+        case PQRatAnimationTypeComing: {
+            break;
+        }
         default:
             break;
     }
