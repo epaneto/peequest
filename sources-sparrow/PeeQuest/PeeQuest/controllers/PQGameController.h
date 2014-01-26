@@ -23,4 +23,5 @@
 -(void)resume;
 -(void)pause;
 -(void)damage;
+-(void)complete;
 @end

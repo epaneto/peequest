@@ -137,6 +137,7 @@
     for (PQBaseObstacle *movingObstacle in placedObstacles) {
         if([playerBounds intersectsRectangle:movingObstacle.container.bounds]){
             //TOOD: collision
+            //[self damage];
         }
         [[movingObstacle container] setX:(movingObstacle.container.x - [_player getVelocity]/1.77)];
     }
@@ -152,6 +153,9 @@
             [placedObstacles removeObject:currentObstacle];
         }
     }
+    
+    //TODO: complete level
+    //[self complete]
 }
 
 -(void)showRain {
@@ -213,6 +217,12 @@
         [[PQGame sharedInstance] setState:STATE_FINISH];
 
     }
+}
+
+-(void)complete
+{
+    playerState = PLAYER_STATE_WIN;
+    [[PQGame sharedInstance] setState:STATE_FINISH];
 }
 
 - (void)updateGame:(SPEnterFrameEvent *)event
