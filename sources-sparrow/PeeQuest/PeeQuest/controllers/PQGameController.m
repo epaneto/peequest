@@ -208,18 +208,11 @@
     if(_paused) return;
     [_background updatePosition:[_player getVelocity]];
     
-    /*TEMP BLOCK TO SIMULATE GAME OVER SCREEN */
+    
     levelOffset += [_player getVelocity];
     if (allObstacles != nil && [allObstacles count] > 0) {
         [self updatePlacedObstacles];
     }
-    if(playerState == PLAYER_STATE_PLAYING) {
-        if(tempTickCounter > 100){
-            playerState = PLAYER_STATE_WIN;
-            [[PQGame sharedInstance] setState:STATE_FINISH];
-        }
-    }
-    tempTickCounter++;
-    /*END TEMP BLOCK*/
+    
 }
 @end
