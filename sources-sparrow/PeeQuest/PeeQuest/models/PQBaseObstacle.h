@@ -31,4 +31,5 @@ typedef enum {
 - (BOOL)checkColisionWithPlayer:(PQPlayerController *)player;
 - (void)showRain;
 -(void) setup;
+-(void)dispose;
 @end
