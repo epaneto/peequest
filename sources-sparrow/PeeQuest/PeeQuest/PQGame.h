@@ -19,6 +19,7 @@
 @interface PQGame : SPSprite
 {
     SPSprite *container;
+    SPSprite *containerUI;
 }
 
 + (PQGame *)sharedInstance;

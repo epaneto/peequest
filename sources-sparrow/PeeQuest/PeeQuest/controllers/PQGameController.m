@@ -21,6 +21,7 @@
 }
 
 @property SPSprite *mainContainer;
+@property SPSprite *obstaclesContainer;
 @property PQBackgroundController *background;
 @property PQPlayerController *player;
 @property BOOL paused;
@@ -45,6 +46,10 @@
     _background = [[PQBackgroundController alloc] init];
     [_background setup];
     [_background show:_mainContainer];
+    
+    //obstacles container
+    _obstaclesContainer = [SPSprite sprite];
+    [_mainContainer addChild:_obstaclesContainer];
     
     ////initialize player
     _player = [[PQPlayerController alloc] init];
@@ -123,7 +128,7 @@
             
             [currentObstacle setContainer:obstacleContainer];
             
-            [_mainContainer addChild:[currentObstacle container]];
+            [_obstaclesContainer addChild:[currentObstacle container]];
             [placedObstacles addObject:currentObstacle];
         }
     }
@@ -139,7 +144,7 @@
         }];
         NSArray *removingArray = [placedObstacles filteredArrayUsingPredicate:predicate];
         for (id currentObstacle in removingArray) {
-            [_mainContainer removeChild:[currentObstacle container]];
+            [_obstaclesContainer removeChild:[currentObstacle container]];
             [placedObstacles removeObject:currentObstacle];
         }
     }

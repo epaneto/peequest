@@ -57,6 +57,9 @@ static PQGame *_sharedInstance = nil;
     container = [SPSprite sprite];
     [self addChild:container];
     
+    containerUI = [SPSprite sprite];
+    [self addChild:containerUI];
+    
     _game = [[PQGameController alloc]init];
     [_game setup:container];
     
@@ -69,7 +72,7 @@ static PQGame *_sharedInstance = nil;
     switch(state){
         case STATE_HOME:
             [self setView:[PQHomeUI class]];
-            [container addEventListener:@selector(onStartTouch:)  atObject:self forType:SP_EVENT_TYPE_TOUCH];
+            [containerUI addEventListener:@selector(onStartTouch:)  atObject:self forType:SP_EVENT_TYPE_TOUCH];
             break;
             
         case STATE_PLAY:
@@ -102,7 +105,7 @@ static PQGame *_sharedInstance = nil;
     
     if(viewClass != NULL){
         PQBaseUI *view = [[viewClass alloc] init];
-        [container addChild:view];
+        [containerUI addChild:view];
         [view show];
         _currentView = view;
     }
@@ -113,7 +116,7 @@ static PQGame *_sharedInstance = nil;
     SPTouch *touch = [[event touchesWithTarget:self andPhase:SPTouchPhaseBegan] anyObject];
     if([touch phase] == SPTouchPhaseBegan){
         [[PQSoundPlayer sharedInstance] play:@"btn-press.caf"];
-        [container removeEventListener:@selector(onStartTouch:)  atObject:self forType:SP_EVENT_TYPE_TOUCH];
+        [containerUI removeEventListener:@selector(onStartTouch:)  atObject:self forType:SP_EVENT_TYPE_TOUCH];
         [self setState:STATE_RESTART];
     }
 }
