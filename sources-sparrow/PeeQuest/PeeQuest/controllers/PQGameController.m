@@ -9,6 +9,7 @@
 #import "PQDoorController.h"
 #import "PQBaseObstacle.h"
 #import "PQGameController.h"
+#import "PQPlantController.h"
 #import "PQBackgroundController.h"
 #import "PQPlayerController.h"
 #import "PQGame.h"
@@ -103,7 +104,9 @@
         id obstacleObject;
         if ([[currentObject objectForKey:@"tag"] integerValue] == PQObstacleTypeDoor) {
             obstacleObject = [[PQDoorController alloc] initWithDict:currentObject];
-        } else {
+        } else if([[currentObject objectForKey:@"tag"] integerValue] == PQObstacleTypePlant){
+            obstacleObject = [[PQPlantController alloc] initWithDict:currentObject];
+        }else {
             obstacleObject = [[PQBaseObstacle alloc] initWithDict:currentObject];
         }
         [allObstacles addObject:obstacleObject];
