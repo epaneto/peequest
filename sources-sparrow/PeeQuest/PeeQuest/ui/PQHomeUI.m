@@ -40,6 +40,20 @@
 - (void)hide
 {
     [super hide];
-    [self removeFromParent];
+    
+    SPTween *tweenLogo = [SPTween tweenWithTarget:logo time:0.5 transition:SP_TRANSITION_EASE_OUT];
+    [tweenLogo moveToX:logo.x y:-100];
+    [tweenLogo fadeTo:0.0f];
+    
+    SPTween *tweenTitle = [SPTween tweenWithTarget:tapToStart time:0.5 transition:SP_TRANSITION_EASE_OUT];
+    [tweenTitle moveToX:tapToStart.x y:400];
+    [tweenTitle fadeTo:0.0f];
+    
+    [Sparrow.juggler addObject:tweenTitle];
+    [Sparrow.juggler addObject:tweenLogo];
+    
+    tweenLogo.onComplete =  ^() {
+        [self removeFromParent];
+    };
 }
 @end

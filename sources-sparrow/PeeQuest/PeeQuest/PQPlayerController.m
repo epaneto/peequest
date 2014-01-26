@@ -55,6 +55,15 @@
     _isWalking = !_isWalking;
 }
 
+-(void)stopWalk
+{
+    _isWalking = NO;
+}
+-(void)startWalk
+{
+    _isWalking = YES;
+}
+
 -(int)getVelocity
 {
     if(_isWalking)
