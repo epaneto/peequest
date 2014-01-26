@@ -42,4 +42,19 @@
     return NO;
 }
 
+-(void)showRain
+{
+    
+}
+
+-(void)setup
+{
+    
+}
+
+-(void)dispose
+{
+    
+}
+
 @end

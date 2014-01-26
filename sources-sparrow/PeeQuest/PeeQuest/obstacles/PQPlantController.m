@@ -6,14 +6,24 @@
 //  Copyright (c) 2014 Doubleleft. All rights reserved.
 //
 
+
+typedef enum{
+    PQPlantModeIdle,
+    PQPLantModeShadow,
+    PQPlantModePlayer
+} PQPlantMode;
+
 #import "PQPlantController.h"
+
+
 @interface PQPlantController()
-@property BOOL isHide;
 @property SPMovieClip * assetView;
 @property SPMovieClip * shadowView;
 @property SPTextureAtlas * atlas;
 @property (nonatomic,strong) NSArray *asset_textures;
 @property (nonatomic,strong) NSArray *shadow_textures;
+@property PQPlantMode mode;
+
 @end
 
 @implementation PQPlantController
@@ -24,15 +34,19 @@
 
 -(void)showRain
 {
-    _isHide = !_isHide;
-    
     [self clearAnimations];
     
-    if(_isHide)
+    if(_mode == PQPlantModeIdle)
     {
         [self showAssetAnimation:@"vaso/idle_"];
-    }else{
         
+    }else if(_mode == PQPlantModePlayer){
+        [self showAssetAnimation:@"vaso/idle_"];
+        
+    }else if(_mode == PQPLantModeShadow)
+    {
+        [self showShadowAnimation:@"vaso/shadow_"];
+        [self showAssetAnimation:@"vaso/idle_"];
     }
 }
 
@@ -44,7 +58,8 @@
     _atlas = [SPTextureAtlas atlasWithContentsOfFile:path];
     
     [self showAssetAnimation:@"vaso/idle_"];
-
+    
+    _mode = PQPlantModeIdle;
 }
 
 -(void)showAssetAnimation :(NSString * )label
@@ -84,6 +99,31 @@
         [Sparrow.juggler removeObject:_shadowView];
         [self.container removeChild:_shadowView];
     }
+}
+
+-(BOOL)checkColisionWithPlayer:(PQPlayerController *)player
+{
+    
+    if(_mode == PQPlantModeIdle)
+        return NO;
+    
+    if(_mode == PQPlantModePlayer)
+    {
+        if([player.getBody intersectsRectangle:_assetView.bounds])
+        {
+            return YES;
+        }
+    }
+    
+    if(_mode == PQPLantModeShadow)
+    {
+        if([player.getShadow intersectsRectangle:_shadowView.bounds])
+        {
+            return YES;
+        }
+    }
+    
+    return NO;
 }
 
 @end
