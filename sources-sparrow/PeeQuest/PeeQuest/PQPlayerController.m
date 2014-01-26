@@ -93,7 +93,28 @@
     
     [self showShadowAnimation:@"shadow_walk/walk_"];
 
-    [self showPlayerAnimation:@"hero_export/"];
+    [self showPlayerAnimation:@"hero_walk/walk_"];
+}
+
+-(void)showWin
+{
+//    [self showPlayerAnimation:@"hero_export/"];
+}
+
+-(void)showLose
+{
+    [self showPlayerAnimation:@"hero_die/die_"];
+    
+    
+    __block PQPlayerController * myself = self;
+    [_view addEventListenerForType:SP_EVENT_TYPE_COMPLETED block:^(id event) {
+        [myself showPlayerAnimation:@"hero_die/dead_"];
+    }];
+    
+    if(_shadow_view){
+        [_container removeChild:_shadow_view];
+        [Sparrow.juggler removeObject:_shadow_view];
+    }
 }
 
 -(void) showPlayerAnimation :(NSString * )label

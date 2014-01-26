@@ -16,6 +16,8 @@
 -(void)showRain;
 -(void)startWalk;
 -(void)stopWalk;
+-(void)showWin;
+-(void)showLose;
 -(SPRectangle*)bounds;
 -(SPRectangle*)shadowBounds;
 -(SPRectangle * )getShadow;

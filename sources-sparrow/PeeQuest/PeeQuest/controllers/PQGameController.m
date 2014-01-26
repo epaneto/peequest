@@ -228,9 +228,9 @@
 
 -(void)complete
 {
-    [_player stopWalk];
     playerState = PLAYER_STATE_WIN;
     [[PQGame sharedInstance] setState:STATE_FINISH];
+    [_player showWin];
 }
 
 - (void)updateGame:(SPEnterFrameEvent *)event
