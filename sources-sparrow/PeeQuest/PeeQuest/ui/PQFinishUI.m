@@ -34,6 +34,9 @@
     if(title == NULL){
         title = [[SPImage alloc] initWithContentsOfFile:winner ? @"win-title.png" : @"lose-title.png"];
         title.x = Sparrow.stage.width / 2 - title.width / 2;
+        if(!winner){
+            title.x += 10;
+        }
         title.y = 20;
         [self addChild:title];
     }
