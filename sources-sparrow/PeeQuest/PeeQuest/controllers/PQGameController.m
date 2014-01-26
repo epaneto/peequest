@@ -157,6 +157,12 @@
                 [(PQPlantController *) currentObstacle setup];
             } else if ([currentObstacle isKindOfClass:[PQDoorController class]]) {
                 [(PQDoorController *) currentObstacle setup];
+                SPImage *image = [SPImage imageWithContentsOfFile:[currentObstacle assestName]];
+                [image setX:0];
+                [image setY:0];
+                [image setScaleX:currentObstacle.scale.width];
+                [image setScaleY:currentObstacle.scale.height];
+                [[currentObstacle container] addChild:image];
             }
             [[currentObstacle container] setX:currentObstacle.offset.x - levelOffset];
             [[currentObstacle container] setY:currentObstacle.offset.y];
