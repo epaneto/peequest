@@ -153,14 +153,14 @@
         return 0;
 }
 
--(SPMovieClip * )getShadow
+-(SPRectangle * )getShadow
 {
-    return _shadow_view;
+    return _shadow_view.bounds;
 }
 
--(SPMovieClip * )getBody
+-(SPRectangle * )getBody
 {
-    return _view;
+    return _view.bounds;
 }
 
 -(void)showRain
