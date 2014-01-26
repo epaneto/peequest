@@ -6,7 +6,6 @@
 //  Copyright (c) 2014 Doubleleft. All rights reserved.
 //
 
-#import "PQLevelController.h"
 #import "PQGame.h"
 #import "PQGameController.h"
 #import "PQHomeUI.h"
@@ -55,13 +54,6 @@ static PQGame *_sharedInstance = nil;
     
     _game = [[PQGameController alloc]init];
     [_game setup:container];
-    
-    NSData *jsonData = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"peeQuest" ofType:@"json"]];
-    
-    NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingAllowFragments error:nil];
-    
-    SPSprite *levelContainer = [[PQLevelController sharedInstance] makeLevelWithDict:dict];
-    [container addChild:levelContainer];
     
     [self setState:STATE_HOME];
 }

@@ -44,7 +44,7 @@
 
 -(void)show:(SPSprite *)container
 {
-    _view.x = 120;
+    _view.x = PQ_LEVEL_INITIAL_POSITION;
     _view.y = 160;
     
     [container addChild:_view];
