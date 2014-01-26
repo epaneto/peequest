@@ -11,6 +11,7 @@
 
 @interface PQPlayerController()
 @property SPMovieClip * view;
+@property SPMovieClip * shadow_view;
 @property (nonatomic,strong) SPTexture * texture;
 @property BOOL isWalking;
 @property uint idleColor;
@@ -29,13 +30,23 @@
     SPTextureAtlas *atlas = [SPTextureAtlas atlasWithContentsOfFile:@"player.xml"];
     
     // this method returns all textures starting with the given string, sorted alphabetically.
-    NSArray *textures = [atlas texturesStartingWith:@"hero_test/walk_"];
+    NSArray *player_textures = [atlas texturesStartingWith:@"hero_export/"];
+    NSLog(@"%@",player_textures);
+    NSArray *shadow_textures = [atlas texturesStartingWith:@"shadow_export/walk_"];
+    NSLog(@"%@",shadow_textures);
     
     // create movie clip
-   _view = [[SPMovieClip alloc] initWithFrames:textures fps:60];
+    _shadow_view = [[SPMovieClip alloc] initWithFrames:shadow_textures fps:60];
+    _shadow_view.loop = YES;
+    [Sparrow.juggler addObject:_shadow_view];
+    [_shadow_view play];
+    
+   _view = [[SPMovieClip alloc] initWithFrames:player_textures fps:60];
     _view.loop = YES;
     [Sparrow.juggler addObject:_view];
     [_view play];
+    
+    
     
     _idleColor = _view.color;
     _darkColor = 0xb49c9c;
@@ -44,10 +55,17 @@
 
 -(void)show:(SPSprite *)container
 {
-    _view.x = 120;
-    _view.y = 160;
+    _view.x = 123;
+    _view.y = 150;
     
+    _shadow_view.x = 130;
+    _shadow_view.y = 42;
+    
+    _shadow_view.scaleX = _shadow_view.scaleY = 1.5;
+    
+    [container addChild:_shadow_view];
     [container addChild:_view];
+    
 }
 
 -(void)toogleMove
@@ -67,7 +85,7 @@
 -(int)getVelocity
 {
     if(_isWalking)
-        return 3;
+        return 2;
     else
         return 0;
 }
