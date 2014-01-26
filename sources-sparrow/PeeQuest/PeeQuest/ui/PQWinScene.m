@@ -56,7 +56,9 @@
 
 -(void)loopAnimation
 {
-    [player removeEventListener:@selector(loopAnimation) atObject:self forType:SP_EVENT_TYPE_COMPLETED];
+    if(player != NULL){
+        [player removeEventListener:@selector(loopAnimation) atObject:self forType:SP_EVENT_TYPE_COMPLETED];
+    }
     [self playAnimation:@"ending_hero/winning_"];
 }
 @end
