@@ -219,4 +219,9 @@
     }
 }
 
+- (float)volume
+{
+    return _volume;
+}
+
 @end

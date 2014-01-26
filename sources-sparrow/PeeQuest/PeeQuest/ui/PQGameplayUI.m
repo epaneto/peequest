@@ -29,7 +29,13 @@
 
 - (void)pauseTouch:(SPTouchEvent*)event
 {
-    [[PQGame sharedInstance] setState:STATE_PAUSE];
+    SPButton *button = (SPButton*)event.currentTarget;
+    SPTouch *touch = [[event touchesWithTarget:self andPhase:SPTouchPhaseBegan] anyObject];
+
+    if([touch phase] != SPTouchPhaseEnded && button.isDown){
+        [[PQSoundPlayer sharedInstance] play:@"btn-press.caf"];
+        [[PQGame sharedInstance] setState:STATE_PAUSE];
+    }
 }
 
 -(void)show

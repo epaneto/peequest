@@ -68,9 +68,11 @@
     SPTouch *touch = [[event touchesWithTarget:self andPhase:SPTouchPhaseBegan] anyObject];
     if([touch phase] != SPTouchPhaseEnded && button.isDown){
         if([button isEqual:returnButton]){
+            [[PQSoundPlayer sharedInstance] play:@"btn-press.caf"];
             [[PQGame sharedInstance] setState:STATE_PLAY];
             
         }else if([button isEqual:retryButton]){
+            [[PQSoundPlayer sharedInstance] play:@"btn-press.caf"];
             [[PQGame sharedInstance] setState:STATE_RESTART];
             
         }else if([button isEqual:soundButton]){
@@ -95,7 +97,9 @@
 {
     if([[PQGame sharedInstance] isSoundMuted]){
         [[PQGame sharedInstance] unmuteSound];
+        [[PQSoundPlayer sharedInstance] play:@"sound-on.caf"];
     }else{
+        [[PQSoundPlayer sharedInstance] play:@"sound-of.caf"];
         [[PQGame sharedInstance] muteSound];
     }
     

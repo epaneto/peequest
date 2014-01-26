@@ -31,5 +31,5 @@
 
 /// Initializes a sound channel from an SPALSound object.
 - (instancetype)initWithSound:(SPALSound *)sound;
-
+- (float)volume;
 @end

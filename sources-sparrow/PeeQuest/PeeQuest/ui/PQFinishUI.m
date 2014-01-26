@@ -60,6 +60,8 @@
     SPButton *button = (SPButton*)event.currentTarget;
     SPTouch *touch = [[event touchesWithTarget:self andPhase:SPTouchPhaseBegan] anyObject];
     if([touch phase] != SPTouchPhaseEnded && button.isDown){
+        
+        [[PQSoundPlayer sharedInstance] play:@"btn-press.caf"];
         BOOL facebook = [button isEqual:facebookButton];
         
         NSString *texttoshare = @"Pee Quest Text Share";

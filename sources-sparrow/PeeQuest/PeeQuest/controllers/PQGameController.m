@@ -64,6 +64,7 @@
 
 -(void)initRainTimer
 {
+    NSLog(@"initRainTimer");
     int randomTime = 2.0 + arc4random() % 5;
     NSLog(@"%i",randomTime);
     _mainTimer = [NSTimer scheduledTimerWithTimeInterval:randomTime target:self selector:@selector(initRain:) userInfo:nil repeats:NO];
@@ -74,7 +75,7 @@
         return;
     }
     [self showRain];
-    [self initRainTimer];
+   [self initRainTimer];
 }
 
 - (void)loadJSONObstacles {
@@ -145,6 +146,8 @@
 }
 
 -(void)showRain {
+    [[PQSoundPlayer sharedInstance] play:@"thunder.caf"];
+    
     [_background showRain];
     [_player showRain];
 }
@@ -174,7 +177,6 @@
 - (void)start
 {
     lifes = PLAYER_LIFES;
-    [self resume];
 }
 
 - (void)onUserTouch:(SPTouchEvent*)event

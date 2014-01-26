@@ -13,10 +13,13 @@
 #import "PQFinishUI.h"
 #import "PQBaseUI.h"
 #import "PQGameplayUI.h"
+#import "SPAVSoundChannel.h"
 
 @interface PQGame()
 {
     BOOL _soundMuted;
+    SPSound* trackSound;
+    SPSoundChannel *trackSoundChannel;
 }
 @property PQGameController * game;
 @property PQBaseUI *currentView;
@@ -46,8 +49,10 @@ static PQGame *_sharedInstance = nil;
     [SPAudioEngine start];
     _soundMuted = NO;
     
-    SPSound *sound = [[SPSound alloc] initWithContentsOfFile:@"track.wav"];
-    [sound play];
+    trackSound = [[SPSound alloc] initWithContentsOfFile:@"track.aifc"];
+    trackSoundChannel = [trackSound createChannel];
+    trackSoundChannel.loop = YES;
+    [trackSound play];
     
     container = [SPSprite sprite];
     [self addChild:container];
@@ -105,22 +110,32 @@ static PQGame *_sharedInstance = nil;
 
 - (void)onStartTouch:(SPTouchEvent*)event
 {
-    [container removeEventListener:@selector(onStartTouch:)  atObject:self forType:SP_EVENT_TYPE_TOUCH];
-    [self setState:STATE_RESTART];
+    SPTouch *touch = [[event touchesWithTarget:self andPhase:SPTouchPhaseBegan] anyObject];
+    if([touch phase] == SPTouchPhaseBegan){
+        [[PQSoundPlayer sharedInstance] play:@"btn-press.caf"];
+        [container removeEventListener:@selector(onStartTouch:)  atObject:self forType:SP_EVENT_TYPE_TOUCH];
+        [self setState:STATE_RESTART];
+    }
 }
 
 - (void)muteSound
 {
-    NSLog(@"mute");
+    if(_soundMuted){
+        return;
+    }
+    
    _soundMuted = YES;
     [SPAudioEngine setMasterVolume:0.0];
 }
 
 - (void)unmuteSound
 {
-    NSLog(@"unmute");
+    if(!_soundMuted){
+        return;
+    }
     _soundMuted = NO;
     [SPAudioEngine setMasterVolume:1.0];
+    [trackSoundChannel play];
 }
 
 - (BOOL)isSoundMuted
