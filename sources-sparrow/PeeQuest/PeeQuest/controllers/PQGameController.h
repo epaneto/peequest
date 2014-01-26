@@ -8,6 +8,17 @@
 
 #import <Foundation/Foundation.h>
 
+#define PLAYER_STATE_WIN 1
+#define PLAYER_STATE_LOSE 2
+#define PLAYER_STATE_PLAYING 3
+
 @interface PQGameController : NSObject
+{
+    int playerState;
+}
+@property(nonatomic,assign) int playerState;
 -(void)setup :(SPSprite * )container;
+-(void)start;
+-(void)resume;
+-(void)pause;
 @end

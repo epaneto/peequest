@@ -10,12 +10,18 @@
 #import "PQGameController.h"
 #import "PQBackgroundController.h"
 #import "PQPlayerController.h"
+#import "PQGame.h"
 
 @interface PQGameController ()
+{
+    BOOL win;
+    int tempTickCounter;
+}
 
 @property SPSprite *mainContainer;
 @property PQBackgroundController *background;
 @property PQPlayerController *player;
+@property BOOL paused;
 @property NSTimer *mainTimer;
 @property (nonatomic, strong) NSMutableArray *allObstacles;
 @property (nonatomic, strong) NSMutableArray *placedObstacles;
@@ -24,6 +30,7 @@
 @end
 
 @implementation PQGameController
+@synthesize playerState;
 @synthesize allObstacles;
 @synthesize placedObstacles;
 @synthesize levelOffset;
@@ -42,29 +49,27 @@
     [_player setup];
     [_player show:_mainContainer];
     
-    ////initialize timer
-    [self initRainTimer];
-    
     ////initialize enter frame
     [_mainContainer addEventListener:@selector(updateGame:) atObject:self forType:SP_EVENT_TYPE_ENTER_FRAME];
-    
     
     ////initialize touch
     [_mainContainer addEventListener:@selector(onUserTouch:)  atObject:self forType:SP_EVENT_TYPE_TOUCH];
     
     [self loadJSONObstacles];
-    
-    
+    _paused = YES;
 }
 
 -(void)initRainTimer
 {
-    int randomTime = 5.0 + arc4random() % 5;
+    int randomTime = 2.0 + arc4random() % 5;
     NSLog(@"%i",randomTime);
     _mainTimer = [NSTimer scheduledTimerWithTimeInterval:randomTime target:self selector:@selector(initRain:) userInfo:nil repeats:NO];
 }
 
 -(void)initRain:(NSTimer *)timer {
+    if(_paused){
+        return;
+    }
     [self showRain];
     [self initRainTimer];
 }
@@ -138,13 +143,41 @@
 
 -(void)showRain {
     [_background showRain];
+    [_player showRain];
+}
+
+- (void)pause
+{
+    _paused = YES;
+    [_player stopWalk];
+    if(_mainTimer != NULL){
+        [_mainTimer invalidate];
+    }
+    [Sparrow.juggler pause];
+}
+
+- (void)resume
+{
+    tempTickCounter = 0;
+    playerState = PLAYER_STATE_PLAYING;
+    _paused = NO;
+    [Sparrow.juggler resume];
+    ////initialize timer
+    [self initRainTimer];
+}
+
+- (void)start
+{
+    [self resume];
 }
 
 - (void)onUserTouch:(SPTouchEvent*)event
 {
+    if(_paused) return;
     SPTouch *touch = [[event touchesWithTarget:_mainContainer
                                       andPhase:SPTouchPhaseBegan] anyObject];
-    if (touch)
+    
+    if (touch && touch.globalY > 100)
     {
         [_player toogleMove];
     }
@@ -152,10 +185,18 @@
 
 - (void)updateGame:(SPEnterFrameEvent *)event
 {
+    if(_paused) return;
     [_background updatePosition:[_player getVelocity]];
     levelOffset += [_player getVelocity];
     if (allObstacles != nil && [allObstacles count] > 0) {
         [self updatePlacedObstacles];
     }
+    if(playerState == PLAYER_STATE_PLAYING) {
+        if(tempTickCounter > 300){
+            playerState = PLAYER_STATE_WIN;
+            [[PQGame sharedInstance] setState:STATE_FINISH];
+        }
+    }
+    tempTickCounter++;
 }
 @end

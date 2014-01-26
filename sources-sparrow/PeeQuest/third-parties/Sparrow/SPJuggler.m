@@ -38,24 +38,36 @@
     [super dealloc];
 }
 
+- (void)pause
+{
+    paused = YES;
+}
+
+- (void)resume
+{
+    paused = NO;
+}
+
 - (void)advanceTime:(double)seconds
 {
-    if (seconds < 0.0)
-        [NSException raise:SPExceptionInvalidOperation format:@"time must be positive"];
-    
-    seconds *= _speed;
-    
-    if (seconds > 0.0)
-    {
-        _elapsedTime += seconds;
+    if(!paused){
+        if (seconds < 0.0)
+            [NSException raise:SPExceptionInvalidOperation format:@"time must be positive"];
         
-        // we need work with a copy, since user-code could modify the collection while enumerating
-        NSArray* objectsCopy = [[_objects array] copy];
+        seconds *= _speed;
         
-        for (id<SPAnimatable> object in objectsCopy)
-            [object advanceTime:seconds];
-        
-        [objectsCopy release];
+        if (seconds > 0.0)
+        {
+            _elapsedTime += seconds;
+            
+            // we need work with a copy, since user-code could modify the collection while enumerating
+            NSArray* objectsCopy = [[_objects array] copy];
+            
+            for (id<SPAnimatable> object in objectsCopy)
+                [object advanceTime:seconds];
+            
+            [objectsCopy release];
+        }
     }
 }
 

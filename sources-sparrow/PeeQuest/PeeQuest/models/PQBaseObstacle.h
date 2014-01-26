@@ -17,12 +17,12 @@ typedef enum {
 
 @property (nonatomic, strong) NSString *assestName;
 @property (nonatomic, strong) SPSprite *container;
-
 @property (nonatomic, assign) CGRect bounds;
 @property (nonatomic, assign) CGPoint offset;
 @property (nonatomic, assign) CGSize scale;
 @property (nonatomic, assign) float zIndex;
 @property (nonatomic, assign) PQObstacleType type;
+
 
 - (id)initWithDict:(NSDictionary *)dict;
 
