@@ -36,8 +36,10 @@
         title.x = Sparrow.stage.width / 2 - title.width / 2;
         if(!winner){
             title.x += 10;
+            title.y = 20;
+        }else{
+            title.y = 40;
         }
-        title.y = 20;
         [self addChild:title];
     }
     
@@ -64,7 +66,7 @@
     
     
     buttons.x = Sparrow.stage.width / 2 - buttons.width / 2;
-    buttons.y = Sparrow.stage.height - buttons.height - 50;
+    buttons.y = Sparrow.stage.height - buttons.height - (winner ? 30 : 50);
     
 }
 
