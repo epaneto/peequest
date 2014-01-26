@@ -325,4 +325,10 @@
     }
     
 }
+
+- (BOOL)tutorialIsOpened
+{
+    return tutorial != NULL;
+}
+
 @end

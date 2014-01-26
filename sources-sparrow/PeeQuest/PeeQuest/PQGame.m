@@ -117,6 +117,11 @@ static PQGame *_sharedInstance = nil;
             break;
             
         case STATE_PAUSE:
+            
+            if([_game tutorialIsOpened]){
+                _state = STATE_PLAY;
+                return;
+            }
             [self setView:[PQPauseUI class]];
             [_game pause];
             break;
