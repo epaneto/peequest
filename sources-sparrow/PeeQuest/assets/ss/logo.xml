@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:e12bbecd241fd167327de84c2014046b:2a1bd71d8f755b1b30aafdc70495a551:a06e47c9a6bc2f900061e663c58dc310$ -->
+<TextureAtlas imagePath="logo.png">
+    <SubTexture name="logo/intro_0000" x="997" y="2" width="1" height="1" frameX="0" frameY="0" frameWidth="220" frameHeight="165"/>
+    <SubTexture name="logo/intro_0001" x="155" y="923" width="26" height="38" frameX="-95" frameY="-53" frameWidth="220" frameHeight="165"/>
+    <SubTexture name="logo/intro_0002" x="255" y="957" width="26" height="34" frameX="-95" frameY="-63" frameWidth="220" frameHeight="165"/>
+    <SubTexture name="logo/intro_0003" x="313" y="921" width="26" height="32" frameX="-95" frameY="-69" frameWidth="220" frameHeight="165"/>
+    <SubTexture name="logo/intro_0004" x="283" y="989" width="26" height="31" frameX="-95" frameY="-71" frameWidth="220" frameHeight="165"/>
+    <SubTexture name="logo/intro_0005" x="314" y="955" width="26" height="30" frameX="-95" frameY="-66" frameWidth="220" frameHeight="165"/>
+    <SubTexture name="logo/intro_0006" x="311" y="989" width="26" height="30" frameX="-95" frameY="-63" frameWidth="220" frameHeight="165"/>
+    <SubTexture name="logo/intro_0007" x="92" y="994" width="26" height="28" frameX="-95" frameY="-63" frameWidth="220" frameHeight="165"/>
+    <SubTexture name="logo/intro_0008" x="283" y="955" width="29" height="32" frameX="-94" frameY="-61" frameWidth="220" frameHeight="165"/>
+    <SubTexture name="logo/intro_0009" x="249" y="921" width="30" height="34" frameX="-93" frameY="-60" frameWidth="220" frameHeight="165"/>
+    <SubTexture name="logo/intro_0010" x="189" y="959" width="32" height="34" frameX="-92" frameY="-60" frameWidth="220" frameHeight="165"/>
+    <SubTexture name="logo/intro_0011" x="183" y="923" width="32" height="34" frameX="-92" frameY="-60" frameWidth="220" frameHeight="165"/>
+    <SubTexture name="logo/intro_0012" x="155" y="963" width="32" height="34" frameX="-92" frameY="-60" frameWidth="220" frameHeight="165"/>
+    <SubTexture name="logo/intro_0013" x="223" y="957" width="30" height="34" frameX="-93" frameY="-60" frameWidth="220" frameHeight="165"/>
+    <SubTexture name="logo/intro_0014" x="217" y="921" width="30" height="34" frameX="-93" frameY="-60" frameWidth="220" frameHeight="165"/>
+    <SubTexture name="logo/intro_0015" x="281" y="921" width="30" height="32" frameX="-93" frameY="-61" frameWidth="220" frameHeight="165"/>
+    <SubTexture name="logo/intro_0016" x="92" y="923" width="61" height="69" frameX="-78" frameY="-40" frameWidth="220" frameHeight="165"/>
+    <SubTexture name="logo/intro_0017" x="2" y="923" width="88" height="97" frameX="-64" frameY="-24" frameWidth="220" frameHeight="165"/>
+    <SubTexture name="logo/intro_0018" x="779" y="767" width="158" height="131" frameX="-25" frameY="-13" frameWidth="220" frameHeight="165"/>
+    <SubTexture name="logo/intro_0019" x="599" y="767" width="178" height="145" frameX="-16" frameY="-6" frameWidth="220" frameHeight="165"/>
+    <SubTexture name="logo/intro_0020" x="2" y="309" width="191" height="153" frameX="-10" frameY="-3" frameWidth="220" frameHeight="165"/>
+    <SubTexture name="logo/intro_0021" x="2" y="2" width="197" height="152" frameX="-7" frameY="-5" frameWidth="220" frameHeight="165"/>
+    <SubTexture name="logo/intro_0022" x="798" y="614" width="197" height="151" frameX="-7" frameY="-6" frameWidth="220" frameHeight="165"/>
+    <SubTexture name="logo/intro_0023" x="599" y="614" width="197" height="151" frameX="-7" frameY="-6" frameWidth="220" frameHeight="165"/>
+    <SubTexture name="logo/intro_0024" x="400" y="767" width="197" height="151" frameX="-7" frameY="-6" frameWidth="220" frameHeight="165"/>
+    <SubTexture name="logo/intro_0025" x="400" y="614" width="197" height="151" frameX="-7" frameY="-6" frameWidth="220" frameHeight="165"/>
+    <SubTexture name="logo/intro_0026" x="798" y="461" width="197" height="151" frameX="-7" frameY="-6" frameWidth="220" frameHeight="165"/>
+    <SubTexture name="logo/intro_0027" x="599" y="461" width="197" height="151" frameX="-7" frameY="-6" frameWidth="220" frameHeight="165"/>
+    <SubTexture name="logo/intro_0028" x="400" y="461" width="197" height="151" frameX="-7" frameY="-6" frameWidth="220" frameHeight="165"/>
+    <SubTexture name="logo/intro_0029" x="792" y="308" width="197" height="151" frameX="-7" frameY="-6" frameWidth="220" frameHeight="165"/>
+    <SubTexture name="logo/intro_0030" x="593" y="308" width="197" height="151" frameX="-7" frameY="-6" frameWidth="220" frameHeight="165"/>
+    <SubTexture name="logo/intro_0031" x="201" y="768" width="197" height="151" frameX="-7" frameY="-6" frameWidth="220" frameHeight="165"/>
+    <SubTexture name="logo/intro_0032" x="201" y="615" width="197" height="151" frameX="-7" frameY="-6" frameWidth="220" frameHeight="165"/>
+    <SubTexture name="logo/intro_0033" x="394" y="308" width="197" height="151" frameX="-7" frameY="-6" frameWidth="220" frameHeight="165"/>
+    <SubTexture name="logo/intro_0034" x="201" y="462" width="197" height="151" frameX="-7" frameY="-6" frameWidth="220" frameHeight="165"/>
+    <SubTexture name="logo/intro_0035" x="2" y="770" width="197" height="151" frameX="-7" frameY="-6" frameWidth="220" frameHeight="165"/>
+    <SubTexture name="logo/intro_0036" x="2" y="617" width="197" height="151" frameX="-7" frameY="-6" frameWidth="220" frameHeight="165"/>
+    <SubTexture name="logo/intro_0037" x="195" y="309" width="197" height="151" frameX="-7" frameY="-6" frameWidth="220" frameHeight="165"/>
+    <SubTexture name="logo/intro_0038" x="2" y="464" width="197" height="151" frameX="-7" frameY="-6" frameWidth="220" frameHeight="165"/>
+    <SubTexture name="logo/intro_0039" x="798" y="155" width="197" height="151" frameX="-7" frameY="-6" frameWidth="220" frameHeight="165"/>
+    <SubTexture name="logo/intro_0040" x="599" y="155" width="197" height="151" frameX="-7" frameY="-6" frameWidth="220" frameHeight="165"/>
+    <SubTexture name="logo/intro_0041" x="400" y="155" width="197" height="151" frameX="-7" frameY="-6" frameWidth="220" frameHeight="165"/>
+    <SubTexture name="logo/intro_0042" x="2" y="156" width="197" height="151" frameX="-7" frameY="-6" frameWidth="220" frameHeight="165"/>
+    <SubTexture name="logo/intro_0043" x="201" y="155" width="197" height="151" frameX="-7" frameY="-6" frameWidth="220" frameHeight="165"/>
+    <SubTexture name="logo/intro_0044" x="798" y="2" width="197" height="151" frameX="-7" frameY="-6" frameWidth="220" frameHeight="165"/>
+    <SubTexture name="logo/intro_0045" x="599" y="2" width="197" height="151" frameX="-7" frameY="-6" frameWidth="220" frameHeight="165"/>
+    <SubTexture name="logo/intro_0046" x="400" y="2" width="197" height="151" frameX="-7" frameY="-6" frameWidth="220" frameHeight="165"/>
+    <SubTexture name="logo/intro_0047" x="201" y="2" width="197" height="151" frameX="-7" frameY="-6" frameWidth="220" frameHeight="165"/>
+</TextureAtlas>
