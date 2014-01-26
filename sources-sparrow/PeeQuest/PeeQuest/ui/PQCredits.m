@@ -15,6 +15,7 @@
     SPImage *current;
     SPButton *closeButton;
     int step;
+    BOOL hidden;
 }
 
 -(void)show
@@ -42,20 +43,24 @@
     
     step = 0;
     [self next];
+    hidden = NO;
 }
 
 -(void)hide
 {
+    hidden = YES;
     if(current != NULL){
         [Sparrow.juggler removeObjectsWithTarget:current];
     }
-    [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(next) object: nil];
     [self removeFromParent];
     [steps removeAllObjects];
+    [[self class] cancelPreviousPerformRequestsWithTarget:self selector:@selector(next) object:nil];
+    
 }
 
 -(void)next
 {
+    if(hidden) return;
     if(current != NULL){
         SPTween *currentTween = [SPTween tweenWithTarget:current time:0.8 transition:SP_TRANSITION_EASE_OUT_BACK];
         [currentTween moveToX:-Sparrow.stage.width y:0];
