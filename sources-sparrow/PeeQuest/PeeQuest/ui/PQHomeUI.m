@@ -12,6 +12,7 @@
 {
     SPImage *logo;
     SPImage *tapToStart;
+    SPButton *creditsButton;
 }
 
 -(void)build
@@ -28,6 +29,14 @@
         tapToStart.x = Sparrow.stage.width / 2 - tapToStart.width / 2;
         tapToStart.y = logo.y + logo.height + 10;
         [self addChild:tapToStart];
+    }
+    
+    if(creditsButton == NULL){
+        SPTexture* creditsButtonTexture = [[SPTexture alloc] initWithContentsOfFile:@"credits-info.png"];
+        creditsButton = [[SPButton alloc] initWithUpState:creditsButtonTexture];
+        creditsButton.x = Sparrow.stage.width - creditsButton.width - 10;
+        creditsButton.y = Sparrow.stage.height - creditsButton.height - 10;
+        [self addChild:creditsButton];
     }
 }
 
