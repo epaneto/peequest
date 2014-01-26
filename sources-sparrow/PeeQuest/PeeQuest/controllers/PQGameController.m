@@ -186,6 +186,11 @@
     
     [_background showRain];
     [_player showRain];
+    
+    for (id currentObstacle in placedObstacles)
+    {
+        [currentObstacle showRain];
+    }
 }
 
 - (void)pause

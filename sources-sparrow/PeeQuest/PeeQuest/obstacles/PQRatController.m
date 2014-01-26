@@ -56,21 +56,23 @@ typedef enum {
     switch (currentAnimation) {
         case PQRatAnimationTypeIdle:
             currentAnimation = PQRatAnimationTypeShadow;
-            [self showAssetAnimation:@"rato_2/levantando_"];
+            [self showAssetAnimation:@"rato_2/levantando_" :NO];
+            [self showShadowAnimation:@"sombra/" :YES];
+
             break;
         case PQRatAnimationTypeShadow:
             if ((rand() % 1000) % 2 == 0) {
                 currentAnimation = PQRatAnimationTypeGoing;
-                [self showAssetAnimation:@"rato_2/correndo_"];
+                [self showAssetAnimation:@"rato_2/correndo_": YES];
                 [self leaveStage];
             } else {
                 currentAnimation = PQRatAnimationTypeIdle;
-                [self showAssetAnimation:@"rato_2/idle_"];
+                [self showAssetAnimation:@"rato_2/idle_": YES];
             }
             break;
         case PQRatAnimationTypeGoing: {
             currentAnimation = PQRatAnimationTypeComing;
-            [self showAssetAnimation:@"rato_2/idle_"];
+            [self showAssetAnimation:@"rato_2/idle_": YES];
             break;
         }
         default:
@@ -78,24 +80,31 @@ typedef enum {
     }
 }
 
--(void)showAssetAnimation :(NSString * )label
+-(void)showAssetAnimation :(NSString * )label :(BOOL)loop
 {
     _asset_textures = [_atlas texturesStartingWith:label];
     
     rat = [[SPMovieClip alloc] initWithFrames:_asset_textures fps:31];
-    rat.loop = YES;
+    if(loop)
+        rat.loop = YES;
+    else
+        rat.loop = NO;
+    
     [Sparrow.juggler addObject:rat];
     [rat play];
     
     [self.container addChild:rat];
 }
 
--(void)showShadowAnimation :(NSString * )label
+-(void)showShadowAnimation :(NSString * )label :(BOOL)loop
 {
     _shadow_textures = [_atlas texturesStartingWith:label];
     
     shadow = [[SPMovieClip alloc] initWithFrames:_shadow_textures fps:31];
-    shadow.loop = YES;
+    
+    if(loop)
+        shadow.loop = YES;
+    
     [Sparrow.juggler addObject:shadow];
     [shadow play];
     
@@ -121,6 +130,7 @@ typedef enum {
     if ([[[self container] bounds] x] > (Sparrow.stage.width - 30)) {
         return;
     }
+    
     [self switchAnimation];
 }
 
@@ -140,7 +150,7 @@ typedef enum {
     // initialize player atlas
     _atlas = [SPTextureAtlas atlasWithContentsOfFile:path];
     
-    [self showAssetAnimation:@"rato_2/idle_"];
+    [self showAssetAnimation:@"rato_2/idle_" :YES];
     
     currentAnimation = PQRatAnimationTypeIdle;
 
