@@ -13,7 +13,6 @@
 		543CE6F61894B09D0087D1FD /* door1.caf in Resources */ = {isa = PBXBuildFile; fileRef = 543CE6E61894B09D0087D1FD /* door1.caf */; };
 		543CE6F71894B09D0087D1FD /* door2.caf in Resources */ = {isa = PBXBuildFile; fileRef = 543CE6E71894B09D0087D1FD /* door2.caf */; };
 		543CE6F81894B09D0087D1FD /* medusa.caf in Resources */ = {isa = PBXBuildFile; fileRef = 543CE6E81894B09D0087D1FD /* medusa.caf */; };
-		543CE6F91894B09D0087D1FD /* organ.caf in Resources */ = {isa = PBXBuildFile; fileRef = 543CE6E91894B09D0087D1FD /* organ.caf */; };
 		543CE6FA1894B09D0087D1FD /* pee.caf in Resources */ = {isa = PBXBuildFile; fileRef = 543CE6EA1894B09D0087D1FD /* pee.caf */; };
 		543CE6FB1894B09D0087D1FD /* rat_on_wood.caf in Resources */ = {isa = PBXBuildFile; fileRef = 543CE6EB1894B09D0087D1FD /* rat_on_wood.caf */; };
 		543CE6FC1894B09D0087D1FD /* sound-of.caf in Resources */ = {isa = PBXBuildFile; fileRef = 543CE6EC1894B09D0087D1FD /* sound-of.caf */; };
@@ -182,7 +181,6 @@
 		543CE6E61894B09D0087D1FD /* door1.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = door1.caf; sourceTree = "<group>"; };
 		543CE6E71894B09D0087D1FD /* door2.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = door2.caf; sourceTree = "<group>"; };
 		543CE6E81894B09D0087D1FD /* medusa.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = medusa.caf; sourceTree = "<group>"; };
-		543CE6E91894B09D0087D1FD /* organ.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = organ.caf; sourceTree = "<group>"; };
 		543CE6EA1894B09D0087D1FD /* pee.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pee.caf; sourceTree = "<group>"; };
 		543CE6EB1894B09D0087D1FD /* rat_on_wood.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = rat_on_wood.caf; sourceTree = "<group>"; };
 		543CE6EC1894B09D0087D1FD /* sound-of.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sound-of.caf"; sourceTree = "<group>"; };
@@ -454,7 +452,6 @@
 				543CE6E61894B09D0087D1FD /* door1.caf */,
 				543CE6E71894B09D0087D1FD /* door2.caf */,
 				543CE6E81894B09D0087D1FD /* medusa.caf */,
-				543CE6E91894B09D0087D1FD /* organ.caf */,
 				543CE6EA1894B09D0087D1FD /* pee.caf */,
 				543CE6EB1894B09D0087D1FD /* rat_on_wood.caf */,
 				543CE6EC1894B09D0087D1FD /* sound-of.caf */,
@@ -930,7 +927,6 @@
 				543CE6F61894B09D0087D1FD /* door1.caf in Resources */,
 				E5B336DF1894347600D95FAC /* character.png in Resources */,
 				543CE7011894B09D0087D1FD /* wood1.caf in Resources */,
-				543CE6F91894B09D0087D1FD /* organ.caf in Resources */,
 				54F2B1D71894629E003D25D3 /* pause-soundon-btn@2x.png in Resources */,
 				A316F3D01894A6F9004253F5 /* porta@2x.png in Resources */,
 				54F2B1CF1894629E003D25D3 /* facebook-btn@2x.png in Resources */,
