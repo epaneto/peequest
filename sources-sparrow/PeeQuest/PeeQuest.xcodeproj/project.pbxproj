@@ -75,6 +75,8 @@
 		543CE79E18957FFE0087D1FD /* logo.xml in Resources */ = {isa = PBXBuildFile; fileRef = 543CE79A18957FFE0087D1FD /* logo.xml */; };
 		543CE79F18957FFE0087D1FD /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 543CE79B18957FFE0087D1FD /* logo@2x.png */; };
 		543CE7A018957FFE0087D1FD /* logo@2x.xml in Resources */ = {isa = PBXBuildFile; fileRef = 543CE79C18957FFE0087D1FD /* logo@2x.xml */; };
+		543CE7A11895812A0087D1FD /* track-finish.caf in Resources */ = {isa = PBXBuildFile; fileRef = 543CE79718957FE80087D1FD /* track-finish.caf */; };
+		543CE7A21895812C0087D1FD /* track-intro.caf in Resources */ = {isa = PBXBuildFile; fileRef = 543CE79818957FE80087D1FD /* track-intro.caf */; };
 		54F2AFC918942680003D25D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F2AFC818942680003D25D3 /* Foundation.framework */; };
 		54F2AFCB18942680003D25D3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F2AFCA18942680003D25D3 /* CoreGraphics.framework */; };
 		54F2AFCD18942680003D25D3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F2AFCC18942680003D25D3 /* UIKit.framework */; };
@@ -1095,6 +1097,8 @@
 				543CE788189574E30087D1FD /* credits4.png in Resources */,
 				543CE79D18957FFE0087D1FD /* logo.png in Resources */,
 				543CE73018955BA80087D1FD /* tutorial02@2x.png in Resources */,
+				543CE7A11895812A0087D1FD /* track-finish.caf in Resources */,
+				543CE7A21895812C0087D1FD /* track-intro.caf in Resources */,
 				543CE7111895281F0087D1FD /* track.caf in Resources */,
 				543CE79F18957FFE0087D1FD /* logo@2x.png in Resources */,
 				A316F3E31894C3D2004253F5 /* Icon.png in Resources */,

@@ -269,7 +269,7 @@
         [_player toogleMove];
         
     }else if(touch && touch.globalY < 100){
-//        [self damage];
+        [self damage];
     }
 }
 
