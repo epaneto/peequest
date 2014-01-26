@@ -78,8 +78,9 @@
         [[PQSoundPlayer sharedInstance] play:@"btn-press.caf"];
         BOOL facebook = [button isEqual:facebookButton];
         
-        NSString *texttoshare = @"Pee Quest Text Share";
-        UIImage *imagetoshare = [UIImage imageNamed:@"share.png"];
+        NSString *texttoshare = winner ? @"Pee faced his fears and made it! Face the dark with him too!  #ggj14 #peequest #doubleleft" : @"Pee didn’t make it this time… Are you afraid of the dark too? #ggj14 #peequest #doubleleft";
+        
+        UIImage *imagetoshare = [UIImage imageNamed:winner ? @"share-win.png" : @"share-lose.png"];
         NSArray *activityItems = @[texttoshare, imagetoshare];
         
         UIActivityViewController *activityVC = [[UIActivityViewController alloc] initWithActivityItems:activityItems applicationActivities:nil];

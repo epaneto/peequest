@@ -26,7 +26,7 @@
     if(tapToStart == NULL){
         tapToStart = [[SPImage alloc] initWithContentsOfFile:@"taptostart-title.png"];
         tapToStart.x = Sparrow.stage.width / 2 - tapToStart.width / 2;
-        tapToStart.y = logo.y + 100;
+        tapToStart.y = logo.y + logo.height + 10;
         [self addChild:tapToStart];
     }
 }
