@@ -21,6 +21,7 @@
 @implementation SPSound
 {
     NSMutableSet *_playingChannels;
+    SPSoundChannel *_channel;
 }
 
 - (instancetype)init
@@ -164,13 +165,13 @@
 
 - (void)play
 {
-    SPSoundChannel *channel = [self createChannel];
-    [channel addEventListener:@selector(onSoundCompleted:) atObject:self
+    _channel = [self createChannel];
+    [_channel addEventListener:@selector(onSoundCompleted:) atObject:self
                       forType:SPEventTypeCompleted];
-    [channel play];
+    [_channel play];
     
     if (!_playingChannels) _playingChannels = [[NSMutableSet alloc] init];    
-    [_playingChannels addObject:channel];
+    [_playingChannels addObject:_channel];
 }
 
 - (void)onSoundCompleted:(SPEvent *)event
@@ -197,5 +198,9 @@
     return [[[SPSound alloc] initWithContentsOfFile:path] autorelease];
 }
 
+- (SPSoundChannel *)channel
+{
+    return _channel;
+}
 
 @end

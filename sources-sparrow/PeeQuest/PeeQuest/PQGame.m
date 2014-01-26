@@ -49,10 +49,10 @@ static PQGame *_sharedInstance = nil;
     [SPAudioEngine start];
     _soundMuted = NO;
     
-    trackSound = [[SPSound alloc] initWithContentsOfFile:@"track.aifc"];
+    trackSound = [[SPSound alloc] initWithContentsOfFile:@"track.caf"];
     trackSoundChannel = [trackSound createChannel];
     trackSoundChannel.loop = YES;
-    [trackSound play];
+    [trackSoundChannel play];
     
     container = [SPSprite sprite];
     [self addChild:container];
@@ -136,7 +136,7 @@ static PQGame *_sharedInstance = nil;
     if(!_soundMuted){
         return;
     }
-    NSLog(@"unmute");
+
     _soundMuted = NO;
     [SPAudioEngine setMasterVolume:1.0];
 }

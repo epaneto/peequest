@@ -57,7 +57,7 @@
 /// Creates an audio channel that gives you more control over playback. Make sure to save
 /// a reference to the returned object, because the sound will immediately stop when it's released.
 - (SPSoundChannel *)createChannel;
-
+- (SPSoundChannel *)channel;
 /// ----------------
 /// @name Properties
 /// ----------------
