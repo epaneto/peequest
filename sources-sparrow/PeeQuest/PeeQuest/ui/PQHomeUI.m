@@ -29,11 +29,8 @@
         logo.loop = NO;
         logo.x = Sparrow.stage.width / 2 - logo.width / 2;
         logo.y = 45;
-        [self addChild:logo];
-        
         [Sparrow.juggler addObject:logo];
-        [logo play];
-
+        [self addChild:logo];
     }
     
     if(tapToStart == NULL){

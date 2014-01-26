@@ -23,4 +23,5 @@
 -(SPRectangle*)shadowBounds;
 -(SPRectangle * )getShadow;
 -(SPRectangle * )getBody;
+- (BOOL) damaged;
 @end

@@ -24,4 +24,5 @@
 -(void)pause;
 -(void)damage;
 -(void)complete;
+- (BOOL)tutorialIsOpened;
 @end

@@ -166,7 +166,12 @@
     for (PQBaseObstacle *movingObstacle in placedObstacles) {
         [[movingObstacle container] setX:(movingObstacle.container.x - [_player getVelocity]/1.77)];
         if ([placedObstacles indexOfObject:movingObstacle] < 2 && [movingObstacle checkColisionWithPlayer:_player]) {
-            [self complete];
+            if([movingObstacle isKindOfClass:[PQDoorController class]]){
+                [self complete];
+            }else{
+                [self damage];
+            }
+            
         }
     }
     
@@ -271,14 +276,12 @@
         }
         [_player toogleMove];
         
-    }else if(touch && touch.globalY < 100){
-        [self damage];
     }
 }
 
 - (void)damage
 {
-    if(playerState != PLAYER_STATE_PLAYING){
+    if(playerState != PLAYER_STATE_PLAYING || [_player damaged]){
         return;
     }
     
@@ -322,4 +325,10 @@
     }
     
 }
+
+- (BOOL)tutorialIsOpened
+{
+    return tutorial != NULL;
+}
+
 @end
