@@ -123,6 +123,7 @@
     if(_isDamaged){
         return;
     }
+    [self stopWalk];
     SPTween * tween = [SPTween tweenWithTarget:_view time:0.4 transition:SP_TRANSITION_EASE_OUT_BOUNCE];
     [tween fadeTo:0];
     tween.repeatCount = 2;
@@ -226,6 +227,11 @@
 -(SPRectangle*)shadowBounds
 {
     return _shadow_view.bounds;
+}
+
+- (BOOL) damaged
+{
+    return _isDamaged;
 }
 
 @end
