@@ -29,6 +29,7 @@
         logo.loop = NO;
         logo.x = Sparrow.stage.width / 2 - logo.width / 2;
         logo.y = 45;
+        [Sparrow.juggler addObject:logo];
         [self addChild:logo];
     }
     
@@ -74,8 +75,6 @@
 {
     [self build];
     [super show];
-    
-    [Sparrow.juggler addObject:logo];
 }
 
 - (void)hide
