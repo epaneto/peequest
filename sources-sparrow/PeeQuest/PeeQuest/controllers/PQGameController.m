@@ -75,6 +75,9 @@
     NSLog(@"initRainTimer");
     int randomTime = 2.0 + arc4random() % 5;
     NSLog(@"%i",randomTime);
+    if(_mainTimer != NULL){
+        [_mainTimer invalidate];
+    }
     _mainTimer = [NSTimer scheduledTimerWithTimeInterval:randomTime target:self selector:@selector(initRain:) userInfo:nil repeats:NO];
 }
 
