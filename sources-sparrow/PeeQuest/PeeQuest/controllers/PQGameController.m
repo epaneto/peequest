@@ -14,13 +14,14 @@
 #import "PQPlayerController.h"
 #import "PQGame.h"
 #import "PQGameplayUI.h"
-
+#import "PQTutorial.h"
 
 @interface PQGameController ()
 {
     BOOL win;
     int tempTickCounter;
     int lifes;
+    PQTutorial *tutorial;
 }
 
 @property SPSprite *mainContainer;
@@ -69,6 +70,7 @@
     [self updatePlacedObstacles];
     _paused = YES;
     levelOffset = 0;
+    
 }
 
 -(void)initRainTimer
@@ -200,7 +202,6 @@
 
 - (void)start
 {
-    
     if ([placedObstacles count] > 0) {
         NSArray *tempArray = [placedObstacles copy];
         for (id currentObstacle in tempArray) {
@@ -214,6 +215,15 @@
      [self updatePlacedObstacles];
     lifes = PLAYER_LIFES;
     [[PQGameplayUI sharedInstance] updateLifes:lifes];
+    
+    if(![[NSUserDefaults standardUserDefaults] objectForKey:@"tutorialWatched"]){
+        if(tutorial == NULL){
+            tutorial = [[PQTutorial alloc] init];
+            [tutorial build];
+            [_mainContainer.parent addChild:tutorial];
+        }
+    }
+    
 }
 
 - (void)onUserTouch:(SPTouchEvent*)event
@@ -223,8 +233,23 @@
     SPTouch *touch = [[event touchesWithTarget:_mainContainer
                                       andPhase:SPTouchPhaseBegan] anyObject];
 
+    
     if (touch && touch.globalY > 100)
     {
+        if(tutorial != NULL){
+            if([tutorial step] >= 2){
+                if([tutorial step] == 3){
+                    [tutorial hide];
+                    tutorial = NULL;
+                    [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"tutorialWatched"];
+                    [[NSUserDefaults standardUserDefaults] synchronize];
+                }else{
+                    [tutorial next];
+                }
+            }else{
+                return;
+            }
+        }
         [_player toogleMove];
         
     }else if(touch && touch.globalY < 100){
