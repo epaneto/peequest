@@ -237,6 +237,7 @@
 		543CE72A18955BA80087D1FD /* tutorial03@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tutorial03@2x.png"; sourceTree = "<group>"; };
 		543CE72B18955BA80087D1FD /* tutorial04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tutorial04.png; sourceTree = "<group>"; };
 		543CE72C18955BA80087D1FD /* tutorial04@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tutorial04@2x.png"; sourceTree = "<group>"; };
+		543CE735189564240087D1FD /* organ.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = organ.caf; sourceTree = "<group>"; };
 		54F2AFC518942680003D25D3 /* PeeQuest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeeQuest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54F2AFC818942680003D25D3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		54F2AFCA18942680003D25D3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -498,6 +499,7 @@
 		543CE6E21894B09D0087D1FD /* sounds */ = {
 			isa = PBXGroup;
 			children = (
+				543CE735189564240087D1FD /* organ.caf */,
 				543CE710189528160087D1FD /* track.caf */,
 				543CE6E31894B09D0087D1FD /* btn-press.caf */,
 				543CE6E41894B09D0087D1FD /* damage1.caf */,
