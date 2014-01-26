@@ -55,8 +55,13 @@
 
 -(void)show:(SPSprite *)container
 {
+<<<<<<< HEAD
     _view.x = 123;
     _view.y = 150;
+=======
+    _view.x = PQ_LEVEL_INITIAL_POSITION;
+    _view.y = 160;
+>>>>>>> ff88eac80dfc37358f896ec5f664371027849352
     
     _shadow_view.x = 130;
     _shadow_view.y = 42;

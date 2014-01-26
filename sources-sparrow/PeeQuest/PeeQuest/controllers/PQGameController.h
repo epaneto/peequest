@@ -11,6 +11,7 @@
 #define PLAYER_STATE_WIN 1
 #define PLAYER_STATE_LOSE 2
 #define PLAYER_STATE_PLAYING 3
+#define PLAYER_LIFES 3
 
 @interface PQGameController : NSObject
 {
@@ -21,4 +22,5 @@
 -(void)start;
 -(void)resume;
 -(void)pause;
+-(void)damage;
 @end

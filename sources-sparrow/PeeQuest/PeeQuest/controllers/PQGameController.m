@@ -12,10 +12,12 @@
 #import "PQPlayerController.h"
 #import "PQGame.h"
 
+
 @interface PQGameController ()
 {
     BOOL win;
     int tempTickCounter;
+    int lifes;
 }
 
 @property SPSprite *mainContainer;
@@ -149,12 +151,14 @@
 
 - (void)pause
 {
-    _paused = YES;
-    [_player stopWalk];
-    if(_mainTimer != NULL){
-        [_mainTimer invalidate];
+    if(playerState == PLAYER_STATE_PLAYING) {
+        _paused = YES;
+        [_player stopWalk];
+        if(_mainTimer != NULL){
+            [_mainTimer invalidate];
+        }
+        [Sparrow.juggler pause];
     }
-    [Sparrow.juggler pause];
 }
 
 - (void)resume
@@ -169,18 +173,34 @@
 
 - (void)start
 {
+    lifes = PLAYER_LIFES;
     [self resume];
 }
 
 - (void)onUserTouch:(SPTouchEvent*)event
 {
     if(_paused) return;
+    if(playerState != PLAYER_STATE_PLAYING) {
+        [[PQGame sharedInstance] setState:STATE_RESTART];
+        return;
+    }
     SPTouch *touch = [[event touchesWithTarget:_mainContainer
                                       andPhase:SPTouchPhaseBegan] anyObject];
     
     if (touch && touch.globalY > 100)
     {
         [_player toogleMove];
+    }
+}
+
+- (void)damage
+{
+    lifes--;
+    if(lifes <= 0){
+        lifes = 0;
+        playerState = PLAYER_STATE_LOSE;
+        [[PQGame sharedInstance] setState:STATE_FINISH];
+
     }
 }
 
@@ -194,12 +214,6 @@
         }
         [self updatePlacedObstacles];
     }
-    if(playerState == PLAYER_STATE_PLAYING) {
-        if(tempTickCounter > 300){
-            playerState = PLAYER_STATE_WIN;
-            [[PQGame sharedInstance] setState:STATE_FINISH];
-        }
-    }
-    tempTickCounter++;
+    
 }
 @end
