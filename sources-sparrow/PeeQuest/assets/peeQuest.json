@@ -1,90 +1,94 @@
 {
 	"canvas": {
-		"width": 2000,
-		"height": 320
+		"width": 9088,
+		"height": 640
 	},
 	"name": "peeQuest",
 	"layers": [
-               {
-               "id": "default",
-               "entities": [
-                            {
-                            "name": "",
-                            "bounds": {
-                            "x": 0,
-                            "y": 0,
-                            "w": 30,
-                            "h": 30
-                            },
-                            "offset": {
-                            "x": 200,
-                            "y": 300
-                            },
-                            "tag": 0,
-                            "scale": {
-                            "x": 1,
-                            "y": 1
-                            },
-                            "zIndex": 1
-                            },
-                            {
-                            "name": "",
-                            "bounds": {
-                            "x": 0,
-                            "y": 0,
-                            "w": 30,
-                            "h": 30
-                            },
-                            "offset": {
-                            "x": 250,
-                            "y": 300
-                            },
-                            "tag": 0,
-                            "scale": {
-                            "x": 1,
-                            "y": 1
-                            },
-                            "zIndex": 1
-                            },
-                            {
-                            "name": "",
-                            "bounds": {
-                            "x": 0,
-                            "y": 0,
-                            "w": 30,
-                            "h": 30
-                            },
-                            "offset": {
-                            "x": 300,
-                            "y": 300
-                            },
-                            "tag": 0,
-                            "scale": {
-                            "x": 1,
-                            "y": 1
-                            },
-                            "zIndex": 1
-                            },
-                            {
-                            "name": "",
-                            "bounds": {
-                            "x": 0,
-                            "y": 0,
-                            "w": 30,
-                            "h": 30
-                            },
-                            "offset": {
-                            "x": 350,
-                            "y": 300
-                            },
-                            "tag": 0,
-                            "scale": {
-                            "x": 1,
-                            "y": 1
-                            },
-                            "zIndex": 1
-                            }
-                            ]
-               }
-               ]
+		{
+			"id": "default",
+			"entities": [
+				{
+					"name": "porta.png",
+					"bounds": {
+						"x": 284,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					},
+					"offset": {
+						"x": 0,
+						"y": 0
+					},
+					"tag": 0,
+					"scale": {
+						"x": 1,
+						"y": 1
+					},
+					"zIndex": 0,
+					"type": 0
+				},
+				{
+					"name": "alcapao_normal.png",
+					"bounds": {
+						"x": 1260,
+						"y": 406,
+						"w": 0,
+						"h": 0
+					},
+					"offset": {
+						"x": 0,
+						"y": 0
+					},
+					"tag": 0,
+					"scale": {
+						"x": 1,
+						"y": 1
+					},
+					"zIndex": 0,
+					"type": 1
+				},
+				{
+					"name": "quadro_normal.png",
+					"bounds": {
+						"x": 2485,
+						"y": -50,
+						"w": 0,
+						"h": 0
+					},
+					"offset": {
+						"x": 0,
+						"y": 0
+					},
+					"tag": 0,
+					"scale": {
+						"x": 1,
+						"y": 1
+					},
+					"zIndex": 0,
+					"type": 0
+				},
+				{
+					"name": "rato_sombra.png",
+					"bounds": {
+						"x": 3081,
+						"y": -227,
+						"w": 0,
+						"h": 0
+					},
+					"offset": {
+						"x": 0,
+						"y": 0
+					},
+					"tag": 0,
+					"scale": {
+						"x": 1,
+						"y": 1
+					},
+					"zIndex": 0,
+					"type": 2
+				}
+			]
+		}
+	]
 }
