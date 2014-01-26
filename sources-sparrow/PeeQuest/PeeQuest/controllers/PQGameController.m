@@ -65,6 +65,7 @@
 - (void)pause
 {
     _paused = YES;
+    [_player stopWalk];
     if(_mainTimer != NULL){
         [_mainTimer invalidate];
     }

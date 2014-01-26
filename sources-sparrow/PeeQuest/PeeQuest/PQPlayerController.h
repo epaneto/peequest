@@ -13,4 +13,6 @@
 -(void)setup;
 -(void)show :(SPSprite * )container;
 -(void)toogleMove;
+-(void)stopWalk;
+-(void)startWalk;
 @end
