@@ -82,6 +82,8 @@ static PQGame *_sharedInstance = nil;
         winnerScreen = NULL;
     }
 
+    [containerUI removeEventListener:@selector(onStartTouch:)  atObject:self forType:SP_EVENT_TYPE_TOUCH];
+
     
     NSLog(@"setState %i", state);
     _state = state;
