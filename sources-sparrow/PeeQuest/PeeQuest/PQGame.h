@@ -28,4 +28,5 @@
 - (void)unmuteSound;
 - (BOOL)isSoundMuted;
 - (BOOL)isWinner;
+- (int)state;
 @end

@@ -185,6 +185,7 @@
     tempTickCounter = 0;
     playerState = PLAYER_STATE_PLAYING;
     _paused = NO;
+    [_player stopWalk];
     [Sparrow.juggler resume];
     ////initialize timer
     [self initRainTimer];
@@ -209,17 +210,17 @@
 
 - (void)onUserTouch:(SPTouchEvent*)event
 {
-    if(_paused) return;
-    if(playerState != PLAYER_STATE_PLAYING) {
-        [[PQGame sharedInstance] setState:STATE_RESTART];
-        return;
-    }
+    if(_paused || playerState != PLAYER_STATE_PLAYING) return;
+
     SPTouch *touch = [[event touchesWithTarget:_mainContainer
                                       andPhase:SPTouchPhaseBegan] anyObject];
-    
+
     if (touch && touch.globalY > 100)
     {
         [_player toogleMove];
+        
+    }else if(touch && touch.globalY < 100){
+        [self damage];
     }
 }
 

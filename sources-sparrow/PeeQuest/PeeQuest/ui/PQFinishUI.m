@@ -15,12 +15,21 @@
     SPButton *facebookButton;
     SPButton *twitterButton;
     SPSprite *buttons;
+    SPQuad *hitArea;
+    
     BOOL winner;
 }
 
 -(void)build
 {
     winner = [[PQGame sharedInstance] isWinner];
+    
+    
+    if(hitArea == NULL){
+        hitArea = [[SPQuad alloc] initWithWidth:Sparrow.stage.width height:Sparrow.stage.height];
+        hitArea.alpha = 0.0;
+        [self addChild:hitArea];
+    }
     
     if(title == NULL){
         title = [[SPImage alloc] initWithContentsOfFile:winner ? @"win-title.png" : @"lose-title.png"];
@@ -50,6 +59,7 @@
         [buttons addChild:twitterButton];
     }
     
+    
     buttons.x = Sparrow.stage.width / 2 - buttons.width / 2;
     buttons.y = Sparrow.stage.height - buttons.height - 50;
     
@@ -59,7 +69,11 @@
 {
     SPButton *button = (SPButton*)event.currentTarget;
     SPTouch *touch = [[event touchesWithTarget:self andPhase:SPTouchPhaseBegan] anyObject];
-    if([touch phase] != SPTouchPhaseEnded && button.isDown){
+    
+    NSSet *touches = [event touchesWithTarget:self];
+    if (touches.count) [event stopPropagation];
+    
+    if([touch phase] == SPTouchPhaseBegan && button.isDown){
         
         [[PQSoundPlayer sharedInstance] play:@"btn-press.caf"];
         BOOL facebook = [button isEqual:facebookButton];

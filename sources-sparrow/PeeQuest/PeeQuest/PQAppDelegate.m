@@ -41,7 +41,9 @@ void onUncaughtException(NSException *exception)
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
-    [[PQGame sharedInstance] setState:STATE_PAUSE];
+    if([[PQGame sharedInstance] state] == STATE_PLAY){
+        [[PQGame sharedInstance] setState:STATE_PAUSE];
+    }
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application

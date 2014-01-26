@@ -20,6 +20,7 @@
     BOOL _soundMuted;
     SPSound* trackSound;
     SPSoundChannel *trackSoundChannel;
+    int _state;
 }
 @property PQGameController * game;
 @property PQBaseUI *currentView;
@@ -68,7 +69,12 @@ static PQGame *_sharedInstance = nil;
 
 - (void)setState:(int)state
 {
+    if(_state == state){
+        return;
+    }
+    
     NSLog(@"setState %i", state);
+    _state = state;
     switch(state){
         case STATE_HOME:
             [self setView:[PQHomeUI class]];
@@ -87,6 +93,7 @@ static PQGame *_sharedInstance = nil;
             
         case STATE_FINISH:
             [self setView:[PQFinishUI class]];
+            [containerUI addEventListener:@selector(onStartTouch:)  atObject:self forType:SP_EVENT_TYPE_TOUCH];
             break;
             
         case STATE_RESTART:
@@ -114,6 +121,7 @@ static PQGame *_sharedInstance = nil;
 - (void)onStartTouch:(SPTouchEvent*)event
 {
     SPTouch *touch = [[event touchesWithTarget:self andPhase:SPTouchPhaseBegan] anyObject];
+    
     if([touch phase] == SPTouchPhaseBegan){
         [[PQSoundPlayer sharedInstance] play:@"btn-press.caf"];
         [containerUI removeEventListener:@selector(onStartTouch:)  atObject:self forType:SP_EVENT_TYPE_TOUCH];
@@ -149,6 +157,11 @@ static PQGame *_sharedInstance = nil;
 - (BOOL)isWinner
 {
     return [_game playerState] == PLAYER_STATE_WIN;
+}
+
+-(int)state
+{
+    return _state;
 }
 
 @end

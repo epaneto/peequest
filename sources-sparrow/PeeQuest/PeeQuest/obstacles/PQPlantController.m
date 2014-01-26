@@ -31,7 +31,7 @@
     }
 }
 
--(void)showAssetAnimation :(NSString * )
+-(void)showAssetAnimation :(NSString * )asset
 {
     [self.container removeAllChildren];
     
