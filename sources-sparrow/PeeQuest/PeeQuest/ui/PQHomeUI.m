@@ -29,6 +29,7 @@
         logo.loop = NO;
         logo.x = Sparrow.stage.width / 2 - logo.width / 2;
         logo.y = 45;
+        [logo setCurrentFrame:0];
         [Sparrow.juggler addObject:logo];
         [self addChild:logo];
     }

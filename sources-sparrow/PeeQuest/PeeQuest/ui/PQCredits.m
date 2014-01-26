@@ -28,7 +28,6 @@
         [steps addObject:[[SPImage alloc] initWithContentsOfFile:@"credits4.png"]];
         [steps addObject:[[SPImage alloc] initWithContentsOfFile:@"credits5.png"]];
         [steps addObject:[[SPImage alloc] initWithContentsOfFile:@"credits6.png"]];
-        [steps addObject:[[SPImage alloc] initWithContentsOfFile:@"credits7.png"]];
     }
     
     if(closeButton == NULL){
