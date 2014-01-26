@@ -2,7 +2,7 @@
 <!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
 <!-- $TexturePacker:SmartUpdate:513c294e27e208014ad83fa55138f6b2:1e9419a13cc3f1f5f8a1a8640610e005:a06e47c9a6bc2f900061e663c58dc310$ -->
 <TextureAtlas imagePath="logo@2x.png">
-    <SubTexture name="logo/intro_0000" x="1994" y="4" width="2" height="2" frameX="0" frameY="0" frameWidth="440" frameHeight="330"/>
+    <SubTexture name="logo/intro_0000" x="310" y="4" width="2" height="2" frameX="0" frameY="0" frameWidth="440" frameHeight="330"/>
     <SubTexture name="logo/intro_0001" x="310" y="1846" width="52" height="74" frameX="-190" frameY="-98" frameWidth="440" frameHeight="330"/>
     <SubTexture name="logo/intro_0002" x="310" y="1924" width="52" height="70" frameX="-190" frameY="-110" frameWidth="440" frameHeight="330"/>
     <SubTexture name="logo/intro_0003" x="500" y="1842" width="52" height="66" frameX="-190" frameY="-118" frameWidth="440" frameHeight="330"/>
