@@ -17,6 +17,7 @@
 @property SPMovieClip * shadow_view;
 @property (nonatomic,strong) SPTexture * texture;
 @property BOOL isWalking;
+@property BOOL isDamaged;
 @property uint idleColor;
 @property uint darkColor;
 @property (nonatomic,strong) SPTextureAtlas * playerAtlas;
@@ -119,11 +120,21 @@
 
 -(void)showDamage
 {
+    if(_isDamaged){
+        return;
+    }
     SPTween * tween = [SPTween tweenWithTarget:_view time:0.4 transition:SP_TRANSITION_EASE_OUT_BOUNCE];
     [tween fadeTo:0];
     tween.repeatCount = 2;
     tween.reverse = YES;
+    _isDamaged = YES;
     [Sparrow.juggler addObject:tween];
+    [self performSelector:@selector(resetDamage) withObject:self afterDelay:1.0];
+}
+
+-(void)resetDamage
+{
+    _isDamaged = NO;
 }
 
 -(void) showPlayerAnimation :(NSString * )label
@@ -177,7 +188,9 @@
 
 -(int)getVelocity
 {
-    if(_isWalking)
+    if(_isDamaged)
+        return -1;
+    else if(_isWalking)
         return 2;
     else
         return 0;

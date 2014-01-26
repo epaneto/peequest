@@ -65,6 +65,7 @@
     [_mainContainer addEventListener:@selector(onUserTouch:)  atObject:self forType:SP_EVENT_TYPE_TOUCH];
     
     [self loadJSONObstacles];
+    [self updatePlacedObstacles];
     _paused = YES;
     levelOffset = 0;
 }
@@ -161,8 +162,6 @@
         }
     }
     
-    //TODO: complete level
-    //[self complete]
 }
 
 -(void)showRain {
@@ -196,6 +195,18 @@
 
 - (void)start
 {
+    
+    if ([placedObstacles count] > 0) {
+        NSArray *tempArray = [placedObstacles copy];
+        for (id currentObstacle in tempArray) {
+            [_obstaclesContainer removeChild:[currentObstacle container]];
+            [placedObstacles removeObject:currentObstacle];
+        }
+        tempArray = NULL;
+    }
+    
+    levelOffset = 0;
+     [self updatePlacedObstacles];
     lifes = PLAYER_LIFES;
 }
 
@@ -217,23 +228,32 @@
 
 - (void)damage
 {
+    if(playerState != PLAYER_STATE_PLAYING){
+        return;
+    }
+    
     lifes--;
     if(lifes <= 0){
         lifes = 0;
         [[PQSoundPlayer sharedInstance] play:@"pee.caf"];
         playerState = PLAYER_STATE_LOSE;
         [[PQGame sharedInstance] setState:STATE_FINISH];
+        [_player showLose];
+        
     }else{
         NSString *damageSound = arc4random() * 2.0 < 1.0 ? @"damage1.caf" : @"damage2.caf";
         [[PQSoundPlayer sharedInstance] play:damageSound];
+        [_player showDamage];
     }
 }
 
 -(void)complete
 {
-    playerState = PLAYER_STATE_WIN;
-    [[PQGame sharedInstance] setState:STATE_FINISH];
-    [_player showWin];
+    if(playerState != PLAYER_STATE_WIN){
+        playerState = PLAYER_STATE_WIN;
+        [[PQGame sharedInstance] setState:STATE_FINISH];
+        [_player showWin];
+    }
 }
 
 - (void)updateGame:(SPEnterFrameEvent *)event
