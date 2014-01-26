@@ -28,87 +28,26 @@
 					"zIndex": 0,
 					"type": 0
 				},
-				{
-					"name": "alcapao_normal.png",
-					"bounds": {
-						"x": 1260,
-						"y": 406,
-						"w": 0,
-						"h": 0
-					},
-					"offset": {
-						"x": 0,
-						"y": 0
-					},
-					"tag": 2,
-					"scale": {
-						"x": 1,
-						"y": 1
-					},
-					"zIndex": 0,
-					"type": 1
-				},
-				{
-					"name": "quadro_normal.png",
-					"bounds": {
-						"x": 2485,
-						"y": -50,
-						"w": 0,
-						"h": 0
-					},
-					"offset": {
-						"x": 0,
-						"y": 0
-					},
-					"tag": 2,
-					"scale": {
-						"x": 1,
-						"y": 1
-					},
-					"zIndex": 0,
-					"type": 0
-				},
-				{
-					"name": "rato_sombra.png",
-					"bounds": {
-						"x": 3081,
-						"y": -227,
-						"w": 0,
-						"h": 0
-					},
-					"offset": {
-						"x": 0,
-						"y": 0
-					},
-					"tag": 2,
-					"scale": {
-						"x": 1,
-						"y": 1
-					},
-					"zIndex": 0,
-					"type": 2
-				},
                 {
-                    "name": "porta.png",
+                    "name": "rato",
                     "bounds": {
-                         "x": 3995,
-                         "y": 46,
+                         "x": 1260,
+                         "y": 406,
                          "w": 0,
                          "h": 0
                     },
                     "offset": {
                          "x": 0,
                          "y": 0
-                    },
-                    "tag": 1,
-                    "scale": {
+                         },
+                         "tag": 2,
+                         "scale": {
                          "x": 1,
                          "y": 1
-                    },
-                    "zIndex": 0,
-                    "type": 0
-                }
-			]
+                         },
+                         "zIndex": 0,
+                         "type": 2
+                }			]
 		}
 	]
 }

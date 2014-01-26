@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 Doubleleft. All rights reserved.
 //
 
+#import "PQRatController.h"
 #import "PQDoorController.h"
 #import "PQBaseObstacle.h"
 #import "PQGameController.h"
@@ -112,7 +113,9 @@
             obstacleObject = [[PQDoorController alloc] initWithDict:currentObject];
         } else if([[currentObject objectForKey:@"tag"] integerValue] == PQObstacleTypePlant){
             obstacleObject = [[PQPlantController alloc] initWithDict:currentObject];
-        }else {
+        } else if ([[currentObject objectForKey:@"tag"] integerValue] == PQObstacleTypeRat) {
+            obstacleObject = [[PQRatController alloc] initWithDict:currentObject];
+        } else {
             obstacleObject = [[PQBaseObstacle alloc] initWithDict:currentObject];
         }
         [allObstacles addObject:obstacleObject];
@@ -130,7 +133,7 @@
     NSArray *obstacles = [allObstacles filteredArrayUsingPredicate:predicate];
     
     for (PQBaseObstacle *currentObstacle in obstacles) {
-        if (![placedObstacles containsObject:currentObstacle]) {
+        if (![placedObstacles containsObject:currentObstacle] && [currentObstacle type] == PQObstacleTypeDecoration) {
             SPImage *image = [SPImage imageWithContentsOfFile:[currentObstacle assestName]];
             [image setX:0];
             [image setY:0];
@@ -144,6 +147,14 @@
             
             [currentObstacle setContainer:obstacleContainer];
             
+            [_obstaclesContainer addChild:[currentObstacle container]];
+            [placedObstacles addObject:currentObstacle];
+        } else if (![placedObstacles containsObject:currentObstacle]) {
+            if ([currentObstacle isKindOfClass:[PQRatController class]]) {
+                [(PQRatController *) currentObstacle setup];
+            }
+            [[currentObstacle container] setX:currentObstacle.offset.x - levelOffset];
+            [[currentObstacle container] setY:currentObstacle.offset.y];
             [_obstaclesContainer addChild:[currentObstacle container]];
             [placedObstacles addObject:currentObstacle];
         }

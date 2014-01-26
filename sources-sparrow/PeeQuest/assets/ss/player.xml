@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
-<!-- $TexturePacker:SmartUpdate:db740d3c77eaca7cc3a2fd9504a92651:6effdf03cc333ac28e73c6f4ccc986c1:2b8ce506fda4d5664accfe8f6e48eb22$ -->
+<!-- $TexturePacker:SmartUpdate:ec567f841c71ee3c9a2a402c50fef4b4:5fe318fffd1d140ce5f2c45521c6ea9d:2b8ce506fda4d5664accfe8f6e48eb22$ -->
 <TextureAtlas imagePath="player.png">
-    <SubTexture name="hero_die/dead_0000" x="151" y="361" width="49" height="89" frameX="-8" frameY="-5" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_die/dead_0000" x="205" y="271" width="49" height="89" frameX="-8" frameY="-5" frameWidth="60" frameHeight="95"/>
     <SubTexture name="hero_die/dead_0001" x="2" y="270" width="51" height="89" frameX="-7" frameY="-5" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_die/dead_0002" x="2" y="452" width="50" height="89" frameX="-8" frameY="-5" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_die/dead_0002" x="2" y="361" width="50" height="89" frameX="-8" frameY="-5" frameWidth="60" frameHeight="95"/>
     <SubTexture name="hero_die/dead_0003" x="104" y="180" width="50" height="88" frameX="-8" frameY="-6" frameWidth="60" frameHeight="95"/>
     <SubTexture name="hero_die/dead_0004" x="434" y="91" width="52" height="88" frameX="-7" frameY="-6" frameWidth="60" frameHeight="95"/>
     <SubTexture name="hero_die/dead_0005" x="381" y="91" width="51" height="88" frameX="-8" frameY="-6" frameWidth="60" frameHeight="95"/>
@@ -24,89 +24,89 @@
     <SubTexture name="hero_die/dead_0019" x="328" y="91" width="51" height="88" frameX="-8" frameY="-6" frameWidth="60" frameHeight="95"/>
     <SubTexture name="hero_die/dead_0020" x="274" y="91" width="52" height="88" frameX="-7" frameY="-6" frameWidth="60" frameHeight="95"/>
     <SubTexture name="hero_die/dead_0021" x="2" y="180" width="50" height="88" frameX="-8" frameY="-6" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_die/dead_0022" x="402" y="363" width="50" height="89" frameX="-8" frameY="-5" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_die/dead_0022" x="406" y="272" width="50" height="89" frameX="-8" frameY="-5" frameWidth="60" frameHeight="95"/>
     <SubTexture name="hero_die/dead_0023" x="309" y="181" width="51" height="89" frameX="-7" frameY="-5" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_die/dead_0024" x="100" y="361" width="49" height="89" frameX="-8" frameY="-5" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_die/die_0000" x="390" y="639" width="46" height="91" frameX="-7" frameY="-3" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_die/die_0001" x="146" y="730" width="47" height="92" frameX="-6" frameY="-2" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_die/die_0002" x="193" y="825" width="46" height="93" frameX="-6" frameY="-1" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_die/die_0003" x="436" y="733" width="47" height="93" frameX="-5" frameY="-1" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_die/die_0004" x="288" y="827" width="47" height="94" frameX="-4" frameY="0" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_die/die_0005" x="97" y="918" width="46" height="94" frameX="-4" frameY="0" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_die/die_0006" x="380" y="923" width="45" height="94" frameX="-3" frameY="0" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_die/die_0007" x="2" y="917" width="46" height="94" frameX="-2" frameY="0" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_die/die_0008" x="432" y="828" width="46" height="94" frameX="-1" frameY="0" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_die/die_0009" x="333" y="923" width="45" height="94" frameX="-2" frameY="0" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_die/die_0010" x="337" y="827" width="46" height="94" frameX="-2" frameY="0" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_die/die_0011" x="286" y="923" width="45" height="94" frameX="-3" frameY="0" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_die/die_0012" x="239" y="922" width="45" height="94" frameX="-3" frameY="0" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_die/die_0013" x="192" y="920" width="45" height="94" frameX="-4" frameY="0" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_die/die_0014" x="145" y="919" width="45" height="94" frameX="-5" frameY="0" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_die/die_0015" x="50" y="918" width="45" height="94" frameX="-6" frameY="0" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_die/die_0016" x="385" y="827" width="45" height="94" frameX="-7" frameY="0" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_die/die_0017" x="241" y="827" width="45" height="93" frameX="-7" frameY="-1" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_die/die_0018" x="50" y="823" width="45" height="93" frameX="-7" frameY="-1" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_die/die_0019" x="387" y="732" width="47" height="93" frameX="-6" frameY="-1" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_die/die_0020" x="291" y="732" width="47" height="93" frameX="-6" frameY="-1" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_die/die_0021" x="2" y="728" width="47" height="92" frameX="-6" frameY="-2" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_die/die_0022" x="147" y="637" width="47" height="91" frameX="-7" frameY="-3" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_die/die_0023" x="53" y="543" width="47" height="90" frameX="-8" frameY="-4" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_idle/idle_0000" x="342" y="639" width="46" height="91" frameX="-7" frameY="-3" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_idle/idle_0001" x="98" y="636" width="47" height="91" frameX="-7" frameY="-3" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_idle/idle_0002" x="102" y="544" width="48" height="90" frameX="-7" frameY="-4" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_idle/idle_0003" x="452" y="454" width="47" height="90" frameX="-8" frameY="-4" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_idle/idle_0004" x="2" y="543" width="49" height="90" frameX="-7" frameY="-4" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_idle/idle_0005" x="54" y="452" width="48" height="89" frameX="-8" frameY="-5" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_idle/idle_0006" x="352" y="363" width="48" height="89" frameX="-8" frameY="-5" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_idle/idle_0007" x="206" y="271" width="50" height="89" frameX="-7" frameY="-5" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_idle/idle_0008" x="302" y="363" width="48" height="89" frameX="-8" frameY="-5" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_idle/idle_0009" x="359" y="272" width="49" height="89" frameX="-7" frameY="-5" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_idle/idle_0010" x="308" y="272" width="49" height="89" frameX="-7" frameY="-5" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_idle/idle_0011" x="454" y="363" width="47" height="89" frameX="-8" frameY="-5" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_idle/idle_0012" x="51" y="361" width="47" height="89" frameX="-8" frameY="-5" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_idle/idle_0013" x="2" y="361" width="47" height="89" frameX="-8" frameY="-5" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_idle/idle_0014" x="459" y="272" width="47" height="89" frameX="-8" frameY="-5" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_idle/idle_0015" x="55" y="270" width="49" height="89" frameX="-7" frameY="-5" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_idle/idle_0016" x="258" y="181" width="49" height="89" frameX="-7" frameY="-5" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_idle/idle_0017" x="252" y="363" width="48" height="89" frameX="-8" frameY="-5" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_idle/idle_0018" x="202" y="362" width="48" height="89" frameX="-8" frameY="-5" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_idle/idle_0019" x="258" y="272" width="48" height="89" frameX="-8" frameY="-5" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_idle/idle_0020" x="156" y="270" width="48" height="89" frameX="-8" frameY="-5" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_die/dead_0024" x="55" y="270" width="49" height="89" frameX="-8" frameY="-5" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_die/die_0000" x="390" y="640" width="46" height="91" frameX="-7" frameY="-3" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_die/die_0001" x="147" y="731" width="47" height="92" frameX="-6" frameY="-2" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_die/die_0002" x="193" y="827" width="46" height="93" frameX="-6" frameY="-1" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_die/die_0003" x="436" y="734" width="47" height="93" frameX="-5" frameY="-1" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_die/die_0004" x="288" y="828" width="47" height="94" frameX="-4" frameY="0" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_die/die_0005" x="97" y="920" width="46" height="94" frameX="-4" frameY="0" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_die/die_0006" x="380" y="924" width="45" height="94" frameX="-3" frameY="0" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_die/die_0007" x="2" y="918" width="46" height="94" frameX="-2" frameY="0" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_die/die_0008" x="432" y="829" width="46" height="94" frameX="-1" frameY="0" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_die/die_0009" x="333" y="924" width="45" height="94" frameX="-2" frameY="0" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_die/die_0010" x="337" y="828" width="46" height="94" frameX="-2" frameY="0" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_die/die_0011" x="286" y="924" width="45" height="94" frameX="-3" frameY="0" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_die/die_0012" x="239" y="923" width="45" height="94" frameX="-3" frameY="0" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_die/die_0013" x="192" y="922" width="45" height="94" frameX="-4" frameY="0" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_die/die_0014" x="145" y="920" width="45" height="94" frameX="-5" frameY="0" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_die/die_0015" x="50" y="919" width="45" height="94" frameX="-6" frameY="0" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_die/die_0016" x="385" y="828" width="45" height="94" frameX="-7" frameY="0" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_die/die_0017" x="241" y="828" width="45" height="93" frameX="-7" frameY="-1" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_die/die_0018" x="50" y="824" width="45" height="93" frameX="-7" frameY="-1" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_die/die_0019" x="387" y="733" width="47" height="93" frameX="-6" frameY="-1" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_die/die_0020" x="244" y="733" width="47" height="93" frameX="-6" frameY="-1" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_die/die_0021" x="98" y="731" width="47" height="92" frameX="-6" frameY="-2" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_die/die_0022" x="147" y="638" width="47" height="91" frameX="-7" frameY="-3" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_die/die_0023" x="447" y="455" width="47" height="90" frameX="-8" frameY="-4" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_idle/idle_0000" x="342" y="640" width="46" height="91" frameX="-7" frameY="-3" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_idle/idle_0001" x="294" y="640" width="46" height="91" frameX="-7" frameY="-3" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_idle/idle_0002" x="98" y="638" width="47" height="91" frameX="-7" frameY="-3" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_idle/idle_0003" x="392" y="547" width="47" height="91" frameX="-7" frameY="-3" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_idle/idle_0004" x="393" y="363" width="46" height="90" frameX="-8" frameY="-4" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_idle/idle_0005" x="345" y="363" width="46" height="90" frameX="-8" frameY="-4" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_idle/idle_0006" x="297" y="363" width="46" height="90" frameX="-8" frameY="-4" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_idle/idle_0007" x="249" y="363" width="46" height="90" frameX="-8" frameY="-4" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_idle/idle_0008" x="201" y="362" width="46" height="90" frameX="-8" frameY="-4" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_idle/idle_0009" x="153" y="361" width="46" height="90" frameX="-8" frameY="-4" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_idle/idle_0010" x="347" y="455" width="47" height="90" frameX="-7" frameY="-4" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_idle/idle_0011" x="298" y="455" width="47" height="90" frameX="-7" frameY="-4" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_idle/idle_0012" x="249" y="455" width="47" height="90" frameX="-7" frameY="-4" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_idle/idle_0013" x="149" y="453" width="47" height="90" frameX="-7" frameY="-4" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_idle/idle_0014" x="100" y="453" width="47" height="90" frameX="-7" frameY="-4" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_idle/idle_0015" x="54" y="361" width="48" height="89" frameX="-7" frameY="-5" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_idle/idle_0016" x="458" y="272" width="47" height="89" frameX="-8" frameY="-5" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_idle/idle_0017" x="258" y="181" width="49" height="89" frameX="-7" frameY="-5" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_idle/idle_0018" x="356" y="272" width="48" height="89" frameX="-8" frameY="-5" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_idle/idle_0019" x="306" y="272" width="48" height="89" frameX="-8" frameY="-5" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_idle/idle_0020" x="256" y="272" width="48" height="89" frameX="-8" frameY="-5" frameWidth="60" frameHeight="95"/>
     <SubTexture name="hero_idle/idle_0021" x="414" y="181" width="50" height="89" frameX="-7" frameY="-5" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_idle/idle_0022" x="303" y="454" width="49" height="90" frameX="-7" frameY="-4" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_idle/idle_0023" x="403" y="454" width="47" height="90" frameX="-8" frameY="-4" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_idle/idle_0024" x="395" y="546" width="47" height="91" frameX="-7" frameY="-3" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_idle/idle_0025" x="346" y="546" width="47" height="91" frameX="-7" frameY="-3" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_idle/idle_0026" x="196" y="638" width="48" height="91" frameX="-6" frameY="-3" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_idle/idle_0027" x="294" y="639" width="46" height="91" frameX="-7" frameY="-3" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_idle/idle_0028" x="246" y="639" width="46" height="91" frameX="-7" frameY="-3" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_walk/walk_0000" x="342" y="639" width="46" height="91" frameX="-7" frameY="-3" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_walk/walk_0001" x="195" y="731" width="46" height="92" frameX="-6" frameY="-2" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_walk/walk_0002" x="438" y="639" width="47" height="92" frameX="-5" frameY="-2" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_walk/walk_0003" x="145" y="824" width="46" height="93" frameX="-5" frameY="-1" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_walk/walk_0004" x="340" y="732" width="45" height="93" frameX="-5" frameY="-1" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_walk/walk_0005" x="97" y="823" width="46" height="93" frameX="-4" frameY="-1" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_walk/walk_0006" x="2" y="822" width="46" height="93" frameX="-4" frameY="-1" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_walk/walk_0007" x="243" y="732" width="46" height="93" frameX="-4" frameY="-1" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_walk/walk_0008" x="51" y="728" width="45" height="93" frameX="-4" frameY="-1" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_walk/walk_0009" x="98" y="729" width="46" height="92" frameX="-5" frameY="-2" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_walk/walk_0010" x="354" y="454" width="47" height="90" frameX="-6" frameY="-4" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_walk/walk_0011" x="153" y="452" width="47" height="90" frameX="-7" frameY="-4" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_walk/walk_0012" x="410" y="272" width="47" height="89" frameX="-8" frameY="-5" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_idle/idle_0022" x="396" y="455" width="49" height="90" frameX="-7" frameY="-4" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_idle/idle_0023" x="51" y="452" width="47" height="90" frameX="-8" frameY="-4" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_idle/idle_0024" x="343" y="547" width="47" height="91" frameX="-7" frameY="-3" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_idle/idle_0025" x="294" y="547" width="47" height="91" frameX="-7" frameY="-3" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_idle/idle_0026" x="244" y="640" width="48" height="91" frameX="-6" frameY="-3" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_idle/idle_0027" x="196" y="639" width="46" height="91" frameX="-7" frameY="-3" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_idle/idle_0028" x="50" y="637" width="46" height="91" frameX="-7" frameY="-3" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_walk/walk_0000" x="342" y="640" width="46" height="91" frameX="-7" frameY="-3" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_walk/walk_0001" x="50" y="730" width="46" height="92" frameX="-6" frameY="-2" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_walk/walk_0002" x="438" y="640" width="47" height="92" frameX="-5" frameY="-2" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_walk/walk_0003" x="145" y="825" width="46" height="93" frameX="-5" frameY="-1" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_walk/walk_0004" x="340" y="733" width="45" height="93" frameX="-5" frameY="-1" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_walk/walk_0005" x="97" y="825" width="46" height="93" frameX="-4" frameY="-1" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_walk/walk_0006" x="2" y="823" width="46" height="93" frameX="-4" frameY="-1" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_walk/walk_0007" x="196" y="732" width="46" height="93" frameX="-4" frameY="-1" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_walk/walk_0008" x="293" y="733" width="45" height="93" frameX="-4" frameY="-1" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_walk/walk_0009" x="2" y="729" width="46" height="92" frameX="-5" frameY="-2" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_walk/walk_0010" x="2" y="452" width="47" height="90" frameX="-6" frameY="-4" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_walk/walk_0011" x="441" y="363" width="47" height="90" frameX="-7" frameY="-4" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_walk/walk_0012" x="156" y="270" width="47" height="89" frameX="-8" frameY="-5" frameWidth="60" frameHeight="95"/>
     <SubTexture name="hero_walk/walk_0013" x="54" y="180" width="48" height="88" frameX="-8" frameY="-6" frameWidth="60" frameHeight="95"/>
     <SubTexture name="hero_walk/walk_0014" x="222" y="91" width="50" height="88" frameX="-7" frameY="-6" frameWidth="60" frameHeight="95"/>
     <SubTexture name="hero_walk/walk_0015" x="207" y="181" width="49" height="88" frameX="-8" frameY="-6" frameWidth="60" frameHeight="95"/>
     <SubTexture name="hero_walk/walk_0016" x="156" y="180" width="49" height="88" frameX="-8" frameY="-6" frameWidth="60" frameHeight="95"/>
     <SubTexture name="hero_walk/walk_0017" x="362" y="181" width="50" height="89" frameX="-7" frameY="-5" frameWidth="60" frameHeight="95"/>
     <SubTexture name="hero_walk/walk_0018" x="106" y="270" width="48" height="89" frameX="-8" frameY="-5" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_walk/walk_0019" x="252" y="454" width="49" height="90" frameX="-7" frameY="-4" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_walk/walk_0020" x="104" y="452" width="47" height="90" frameX="-8" frameY="-4" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_walk/walk_0021" x="202" y="453" width="48" height="90" frameX="-7" frameY="-4" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_walk/walk_0022" x="297" y="546" width="47" height="91" frameX="-7" frameY="-3" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_walk/walk_0023" x="200" y="545" width="47" height="91" frameX="-7" frameY="-3" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_walk/walk_0024" x="444" y="546" width="48" height="91" frameX="-6" frameY="-3" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_walk/walk_0025" x="50" y="635" width="46" height="91" frameX="-7" frameY="-3" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_walk/walk_0026" x="2" y="635" width="46" height="91" frameX="-7" frameY="-3" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_walk/walk_0027" x="249" y="546" width="46" height="91" frameX="-7" frameY="-3" frameWidth="60" frameHeight="95"/>
-    <SubTexture name="hero_walk/walk_0028" x="152" y="544" width="46" height="91" frameX="-7" frameY="-3" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_walk/walk_0019" x="198" y="454" width="49" height="90" frameX="-7" frameY="-4" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_walk/walk_0020" x="104" y="361" width="47" height="90" frameX="-8" frameY="-4" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_walk/walk_0021" x="2" y="544" width="48" height="90" frameX="-7" frameY="-4" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_walk/walk_0022" x="245" y="547" width="47" height="91" frameX="-7" frameY="-3" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_walk/walk_0023" x="100" y="545" width="47" height="91" frameX="-7" frameY="-3" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_walk/walk_0024" x="441" y="547" width="48" height="91" frameX="-6" frameY="-3" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_walk/walk_0025" x="2" y="636" width="46" height="91" frameX="-7" frameY="-3" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_walk/walk_0026" x="197" y="546" width="46" height="91" frameX="-7" frameY="-3" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_walk/walk_0027" x="149" y="545" width="46" height="91" frameX="-7" frameY="-3" frameWidth="60" frameHeight="95"/>
+    <SubTexture name="hero_walk/walk_0028" x="52" y="544" width="46" height="91" frameX="-7" frameY="-3" frameWidth="60" frameHeight="95"/>
 </TextureAtlas>

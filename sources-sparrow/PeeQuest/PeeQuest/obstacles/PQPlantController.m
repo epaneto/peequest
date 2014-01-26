@@ -66,7 +66,7 @@ typedef enum{
 {
     _asset_textures = [_atlas texturesStartingWith:label];
     
-    _assetView = [[SPMovieClip alloc] initWithFrames:_asset_textures fps:30];
+    _assetView = [[SPMovieClip alloc] initWithFrames:_asset_textures fps:31];
     _assetView.loop = YES;
     [Sparrow.juggler addObject:_assetView];
     [_assetView play];
@@ -78,7 +78,7 @@ typedef enum{
 {
     _shadow_textures = [_atlas texturesStartingWith:label];
     
-    _shadowView = [[SPMovieClip alloc] initWithFrames:_shadow_textures fps:30];
+    _shadowView = [[SPMovieClip alloc] initWithFrames:_shadow_textures fps:31];
     _shadowView.loop = YES;
     [Sparrow.juggler addObject:_shadowView];
     [_shadowView play];
