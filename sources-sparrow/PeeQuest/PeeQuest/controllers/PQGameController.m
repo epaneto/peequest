@@ -13,6 +13,7 @@
 #import "PQBackgroundController.h"
 #import "PQPlayerController.h"
 #import "PQGame.h"
+#import "PQGameplayUI.h"
 
 
 @interface PQGameController ()
@@ -212,6 +213,7 @@
     levelOffset = 0;
      [self updatePlacedObstacles];
     lifes = PLAYER_LIFES;
+    [[PQGameplayUI sharedInstance] updateLifes:lifes];
 }
 
 - (void)onUserTouch:(SPTouchEvent*)event
@@ -248,6 +250,10 @@
         NSString *damageSound = arc4random() * 2.0 < 1.0 ? @"damage1.caf" : @"damage2.caf";
         [[PQSoundPlayer sharedInstance] play:damageSound];
         [_player showDamage];
+    }
+    
+    if([PQGameplayUI sharedInstance] != NULL){
+        [[PQGameplayUI sharedInstance] updateLifes:lifes];
     }
 }
 

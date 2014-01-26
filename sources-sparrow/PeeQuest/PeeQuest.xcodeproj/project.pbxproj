@@ -30,6 +30,10 @@
 		543CE71718954BE90087D1FD /* share-lose@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 543CE71318954BE90087D1FD /* share-lose@2x.png */; };
 		543CE71818954BE90087D1FD /* share-win.png in Resources */ = {isa = PBXBuildFile; fileRef = 543CE71418954BE90087D1FD /* share-win.png */; };
 		543CE71918954BE90087D1FD /* share-win@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 543CE71518954BE90087D1FD /* share-win@2x.png */; };
+		543CE71E189552620087D1FD /* heart-active.png in Resources */ = {isa = PBXBuildFile; fileRef = 543CE71A189552620087D1FD /* heart-active.png */; };
+		543CE71F189552620087D1FD /* heart-active@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 543CE71B189552620087D1FD /* heart-active@2x.png */; };
+		543CE720189552620087D1FD /* heart-disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 543CE71C189552620087D1FD /* heart-disabled.png */; };
+		543CE721189552620087D1FD /* heart-disabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 543CE71D189552620087D1FD /* heart-disabled@2x.png */; };
 		54F2AFC918942680003D25D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F2AFC818942680003D25D3 /* Foundation.framework */; };
 		54F2AFCB18942680003D25D3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F2AFCA18942680003D25D3 /* CoreGraphics.framework */; };
 		54F2AFCD18942680003D25D3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F2AFCC18942680003D25D3 /* UIKit.framework */; };
@@ -209,6 +213,10 @@
 		543CE71318954BE90087D1FD /* share-lose@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "share-lose@2x.png"; sourceTree = "<group>"; };
 		543CE71418954BE90087D1FD /* share-win.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "share-win.png"; sourceTree = "<group>"; };
 		543CE71518954BE90087D1FD /* share-win@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "share-win@2x.png"; sourceTree = "<group>"; };
+		543CE71A189552620087D1FD /* heart-active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "heart-active.png"; sourceTree = "<group>"; };
+		543CE71B189552620087D1FD /* heart-active@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "heart-active@2x.png"; sourceTree = "<group>"; };
+		543CE71C189552620087D1FD /* heart-disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "heart-disabled.png"; sourceTree = "<group>"; };
+		543CE71D189552620087D1FD /* heart-disabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "heart-disabled@2x.png"; sourceTree = "<group>"; };
 		54F2AFC518942680003D25D3 /* PeeQuest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeeQuest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54F2AFC818942680003D25D3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		54F2AFCA18942680003D25D3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -743,6 +751,10 @@
 		54F2B1C11894629E003D25D3 /* ui-assets */ = {
 			isa = PBXGroup;
 			children = (
+				543CE71A189552620087D1FD /* heart-active.png */,
+				543CE71B189552620087D1FD /* heart-active@2x.png */,
+				543CE71C189552620087D1FD /* heart-disabled.png */,
+				543CE71D189552620087D1FD /* heart-disabled@2x.png */,
 				54F2B1C21894629E003D25D3 /* facebook-btn@2x.png */,
 				543CE71218954BE90087D1FD /* share-lose.png */,
 				543CE71318954BE90087D1FD /* share-lose@2x.png */,
@@ -930,6 +942,7 @@
 				543CE7111895281F0087D1FD /* track.caf in Resources */,
 				A316F3E31894C3D2004253F5 /* Icon.png in Resources */,
 				543CE6F51894B09D0087D1FD /* damage2.caf in Resources */,
+				543CE71F189552620087D1FD /* heart-active@2x.png in Resources */,
 				A316F3DF1894A6F9004253F5 /* vaso_sombra.png in Resources */,
 				A316F3D41894A6F9004253F5 /* quadro_sombra@2x.png in Resources */,
 				54F2B1D31894629E003D25D3 /* pause-btn@2x.png in Resources */,
@@ -940,6 +953,7 @@
 				E5B336F01894874700D95FAC /* player@2x.png in Resources */,
 				A316F3C71894A6F9004253F5 /* alcapao_normal.png in Resources */,
 				543CE71818954BE90087D1FD /* share-win.png in Resources */,
+				543CE721189552620087D1FD /* heart-disabled@2x.png in Resources */,
 				A316F3CC1894A6F9004253F5 /* janela_normal@2x.png in Resources */,
 				54F2B1D61894629E003D25D3 /* pause-soundoff-btn@2x.png in Resources */,
 				543CE7021894B09D0087D1FD /* wood2.caf in Resources */,
@@ -991,6 +1005,7 @@
 				A316F3C51894A6F9004253F5 /* alcapao_menino.png in Resources */,
 				A316F3D81894A6F9004253F5 /* rato_normal@2x.png in Resources */,
 				E5B336CD18942C0500D95FAC /* background@2x.png in Resources */,
+				543CE71E189552620087D1FD /* heart-active.png in Resources */,
 				543CE6FC1894B09D0087D1FD /* sound-of.caf in Resources */,
 				543CE6F81894B09D0087D1FD /* medusa.caf in Resources */,
 				543CE6FB1894B09D0087D1FD /* rat_on_wood.caf in Resources */,
@@ -999,6 +1014,7 @@
 				E5B336F11894874700D95FAC /* player@2x.xml in Resources */,
 				A316F3D51894A6F9004253F5 /* rato_menino.png in Resources */,
 				543CE7001894B09D0087D1FD /* wind-plant.caf in Resources */,
+				543CE720189552620087D1FD /* heart-disabled.png in Resources */,
 				E5B336E01894347600D95FAC /* character@2x.png in Resources */,
 				54F2B1DB1894629E003D25D3 /* win-title@2x.png in Resources */,
 				54F2AFDB18942680003D25D3 /* Images.xcassets in Resources */,

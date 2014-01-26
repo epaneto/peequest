@@ -10,5 +10,6 @@
 #import "PQGame.h"
 
 @interface PQGameplayUI : PQBaseUI
-
++ (PQGameplayUI *)sharedInstance;
+- (void)updateLifes:(int)lifes;
 @end
