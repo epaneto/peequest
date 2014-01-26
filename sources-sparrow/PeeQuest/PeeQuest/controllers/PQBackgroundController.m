@@ -41,9 +41,9 @@
 -(void)updatePosition:(float)speed
 {
     _offset += (speed) * 0.001;
-    if(_offset > 1.0){
-        _offset = 0.0;
-    }
+//    if(_offset > 1.0){
+//        _offset = 0.0;
+//    }
     
     [_view setTexCoordsWithX:  _offset y:0 ofVertex:0];
     [_view setTexCoordsWithX:1+_offset y:0 ofVertex:1];

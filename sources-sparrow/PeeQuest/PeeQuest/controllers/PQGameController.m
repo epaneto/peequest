@@ -57,6 +57,7 @@
     
     [self loadJSONObstacles];
     _paused = YES;
+    levelOffset = 0;
 }
 
 -(void)initRainTimer
@@ -125,7 +126,7 @@
     }
     
     for (PQBaseObstacle *movingObstacle in placedObstacles) {
-        [[movingObstacle container] setX:(movingObstacle.offset.x - levelOffset)];
+        [[movingObstacle container] setX:(movingObstacle.container.x - [_player getVelocity]/1.77)];
     }
     
     //removing obstacles
@@ -187,8 +188,10 @@
 {
     if(_paused) return;
     [_background updatePosition:[_player getVelocity]];
-    levelOffset += [_player getVelocity];
     if (allObstacles != nil && [allObstacles count] > 0) {
+        if ([placedObstacles count] > 0) {
+            levelOffset += [_player getVelocity]/1.77;
+        }
         [self updatePlacedObstacles];
     }
     if(playerState == PLAYER_STATE_PLAYING) {
