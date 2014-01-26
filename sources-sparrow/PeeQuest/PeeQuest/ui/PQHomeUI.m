@@ -21,16 +21,15 @@
 -(void)build
 {
     if(logo == NULL){
-        
-        logoAtlas = [[SPTextureAtlas alloc] initWithContentsOfFile:@"logo.xml"];
+        logoAtlas = [SPTextureAtlas atlasWithContentsOfFile:@"logo.xml"];
         textures = [logoAtlas texturesStartingWith:@"logo/intro_"];
         
-        logo = [[SPMovieClip alloc] initWithFrames:textures fps:30];
+        logo = [[SPMovieClip alloc] initWithFrames:textures fps:31];
         logo.loop = NO;
         logo.x = Sparrow.stage.width / 2 - logo.width / 2;
         logo.y = 45;
-        [logo setCurrentFrame:0];
         [Sparrow.juggler addObject:logo];
+        [logo play];
         [self addChild:logo];
     }
     

@@ -164,7 +164,6 @@
 		54F2B1BF18945BFB003D25D3 /* PQHomeUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F2B1BA18945BFB003D25D3 /* PQHomeUI.m */; };
 		54F2B1C018945BFB003D25D3 /* PQPauseUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F2B1BC18945BFB003D25D3 /* PQPauseUI.m */; };
 		54F2B1CF1894629E003D25D3 /* facebook-btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54F2B1C21894629E003D25D3 /* facebook-btn@2x.png */; };
-		54F2B1D11894629E003D25D3 /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54F2B1C41894629E003D25D3 /* logo@2x.png */; };
 		54F2B1D21894629E003D25D3 /* lose-title@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54F2B1C51894629E003D25D3 /* lose-title@2x.png */; };
 		54F2B1D31894629E003D25D3 /* pause-btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54F2B1C61894629E003D25D3 /* pause-btn@2x.png */; };
 		54F2B1D41894629E003D25D3 /* pause-retry-btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54F2B1C71894629E003D25D3 /* pause-retry-btn@2x.png */; };
@@ -484,7 +483,6 @@
 		54F2B1BB18945BFB003D25D3 /* PQPauseUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PQPauseUI.h; sourceTree = "<group>"; };
 		54F2B1BC18945BFB003D25D3 /* PQPauseUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PQPauseUI.m; sourceTree = "<group>"; };
 		54F2B1C21894629E003D25D3 /* facebook-btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "facebook-btn@2x.png"; sourceTree = "<group>"; };
-		54F2B1C41894629E003D25D3 /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
 		54F2B1C51894629E003D25D3 /* lose-title@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lose-title@2x.png"; sourceTree = "<group>"; };
 		54F2B1C61894629E003D25D3 /* pause-btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pause-btn@2x.png"; sourceTree = "<group>"; };
 		54F2B1C71894629E003D25D3 /* pause-retry-btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pause-retry-btn@2x.png"; sourceTree = "<group>"; };
@@ -929,7 +927,6 @@
 				543CE71318954BE90087D1FD /* share-lose@2x.png */,
 				543CE71418954BE90087D1FD /* share-win.png */,
 				543CE71518954BE90087D1FD /* share-win@2x.png */,
-				54F2B1C41894629E003D25D3 /* logo@2x.png */,
 				54F2B1C51894629E003D25D3 /* lose-title@2x.png */,
 				54F2B1C61894629E003D25D3 /* pause-btn@2x.png */,
 				54F2B1C71894629E003D25D3 /* pause-retry-btn@2x.png */,
@@ -1213,7 +1210,6 @@
 				A316F3DC1894A6F9004253F5 /* vaso_menino@2x.png in Resources */,
 				543CE79518957D7F0087D1FD /* tutorial05.png in Resources */,
 				543CE78D189574E30087D1FD /* credits6@2x.png in Resources */,
-				54F2B1D11894629E003D25D3 /* logo@2x.png in Resources */,
 				543CE70B1894D0BE0087D1FD /* Default@2x.png in Resources */,
 				A3EB2CE918943ED3001CEEC1 /* peeQuest.json in Resources */,
 				A316F3F618957329004253F5 /* rato.xml in Resources */,
