@@ -117,6 +117,15 @@
     }
 }
 
+-(void)showDamage
+{
+    SPTween * tween = [SPTween tweenWithTarget:_view time:0.4 transition:SP_TRANSITION_EASE_OUT_BOUNCE];
+    [tween fadeTo:0];
+    tween.repeatCount = 2;
+    tween.reverse = YES;
+    [Sparrow.juggler addObject:tween];
+}
+
 -(void) showPlayerAnimation :(NSString * )label
 {
     ////clear previous animation

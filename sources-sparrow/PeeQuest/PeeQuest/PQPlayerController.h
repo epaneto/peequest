@@ -18,6 +18,7 @@
 -(void)stopWalk;
 -(void)showWin;
 -(void)showLose;
+-(void)showDamage;
 -(SPRectangle*)bounds;
 -(SPRectangle*)shadowBounds;
 -(SPRectangle * )getShadow;
