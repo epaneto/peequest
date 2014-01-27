@@ -234,6 +234,10 @@
 		E5C3D764189589880046CFA2 /* vaso.xml in Resources */ = {isa = PBXBuildFile; fileRef = E5C3D760189589880046CFA2 /* vaso.xml */; };
 		E5C3D765189589880046CFA2 /* vaso@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5C3D761189589880046CFA2 /* vaso@2x.png */; };
 		E5C3D766189589880046CFA2 /* vaso@2x.xml in Resources */ = {isa = PBXBuildFile; fileRef = E5C3D762189589880046CFA2 /* vaso@2x.xml */; };
+		E5C3D76818967AC50046CFA2 /* Artwork.png in Resources */ = {isa = PBXBuildFile; fileRef = E5C3D76718967AC50046CFA2 /* Artwork.png */; };
+		E5C3D76A189683B10046CFA2 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5C3D769189683B10046CFA2 /* Icon@2x.png */; };
+		E5C3D76C189684150046CFA2 /* Icon_spotlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5C3D76B189684150046CFA2 /* Icon_spotlight@2x.png */; };
+		E5C3D76E189684640046CFA2 /* Icon_settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5C3D76D189684640046CFA2 /* Icon_settings@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -562,6 +566,10 @@
 		E5C3D760189589880046CFA2 /* vaso.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = vaso.xml; sourceTree = "<group>"; };
 		E5C3D761189589880046CFA2 /* vaso@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vaso@2x.png"; sourceTree = "<group>"; };
 		E5C3D762189589880046CFA2 /* vaso@2x.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "vaso@2x.xml"; sourceTree = "<group>"; };
+		E5C3D76718967AC50046CFA2 /* Artwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Artwork.png; sourceTree = "<group>"; };
+		E5C3D769189683B10046CFA2 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		E5C3D76B189684150046CFA2 /* Icon_spotlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon_spotlight@2x.png"; sourceTree = "<group>"; };
+		E5C3D76D189684640046CFA2 /* Icon_settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon_settings@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -841,7 +849,11 @@
 		54F2B16B18942941003D25D3 /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				E5C3D76D189684640046CFA2 /* Icon_settings@2x.png */,
+				E5C3D76B189684150046CFA2 /* Icon_spotlight@2x.png */,
+				E5C3D769189683B10046CFA2 /* Icon@2x.png */,
 				543CE7061894D0BE0087D1FD /* Default-568h@2x.png */,
+				E5C3D76718967AC50046CFA2 /* Artwork.png */,
 				543CE7071894D0BE0087D1FD /* Default.png */,
 				543CE7081894D0BE0087D1FD /* Default@2x.png */,
 				A316F3A81894A6F9004253F5 /* Obstacles */,
@@ -1093,7 +1105,7 @@
 				ORGANIZATIONNAME = Doubleleft;
 				TargetAttributes = {
 					54F2AFC418942680003D25D3 = {
-						DevelopmentTeam = N56BB82M7F;
+						DevelopmentTeam = 7CLJ7E75JS;
 					};
 					54F2AFDF18942680003D25D3 = {
 						TestTargetID = 54F2AFC418942680003D25D3;
@@ -1135,6 +1147,7 @@
 				543CE79618957D7F0087D1FD /* tutorial05@2x.png in Resources */,
 				543CE71F189552620087D1FD /* heart-active@2x.png in Resources */,
 				543CE782189574E30087D1FD /* credits1.png in Resources */,
+				E5C3D76C189684150046CFA2 /* Icon_spotlight@2x.png in Resources */,
 				543CE78F189574E30087D1FD /* credits7@2x.png in Resources */,
 				A316F3DF1894A6F9004253F5 /* vaso_sombra.png in Resources */,
 				A316F3D41894A6F9004253F5 /* quadro_sombra@2x.png in Resources */,
@@ -1154,6 +1167,7 @@
 				543CE71818954BE90087D1FD /* share-win.png in Resources */,
 				E5C3D766189589880046CFA2 /* vaso@2x.xml in Resources */,
 				543CE721189552620087D1FD /* heart-disabled@2x.png in Resources */,
+				E5C3D76A189683B10046CFA2 /* Icon@2x.png in Resources */,
 				A316F3CC1894A6F9004253F5 /* janela_normal@2x.png in Resources */,
 				54F2B1D61894629E003D25D3 /* pause-soundoff-btn@2x.png in Resources */,
 				543CE7021894B09D0087D1FD /* wood2.caf in Resources */,
@@ -1179,6 +1193,7 @@
 				543CE72D18955BA80087D1FD /* tutorial01.png in Resources */,
 				543CE78B189574E30087D1FD /* credits5@2x.png in Resources */,
 				A316F3D91894A6F9004253F5 /* rato_sombra.png in Resources */,
+				E5C3D76818967AC50046CFA2 /* Artwork.png in Resources */,
 				E5C3D763189589880046CFA2 /* vaso.png in Resources */,
 				543CE78C189574E30087D1FD /* credits6.png in Resources */,
 				E5B336CC18942C0500D95FAC /* background.png in Resources */,
@@ -1239,6 +1254,7 @@
 				543CE73A189567DA0087D1FD /* ending_hero.png in Resources */,
 				543CE6FB1894B09D0087D1FD /* rat_on_wood.caf in Resources */,
 				A316F3C61894A6F9004253F5 /* alcapao_menino@2x.png in Resources */,
+				E5C3D76E189684640046CFA2 /* Icon_settings@2x.png in Resources */,
 				543CE7B018959D1C0087D1FD /* tutorial05-568h@2x.png in Resources */,
 				E526AA9D18951AD7005892AE /* player_shadow.png in Resources */,
 				A316F3F818957329004253F5 /* rato@2x.xml in Resources */,
@@ -1471,7 +1487,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Gabriel Pacheco (87TNYHMEF8)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PeeQuest/PeeQuest-Prefix.pch";
@@ -1481,9 +1497,9 @@
 					"third-parties",
 				);
 				INFOPLIST_FILE = "PeeQuest/PeeQuest-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "7458011B-A7CB-4CCF-86AE-5F8F92743EF3";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1502,9 +1518,9 @@
 					"third-parties",
 				);
 				INFOPLIST_FILE = "PeeQuest/PeeQuest-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "7458011B-A7CB-4CCF-86AE-5F8F92743EF3";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
